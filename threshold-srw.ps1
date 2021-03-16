@@ -60,56 +60,62 @@ ${ProgramsSetup}.Font                                           = New-Object Sys
 ${ProgramsSetup_Install_Chocolatey}                             = New-Object System.Windows.Forms.Button
 ${ProgramsSetup_Install_Chocolatey}.Text                        = "Install Chocolatey"
 ${ProgramsSetup_Install_Chocolatey}.AutoSize                    = $true
-${ProgramsSetup_Install_Chocolatey}.Location                    = New-Object System.Drawing.Point(30,80)
+${ProgramsSetup_Install_Chocolatey}.Location                    = New-Object System.Drawing.Point(20,80)
 ${ProgramsSetup_Install_Chocolatey}.Font                        = New-Object System.Drawing.Font('Microsoft Sans Serif',20)
 
 ${ProgramsSetup_Install_7zip}                                   = New-Object System.Windows.Forms.Button
 ${ProgramsSetup_Install_7zip}.Text                              = "Install 7-Zip"
 ${ProgramsSetup_Install_7zip}.AutoSize                          = $true
-${ProgramsSetup_Install_7zip}.Location                          = New-Object System.Drawing.Point(30,135)
+${ProgramsSetup_Install_7zip}.Location                          = New-Object System.Drawing.Point(20,135)
 ${ProgramsSetup_Install_7zip}.Font                              = New-Object System.Drawing.Font('Microsoft Sans Serif',20)
 
 ${ProgramsSetup_Install_Steam}                                  = New-Object System.Windows.Forms.Button
 ${ProgramsSetup_Install_Steam}.Text                             = "Install Steam"
 ${ProgramsSetup_Install_Steam}.AutoSize                         = $true
-${ProgramsSetup_Install_Steam}.Location                         = New-Object System.Drawing.Point(30,190)
+${ProgramsSetup_Install_Steam}.Location                         = New-Object System.Drawing.Point(20,190)
 ${ProgramsSetup_Install_Steam}.Font                             = New-Object System.Drawing.Font('Microsoft Sans Serif',20)
 
 ${ProgramsSetup_Install_Rwc}                                    = New-Object System.Windows.Forms.Button
 ${ProgramsSetup_Install_Rwc}.Text                               = "Install Reddit Wallpaper Changer"
 ${ProgramsSetup_Install_Rwc}.AutoSize                           = $true
-${ProgramsSetup_Install_Rwc}.Location                           = New-Object System.Drawing.Point(30,245)
+${ProgramsSetup_Install_Rwc}.Location                           = New-Object System.Drawing.Point(20,245)
 ${ProgramsSetup_Install_Rwc}.Font                               = New-Object System.Drawing.Font('Microsoft Sans Serif',20)
 
 ${ProgramsSetup_Install_Egl}                                    = New-Object System.Windows.Forms.Button
 ${ProgramsSetup_Install_Egl}.Text                               = "Install Epic Games Launcher"
 ${ProgramsSetup_Install_Egl}.AutoSize                           = $true
-${ProgramsSetup_Install_Egl}.Location                           = New-Object System.Drawing.Point(30,300)
+${ProgramsSetup_Install_Egl}.Location                           = New-Object System.Drawing.Point(20,300)
 ${ProgramsSetup_Install_Egl}.Font                               = New-Object System.Drawing.Font('Microsoft Sans Serif',20)
 
 ${ProgramsSetup_Install_Spotify}                                = New-Object System.Windows.Forms.Button
 ${ProgramsSetup_Install_Spotify}.Text                           = "Install Spotify"
 ${ProgramsSetup_Install_Spotify}.AutoSize                       = $true
-${ProgramsSetup_Install_Spotify}.Location                       = New-Object System.Drawing.Point(30,355)
+${ProgramsSetup_Install_Spotify}.Location                       = New-Object System.Drawing.Point(20,355)
 ${ProgramsSetup_Install_Spotify}.Font                           = New-Object System.Drawing.Font('Microsoft Sans Serif',20)
 
 ${ProgramsSetup_Install_Discord}                                = New-Object System.Windows.Forms.Button
 ${ProgramsSetup_Install_Discord}.Text                           = "Install Discord"
 ${ProgramsSetup_Install_Discord}.AutoSize                       = $true
-${ProgramsSetup_Install_Discord}.Location                       = New-Object System.Drawing.Point(30,410)
+${ProgramsSetup_Install_Discord}.Location                       = New-Object System.Drawing.Point(20,410)
 ${ProgramsSetup_Install_Discord}.Font                           = New-Object System.Drawing.Font('Microsoft Sans Serif',20)
 
 ${ProgramsSetup_Install_Bleachbit}                              = New-Object System.Windows.Forms.Button
 ${ProgramsSetup_Install_Bleachbit}.Text                         = "Install BleachBit"
 ${ProgramsSetup_Install_Bleachbit}.AutoSize                     = $true
-${ProgramsSetup_Install_Bleachbit}.Location                     = New-Object System.Drawing.Point(30,465)
+${ProgramsSetup_Install_Bleachbit}.Location                     = New-Object System.Drawing.Point(20,465)
 ${ProgramsSetup_Install_Bleachbit}.Font                         = New-Object System.Drawing.Font('Microsoft Sans Serif',20)
 
 ${ProgramsSetup_Uninstall_Chocolatey}                           = New-Object System.Windows.Forms.Button
-${ProgramsSetup_Uninstall_Chocolatey}.Text                      = "Install BleachBit"
+${ProgramsSetup_Uninstall_Chocolatey}.Text                      = "Uninstall Chocolatey"
 ${ProgramsSetup_Uninstall_Chocolatey}.AutoSize                  = $true
-${ProgramsSetup_Uninstall_Chocolatey}.Location                  = New-Object System.Drawing.Point(30,465)
+${ProgramsSetup_Uninstall_Chocolatey}.Location                  = New-Object System.Drawing.Point(20,520)
 ${ProgramsSetup_Uninstall_Chocolatey}.Font                      = New-Object System.Drawing.Font('Microsoft Sans Serif',20)
+
+${ProgramsSetup_CheckForUpdates_Chocolatey}                     = New-Object System.Windows.Forms.Button
+${ProgramsSetup_CheckForUpdates_Chocolatey}.Text                = "Upgrade Chocolatey packages"
+${ProgramsSetup_CheckForUpdates_Chocolatey}.AutoSize            = $true
+${ProgramsSetup_CheckForUpdates_Chocolatey}.Location            = New-Object System.Drawing.Point(20,575)
+${ProgramsSetup_CheckForUpdates_Chocolatey}.Font                = New-Object System.Drawing.Font('Microsoft Sans Serif',20)
 
 ${SystemAdministration}                                         = New-Object System.Windows.Forms.Panel
 ${SystemAdministration}.AutoSize                                = $true
@@ -117,27 +123,41 @@ ${SystemAdministration}.AutoSize                                = $true
 ${SystemReadiness}                                              = New-Object System.Windows.Forms.Label
 ${SystemReadiness}.Text                                         = "System Administration"
 ${SystemReadiness}.AutoSize                                     = $true
-${SystemReadiness}.Location                                     = New-Object System.Drawing.Point(550,15)
+${SystemReadiness}.Location                                     = New-Object System.Drawing.Point(560,15)
 ${SystemReadiness}.Font                                         = New-Object System.Drawing.Font('Microsoft Sans Serif',30)
 
 ${SystemReadiness_Apply}                                        = New-Object System.Windows.Forms.Button
 ${SystemReadiness_Apply}.Text                                   = "Apply System Readiness"
 ${SystemReadiness_Apply}.AutoSize                               = $true
-${SystemReadiness_Apply}.Location                               = New-Object System.Drawing.Point(560,80)
+${SystemReadiness_Apply}.Location                               = New-Object System.Drawing.Point(570,80)
 ${SystemReadiness_Apply}.Font                                   = New-Object System.Drawing.Font('Microsoft Sans Serif',20)
 
 ${SystemReadiness_RemoveUwpApps}                                = New-Object System.Windows.Forms.Button
 ${SystemReadiness_RemoveUwpApps}.Text                           = "Remove non-critical UWP apps"
 ${SystemReadiness_RemoveUwpApps}.AutoSize                       = $true
-${SystemReadiness_RemoveUwpApps}.Location                       = New-Object System.Drawing.Point(560,135)
+${SystemReadiness_RemoveUwpApps}.Location                       = New-Object System.Drawing.Point(570,135)
 ${SystemReadiness_RemoveUwpApps}.Font                           = New-Object System.Drawing.Font('Microsoft Sans Serif',20)
 
 ${SystemReadiness_RemoveAllUwpApps}                             = New-Object System.Windows.Forms.Button
 ${SystemReadiness_RemoveAllUwpApps}.Text                        = "Remove all UWP apps"
 ${SystemReadiness_RemoveAllUwpApps}.AutoSize                    = $true
-${SystemReadiness_RemoveAllUwpApps}.Location                    = New-Object System.Drawing.Point(560,190)
+${SystemReadiness_RemoveAllUwpApps}.Location                    = New-Object System.Drawing.Point(570,190)
 ${SystemReadiness_RemoveAllUwpApps}.Font                        = New-Object System.Drawing.Font('Microsoft Sans Serif',20)
 
+${ThirdpartyContainer}                                            = New-Object System.Windows.Forms.Panel
+${ThirdpartyContainer}.AutoSize                                   = $true
+
+${ThirdpartyContainer_Label}                                      = New-Object System.Windows.Forms.Label
+${ThirdpartyContainer_Label}.Text                                 = "Third-party Scripts"
+${ThirdpartyContainer_Label}.AutoSize                             = $true
+${ThirdpartyContainer_Label}.Location                             = New-Object System.Drawing.Point(560,465)
+${ThirdpartyContainer_Label}.Font                                 = New-Object System.Drawing.Font('Microsoft Sans Serif',20)
+
+${ThirdpartyContainer_CttWin10script}                             = New-Object System.Windows.Forms.Button
+${ThirdpartyContainer_CttWin10script}.Text                        = "Launch CTT's win10script"
+${ThirdpartyContainer_CttWin10script}.AutoSize                    = $true
+${ThirdpartyContainer_CttWin10script}.Location                    = New-Object System.Drawing.Point(570,520)
+${ThirdpartyContainer_CttWin10script}.Font                        = New-Object System.Drawing.Font('Microsoft Sans Serif',20)
 
 ${ProgramsSetup_Install_Chocolatey}.Add_Click({
     Write-Host "Installing Chocolatey package manager for Windows... "
@@ -166,7 +186,7 @@ ${ProgramsSetup_Install_Rwc}.Add_Click({
 
 ${ProgramsSetup_Install_Egl}.Add_Click({
     Write-Host "Installing Epic Games Launcher... "
-    choco install reddit-wallpaper-changer -y
+    choco install epicgameslauncher -y
     ${WShell}.Popup("Operation completed",0,"$(${ProgramsSetup_Install_Egl}.Text)",0x0)
 })
 
@@ -178,17 +198,23 @@ ${ProgramsSetup_Install_Spotify}.Add_Click({
 
 ${ProgramsSetup_Install_Discord}.Add_Click({
     Write-Host "Installing Discord... "
-    choco install discord -y
+    choco install discord.install -y
     ${WShell}.Popup("Operation completed",0,"$(${ProgramsSetup_Install_Discord}.Text)",0x0)
+    Write-Host "Operation completed"
 })
 
 ${ProgramsSetup_Install_Bleachbit}.Add_Click({
     Write-Host "Installing BleachBit... "
-    choco install bleachbit -y
+    choco install bleachbit.install -y
     ${WShell}.Popup("Operation completed",0,"$(${ProgramsSetup_Install_Bleachbit}.Text)",0x0)
+    Write-Host "Operation completed"
 })
 
 ${ProgramsSetup_Uninstall_Chocolatey}.Add_Click({
+
+    Write-Warning "Chocolatey will uninstalled within 10 seconds..."
+    Start-Sleep 5
+    
     $VerbosePreference = 'Continue'
 if (-not $env:ChocolateyInstall) {
     $message = @(
@@ -287,13 +313,23 @@ if ($env:ChocolateyToolsLocation -and (Test-Path $env:ChocolateyToolsLocation)) 
 foreach ($scope in 'User', 'Machine') {
     [Environment]::SetEnvironmentVariable('ChocolateyToolsLocation', [string]::Empty, $scope)
 }
+    ${WShell}.Popup("Operation completed",0,"$(${ProgramsSetup_Uninstall_Chocolatey}.Text)",0x0)
+    Write-Host "Operation completed"
+})
+
+${ProgramsSetup_CheckForUpdates_Chocolatey}.Add_Click({
+    Write-Warning "If Chocolatey is installed, packages installed within the repository will be upgraded..."
+    Start-Sleep 5
+    choco upgrade all -y
+    ${WShell}.Popup("Operation completed",0,"$(${ProgramsSetup_CheckForUpdates_Chocolatey}.Text)",0x0)
+    Write-Host "Operation completed"
 })
 
 ${SystemReadiness_Apply}.Add_Click({
     # Privacy settings
     Write-Host "Applying privacy settings..."
     Import-Module BitsTransfer | Out-Null
-    Start-BitsTransfer -Source "https://raw.githubusercontent.com/gfelipe099/threshold-srw/master/ooshutup10.cfg" -Destination ooshutup10.cfg | Out-Null
+    Start-BitsTransfer -Source "https://raw.githubusercontent.com/gfelipe099/threshold-srb/master/ooshutup10.cfg" -Destination ooshutup10.cfg | Out-Null
     Start-BitsTransfer -Source "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe" -Destination OOSU10.exe | Out-Null
     ./OOSU10.exe ooshutup10.cfg /quiet
     Remove-Module BitsTransfer
@@ -772,6 +808,7 @@ ${SystemReadiness_Apply}.Add_Click({
     DISM /Online /Remove-Capability /CapabilityName:WMI-SNMP-Provider.Client~~~~0.0.1.0 /NoRestart | Out-Null
     DISM /Online /Remove-Capability /CapabilityName:XPS.Viewer~~~~0.0.1.0 /NoRestart | Out-Null
     Remove-Printer -Name "Fax" -ErrorAction SilentlyContinue | Out-Null
+    ${WShell}.Popup("Operation completed",0,"$(${SystemReadiness_Apply}.Text)",0x0)
 })
 
 ${SystemReadiness_RemoveAllUwpApps}.Add_Click({
@@ -785,9 +822,15 @@ ${SystemReadiness_RemoveUwpApps}.Add_Click({
     Write-Host "WARNING: The following UWP apps has been left installed, they provide critical functionalities to the system: Windows Store, NVIDIA Control Panel, Realtek Audio Console and Intel Graphics Command Center"
 })
 
-${threshold-srw}.Controls.AddRange(@(${ProgramsContainer},${SystemAdministration}))
-${ProgramsContainer}.Controls.AddRange(@(${ProgramsSetup},${ProgramsSetup_Install_Chocolatey},${ProgramsSetup_Install_7zip},${ProgramsSetup_Install_Steam},${ProgramsSetup_Install_Origin},${ProgramsSetup_Install_Rwc},${ProgramsSetup_Install_Egl},${ProgramsSetup_Install_Spotify},${ProgramsSetup_Install_Discord},${ProgramsSetup_Install_Bleachbit},${SystemReadiness_Apply},${ProgramsSetup_Uninstall_Chocolatey}))
+${ThirdpartyContainer_CttWin10script}.Add_Click({
+    Write-Host "Downloading and executing ChristTitusTech's win10script..."
+    iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JJ8R4'))
+})
+
+${threshold-srw}.Controls.AddRange(@(${ProgramsContainer},${SystemAdministration},${ThirdpartyContainer}))
+${ProgramsContainer}.Controls.AddRange(@(${ProgramsSetup},${ProgramsSetup_Install_Chocolatey},${ProgramsSetup_Install_7zip},${ProgramsSetup_Install_Steam},${ProgramsSetup_Install_Origin},${ProgramsSetup_Install_Rwc},${ProgramsSetup_Install_Egl},${ProgramsSetup_Install_Spotify},${ProgramsSetup_Install_Discord},${ProgramsSetup_Install_Bleachbit},${SystemReadiness_Apply},${ProgramsSetup_Uninstall_Chocolatey},${ProgramsSetup_CheckForUpdates_Chocolatey}))
 ${SystemAdministration}.Controls.AddRange(@(${SystemReadiness},${SystemReadiness_Apply},${SystemReadiness_RemoveAllUwp},${SystemReadiness_RemoveAllUwpApps},${SystemReadiness_RemoveUwpApps}))
+${ThirdpartyContainer}.Controls.AddRange(@(${ThirdpartyContainer_Label},${ThirdpartyContainer_CttWin10script}))
 
 if (${OsEdition} -ne "${validatedOsEdition}") {
     ${WShell}.Popup("The OS edition you are using is not validated to use with this script. You need to use ${validatedOsEdition}, and you are using: ${OsEdition}.",0,"$(${threshold-srw}.Text)",0x0)
