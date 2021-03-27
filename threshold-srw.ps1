@@ -812,14 +812,16 @@ ${SystemReadiness_Apply}.Add_Click({
 })
 
 ${SystemReadiness_RemoveAllUwpApps}.Add_Click({
-    Write-Host "Uninstalling every UWP apps..."
+    Write-Host "Uninstalling UWP apps..."
     Get-AppxPackage -AllUsers | Remove-AppxPackage
+    Get-AppxProvisionedPackage -Online | Remove-AppxProvisionedPackage -Online
 })
 
 ${SystemReadiness_RemoveUwpApps}.Add_Click({
-    Write-Host "Uninstalling UWP apps except critical apps..."
+    Write-Host "Uninstalling UWP apps except critical ones..."
     Get-AppxPackage -AllUsers | where-object {$_.name -notlike "*Microsoft.WindowsStore*"} | where-object {$_.name -notlike "*AppUp.IntelGraphicsExperience*"} | where-object {$_.name -notlike "*NVIDIACorp.NVIDIAControlPanel*"} | where-object {$_.name -notlike "*RealtekSemiconductorCorp.RealtekAudioControl*"} | Remove-AppxPackage
-    Write-Host "WARNING: The following UWP apps has been left installed, they provide critical functionalities to the system: Windows Store, NVIDIA Control Panel, Realtek Audio Console and Intel Graphics Command Center"
+    Get-AppxProvisionedPackage -Online | where-object {$_.name -notlike "*Microsoft.WindowsStore*"} | where-object {$_.name -notlike "*AppUp.IntelGraphicsExperience*"} | where-object {$_.name -notlike "*NVIDIACorp.NVIDIAControlPanel*"} | where-object {$_.name -notlike "*RealtekSemiconductorCorp.RealtekAudioControl*"} | Remove-AppxProvisionedPackage -Online
+    Write-Warning "WARNING: The following UWP apps has been left installed, they provide critical functionalities to the system: Windows Store, NVIDIA Control Panel, Realtek Audio Console and Intel Graphics Command Center"
 })
 
 ${ThirdpartyContainer_CttWin10script}.Add_Click({
