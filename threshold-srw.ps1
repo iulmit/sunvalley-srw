@@ -9,7 +9,7 @@ Clear-Host
 
 ### Check system version and edition ###
 if (!${validatedOsVersion}) {
-    New-Variable -Name validatedOsVersion -Value "10.0.19042" | Out-Null
+    New-Variable -Name validatedOsVersion -Value "10.0.19043" | Out-Null
 }
 
 if (!${validatedOsEdition}) {
