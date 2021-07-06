@@ -388,7 +388,7 @@ ${SystemReadiness_Apply}.Add_Click({
     $wc = (Get-WindowsCapability -Online).Name
     Write-Host ('Removing ' + $wc.Count + ' Windows capabilities...')
     $wc | ForEach-Object {
-        Remove-WindowsCapability -FeatureName $_ -Online -NoRestart -WarningAction SilentlyContinue | Out-Null
+        Remove-WindowsCapability -Name $_ -Online -WarningAction SilentlyContinue | Out-Null
     }
     Remove-Printer -Name "Fax" -ErrorAction SilentlyContinue | Out-Null
     ${WShell}.Popup("Operation completed",0,"$(${SystemReadiness_Apply}.Text)",0x0)
