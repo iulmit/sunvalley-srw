@@ -1,7 +1,7 @@
 # sunvalley-srw
 
 ## What is this?
-System Readiness for Workstations is an automated privacy-focused configuration tool which debloats and tweaks Windows 10 Pro N for Workstations to improve it's performance and reduce the user's footprint.
+System Readiness for Workstations is an automated privacy-focused configuration tool which debloats and tweaks Windows 11 Pro N for Workstations to improve it's performance and reduce the user's footprint.
 
 ## Getting started
 Get started by opening PowerShell as administrator, then copy and right-click on the PowerShell window, this command:
