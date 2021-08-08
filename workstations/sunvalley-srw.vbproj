@@ -6,15 +6,16 @@
     <RootNamespace>Container</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>0.0.1</Version>
+    <Version>0.0.2</Version>
     <Authors>Liam Powell</Authors>
     <Company />
     <NeutralLanguage>en-US</NeutralLanguage>
     <StartupObject>Container.Container</StartupObject>
     <RepositoryType></RepositoryType>
     <PackageLicenseFile>C:\Users\gfelipe099\Documents\GitHub\sunvalley-srw\LICENSE</PackageLicenseFile>
-    <PackageProjectUrl>https://raw.githubusercontent.com/gfelipe099/sunvalley-srw</PackageProjectUrl>
-    <RepositoryUrl>https://raw.githubusercontent.com/gfelipe099/sunvalley-srw</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/gfelipe099/sunvalley-srw/tree/sunvalley-v2</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/gfelipe099/sunvalley-srw/tree/sunvalley-v2</RepositoryUrl>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -36,6 +37,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
     <None Include="C:\Users\gfelipe099\Documents\GitHub\sunvalley-srw\LICENSE">
       <Pack>True</Pack>
       <PackagePath></PackagePath>

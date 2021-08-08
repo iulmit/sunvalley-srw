@@ -116,14 +116,14 @@ Public Class Container
 
     Private Sub SystemAdministration_SystemReadiness_Click(sender As Object, e As EventArgs) Handles SystemAdministration_SystemReadiness.Click
         If GetCurrentRole.IsUserAdmin() = True Then
-            Process.Start("powershell.exe", "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/gfelipe099/sunvalley-sr-modules/main/workstations/SystemReadiness.ps1'))")
+            Process.Start("powershell.exe", "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/gfelipe099/sunvalley-srw/sunvalley-v2/modules/ApplySystemReadiness.ps1'))")
         Else
             MessageBox.Show("You need Administrator privileges to do this.", "Access denied", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
     End Sub
     Private Sub SystemAdministration_RemoveAllUwpApps_Click(sender As Object, e As EventArgs) Handles SystemAdministration_RemoveAllUwpApps.Click
         If GetCurrentRole.IsUserAdmin() = True Then
-            Process.Start("powershell.exe", "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/gfelipe099/sunvalley-sr-modules/main/workstations/RemoveAllUwpApps.ps1'))")
+            Process.Start("powershell.exe", "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/gfelipe099/sunvalley-srw/sunvalley-v2/modules/RemoveAllUwpApps.ps1'))")
         Else
             MessageBox.Show("You need Administrator privileges to do this.", "Access denied", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
