@@ -8,6 +8,8 @@
 - The 'System Administration' box will have what I called modules (PowerShell scripts), one per button.
 - The first ever installer program for sunvalley-srw.
 - A more user-friendly behaviour.
+
+> Check the progress of this update [here](https://github.com/gfelipe099/sunvalley-srw/tree/sunvalley-v2).
 ---------------------------
 
 # sunvalley-srw
