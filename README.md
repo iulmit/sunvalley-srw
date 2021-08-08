@@ -1,3 +1,15 @@
+---------------------------
+# sunvalley-srw v2
+
+## Next big changes
+- Core language will be Visual Basic.
+- Will be a compiled program (.exe).
+- Will be more reliable and faster.
+- The 'System Administration' box will have what I called modules (PowerShell scripts), one per button.
+- The first ever installer program for sunvalley-srw.
+- A more user-friendly behaviour.
+---------------------------
+
 # sunvalley-srw
 
 ## What is this?
