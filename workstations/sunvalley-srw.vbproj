@@ -6,7 +6,7 @@
     <RootNamespace>Container</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>0.0.3</Version>
+    <Version>0.0.3.1</Version>
     <Authors>Liam Powell</Authors>
     <Company />
     <NeutralLanguage>en-US</NeutralLanguage>
@@ -20,6 +20,7 @@
     <AssemblyOriginatorKeyFile>liampowell.pfx</AssemblyOriginatorKeyFile>
     <Description>System Readiness for Workstations is an automated privacy-focused configuration tool which debloats and tweaks any compatible Windows version and edition to improve it's performance and reduce the user's footprint as much as possible.</Description>
     <Copyright>GNU General Public License v3.0</Copyright>
+    <PackageReleaseNotes>Renamed wrong module name from RemoveNonCriticalUwpApps.ps1 to RemoveAllNonCriticalUwpApps.ps1.</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
