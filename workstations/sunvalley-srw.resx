@@ -61,10 +61,44 @@
   <data name="Programs.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
-  <metadata name="Programs_Install_Gd.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="Programs_Install_Skype.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Programs_Install_Skype.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Programs_Install_Skype.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Programs_Install_Skype.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 473</value>
+  </data>
+  <data name="Programs_Install_Skype.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 27</value>
+  </data>
+  <data name="Programs_Install_Skype.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="Programs_Install_Skype.Text" xml:space="preserve">
+    <value>Install Skype</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_Skype.Name" xml:space="preserve">
+    <value>Programs_Install_Skype</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_Skype.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_Skype.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_Skype.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="Programs_Install_Gd.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="Programs_Install_Gd.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -74,7 +108,6 @@
   <data name="Programs_Install_Gd.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Programs_Install_Gd.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 443</value>
   </data>
@@ -97,7 +130,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Gd.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <metadata name="Programs_Install_Vs.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -133,7 +166,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Vs.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <metadata name="Programs_Install_Vscm.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -169,7 +202,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Vscm.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <metadata name="Programs_Install_Td.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -205,7 +238,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Td.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <metadata name="Programs_Install_Mt.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -241,7 +274,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Mt.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <metadata name="Programs_Install_Brave.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -277,7 +310,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Brave.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <metadata name="Programs_Install_As.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -313,7 +346,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_As.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <metadata name="Programs_Install_Kdec.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -349,7 +382,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Kdec.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <metadata name="Programs_Install_Gimp.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -385,7 +418,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Gimp.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <metadata name="Programs_Install_Sdi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -421,7 +454,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Sdi.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <metadata name="Programs_Install_Discord.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -457,7 +490,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Discord.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <metadata name="Programs_Install_Ead.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -493,7 +526,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Ead.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <metadata name="Programs_Install_Egl.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -529,7 +562,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Egl.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <metadata name="Programs_Install_Steam.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -562,7 +595,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Steam.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <metadata name="Programs_Install_7zip.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -595,7 +628,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_7zip.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="Programs.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 12</value>
@@ -795,41 +828,74 @@
   <data name="ThirdParty.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Right</value>
   </data>
-  <metadata name="Thirdparty_Cttwin10script.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="ThirdParty_Simeononsecurity.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="Thirdparty_Cttwin10script.AutoSize" type="System.Boolean, mscorlib">
+  <data name="ThirdParty_Simeononsecurity.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="Thirdparty_Cttwin10script.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="ThirdParty_Simeononsecurity.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
   </data>
-  <data name="Thirdparty_Cttwin10script.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="ThirdParty_Simeononsecurity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 52</value>
   </data>
-  <data name="Thirdparty_Cttwin10script.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 22</value>
+  <data name="ThirdParty_Simeononsecurity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>345, 24</value>
   </data>
-  <data name="Thirdparty_Cttwin10script.Size" type="System.Drawing.Size, System.Drawing">
-    <value>192, 24</value>
+  <data name="ThirdParty_Simeononsecurity.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="Thirdparty_Cttwin10script.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="ThirdParty_Simeononsecurity.Text" xml:space="preserve">
+    <value>Run simeononsecurity's Windows-Optimize-Harden-Debloat </value>
   </data>
-  <data name="Thirdparty_Cttwin10script.Text" xml:space="preserve">
-    <value>Run ChrisTitusTech's win10script</value>
+  <data name="&gt;&gt;ThirdParty_Simeononsecurity.Name" xml:space="preserve">
+    <value>ThirdParty_Simeononsecurity</value>
   </data>
-  <data name="&gt;&gt;Thirdparty_Cttwin10script.Name" xml:space="preserve">
-    <value>Thirdparty_Cttwin10script</value>
-  </data>
-  <data name="&gt;&gt;Thirdparty_Cttwin10script.Type" xml:space="preserve">
+  <data name="&gt;&gt;ThirdParty_Simeononsecurity.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Thirdparty_Cttwin10script.Parent" xml:space="preserve">
+  <data name="&gt;&gt;ThirdParty_Simeononsecurity.Parent" xml:space="preserve">
     <value>ThirdParty</value>
   </data>
-  <data name="&gt;&gt;Thirdparty_Cttwin10script.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;ThirdParty_Simeononsecurity.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <metadata name="ThirdParty_Cttwin10script.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="ThirdParty_Cttwin10script.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ThirdParty_Cttwin10script.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="ThirdParty_Cttwin10script.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ThirdParty_Cttwin10script.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 22</value>
+  </data>
+  <data name="ThirdParty_Cttwin10script.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 24</value>
+  </data>
+  <data name="ThirdParty_Cttwin10script.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="ThirdParty_Cttwin10script.Text" xml:space="preserve">
+    <value>Run ChrisTitusTech's win10script</value>
+  </data>
+  <data name="&gt;&gt;ThirdParty_Cttwin10script.Name" xml:space="preserve">
+    <value>ThirdParty_Cttwin10script</value>
+  </data>
+  <data name="&gt;&gt;ThirdParty_Cttwin10script.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ThirdParty_Cttwin10script.Parent" xml:space="preserve">
+    <value>ThirdParty</value>
+  </data>
+  <data name="&gt;&gt;ThirdParty_Cttwin10script.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="ThirdParty.Location" type="System.Drawing.Point, System.Drawing">
     <value>518, 358</value>

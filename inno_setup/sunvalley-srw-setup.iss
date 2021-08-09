@@ -1,5 +1,5 @@
 #define MyAppName "System Readiness for Workstations"
-#define MyAppVersion "0.0.1"
+#define MyAppVersion "0.0.3"
 #define MyAppURL "https://github.com/gfelipe099/sunvalley-srw"
 #define MyAppExeName "sunvalley-srw.exe"
 #define MyUsername "gfelipe099"
@@ -32,8 +32,8 @@ Name: "spanish"; MessagesFile: "compiler:Languages\Spanish.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "A:\Users\gfeli\source\repos\system-readiness\sunvalley-srw\bin\Release\netcoreapp3.1\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
-Source: "A:\Users\gfeli\source\repos\system-readiness\sunvalley-srw\bin\Release\netcoreapp3.1\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Users\{#MyUsername}\Documents\GitHub\sunvalley-srw\workstations\bin\Release\netcoreapp3.1\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\{#MyUsername}\Documents\GitHub\sunvalley-srw\workstations\bin\Release\netcoreapp3.1\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 [Icons]
 Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"

@@ -114,39 +114,78 @@ Public Class Container
         Process.Start("powershell.exe", "winget install GitHub.GitHubDesktop")
     End Sub
 
+    Private Sub Programs_Install_Skype_Click(sender As Object, e As EventArgs) Handles Programs_Install_Skype.Click
+        Process.Start("powershell.exe", "winget install Microsoft.Skype")
+    End Sub
+
     Private Sub SystemAdministration_SystemReadiness_Click(sender As Object, e As EventArgs) Handles SystemAdministration_SystemReadiness.Click
-        If GetCurrentRole.IsUserAdmin() = True Then
-            Process.Start("powershell.exe", "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/gfelipe099/sunvalley-srw/sunvalley-v2/modules/ApplySystemReadiness.ps1'))")
-        Else
-            MessageBox.Show("You need Administrator privileges to do this.", "Access denied", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Dim Message = "System Readiness is not made for everyone as it breaks functionalities which are useful to people. Are you sure you want to continue?"
+        Dim Caption = "Warning"
+        Dim ButtonLayout = MessageBoxButtons.YesNo
+        Dim Icon = MessageBoxIcon.Warning
+        Dim Result As DialogResult
+        Result = MessageBox.Show(Message, Caption, ButtonLayout, Icon)
+        If Result = DialogResult.Yes Then
+            If GetCurrentRole.IsUserAdmin() = True Then
+                Process.Start("powershell.exe", "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/gfelipe099/sunvalley-srw/sunvalley-v2/modules/ApplySystemReadiness.ps1'))")
+            Else
+                MessageBox.Show("You need Administrator privileges to do this.", "Access denied", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
         End If
     End Sub
     Private Sub SystemAdministration_RemoveAllUwpApps_Click(sender As Object, e As EventArgs) Handles SystemAdministration_RemoveAllUwpApps.Click
-        If GetCurrentRole.IsUserAdmin() = True Then
-            Process.Start("powershell.exe", "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/gfelipe099/sunvalley-srw/sunvalley-v2/modules/RemoveAllUwpApps.ps1'))")
-        Else
-            MessageBox.Show("You need Administrator privileges to do this.", "Access denied", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Dim Message = "This will break your system somehow, only recommended to power users. Are you sure you want to continue?"
+        Dim Caption = "Warning"
+        Dim ButtonLayout = MessageBoxButtons.YesNo
+        Dim Icon = MessageBoxIcon.Warning
+        Dim Result As DialogResult
+        Result = MessageBox.Show(Message, Caption, ButtonLayout, Icon)
+        If Result = DialogResult.Yes Then
+            If GetCurrentRole.IsUserAdmin() = True Then
+                Process.Start("powershell.exe", "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/gfelipe099/sunvalley-srw/sunvalley-v2/modules/RemoveAllUwpApps.ps1'))")
+            Else
+                MessageBox.Show("You need Administrator privileges to do this.", "Access denied", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
         End If
     End Sub
 
     Private Sub SystemAdministration_RemoveNonCriticalUwpApps_Click(sender As Object, e As EventArgs) Handles SystemAdministration_RemoveNonCriticalUwpApps.Click
         If GetCurrentRole.IsUserAdmin() = True Then
-            Process.Start("powershell.exe", "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/gfelipe099/sunvalley-sr-modules/main/workstations/RemoveNonCriticalUwpApps.ps1'))")
+            Process.Start("powershell.exe", "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/gfelipe099/sunvalley-srw/sunvalley-v2/modules/RemoveNonCriticalUwpApps.ps1'))")
         Else
             MessageBox.Show("You need Administrator privileges to do this.", "Access denied", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
     End Sub
 
     Private Sub SystemAdministration_ReinstallAllUwpApps_Click(sender As Object, e As EventArgs) Handles SystemAdministration_ReinstallAllUwpApps.Click
-        MessageBox.Show("This is not implemented yet.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        If GetCurrentRole.IsUserAdmin() = True Then
+            Process.Start("powershell.exe", "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/gfelipe099/sunvalley-srw/sunvalley-v2/modules/ReinstallAllUwpApps.ps1'))")
+        Else
+            MessageBox.Show("You need Administrator privileges to do this.", "Access denied", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
     End Sub
 
-
-    Private Sub ThirdParty_CttWin10script_Click(sender As Object, e As EventArgs) Handles Thirdparty_Cttwin10script.Click
+    Private Sub ThirdParty_CttWin10script_Click(sender As Object, e As EventArgs) Handles ThirdParty_Cttwin10script.Click
         If GetCurrentRole.IsUserAdmin() = True Then
             Process.Start("powershell.exe", "iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JJ8R4'))")
         Else
             MessageBox.Show("You need Administrator privileges to execute this script.", "Access denied", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
+    End Sub
+
+    Private Sub ThirdParty_Simeononsecurity_Click(sender As Object, e As EventArgs) Handles ThirdParty_Simeononsecurity.Click
+        Dim Message = "This script will harden your system's security as much as possible, only recommended to power users. Are you sure you want to continue?"
+        Dim Caption = "Warning"
+        Dim ButtonLayout = MessageBoxButtons.YesNo
+        Dim Icon = MessageBoxIcon.Warning
+        Dim Result As DialogResult
+        Result = MessageBox.Show(Message, Caption, ButtonLayout, Icon)
+        If Result = DialogResult.Yes Then
+            If GetCurrentRole.IsUserAdmin() = True Then
+                Process.Start("powershell.exe", "iwr -useb 'https://simeononsecurity.ch/scripts/windowsoptimizeandharden.ps1'|iex")
+            Else
+                MessageBox.Show("You need Administrator privileges to do this.", "Access denied", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
         End If
     End Sub
 

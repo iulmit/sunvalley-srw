@@ -24,6 +24,7 @@ Partial Class Container
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Container))
         Me.Programs = New System.Windows.Forms.GroupBox()
+        Me.Programs_Install_Gd = New System.Windows.Forms.Button()
         Me.Programs_Install_Vs = New System.Windows.Forms.Button()
         Me.Programs_Install_Vscm = New System.Windows.Forms.Button()
         Me.Programs_Install_Td = New System.Windows.Forms.Button()
@@ -44,8 +45,9 @@ Partial Class Container
         Me.SystemAdministration_RemoveAllUwpApps = New System.Windows.Forms.Button()
         Me.SystemAdministration_SystemReadiness = New System.Windows.Forms.Button()
         Me.ThirdParty = New System.Windows.Forms.GroupBox()
-        Me.Thirdparty_Cttwin10script = New System.Windows.Forms.Button()
-        Me.Programs_Install_Gd = New System.Windows.Forms.Button()
+        Me.ThirdParty_Simeononsecurity = New System.Windows.Forms.Button()
+        Me.ThirdParty_Cttwin10script = New System.Windows.Forms.Button()
+        Me.Programs_Install_Skype = New System.Windows.Forms.Button()
         Me.Programs.SuspendLayout()
         Me.SystemAdministration.SuspendLayout()
         Me.ThirdParty.SuspendLayout()
@@ -54,6 +56,7 @@ Partial Class Container
         'Programs
         '
         resources.ApplyResources(Me.Programs, "Programs")
+        Me.Programs.Controls.Add(Me.Programs_Install_Skype)
         Me.Programs.Controls.Add(Me.Programs_Install_Gd)
         Me.Programs.Controls.Add(Me.Programs_Install_Vs)
         Me.Programs.Controls.Add(Me.Programs_Install_Vscm)
@@ -72,6 +75,14 @@ Partial Class Container
         Me.Programs.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.Programs.Name = "Programs"
         Me.Programs.TabStop = False
+        '
+        'Programs_Install_Gd
+        '
+        resources.ApplyResources(Me.Programs_Install_Gd, "Programs_Install_Gd")
+        Me.Programs_Install_Gd.BackColor = System.Drawing.SystemColors.Control
+        Me.Programs_Install_Gd.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Programs_Install_Gd.Name = "Programs_Install_Gd"
+        Me.Programs_Install_Gd.UseVisualStyleBackColor = False
         '
         'Programs_Install_Vs
         '
@@ -232,26 +243,31 @@ Partial Class Container
         'ThirdParty
         '
         resources.ApplyResources(Me.ThirdParty, "ThirdParty")
-        Me.ThirdParty.Controls.Add(Me.Thirdparty_Cttwin10script)
+        Me.ThirdParty.Controls.Add(Me.ThirdParty_Simeononsecurity)
+        Me.ThirdParty.Controls.Add(Me.ThirdParty_Cttwin10script)
         Me.ThirdParty.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.ThirdParty.Name = "ThirdParty"
         Me.ThirdParty.TabStop = False
         '
-        'Thirdparty_Cttwin10script
+        'ThirdParty_Simeononsecurity
         '
-        resources.ApplyResources(Me.Thirdparty_Cttwin10script, "Thirdparty_Cttwin10script")
-        Me.Thirdparty_Cttwin10script.BackColor = System.Drawing.SystemColors.Control
-        Me.Thirdparty_Cttwin10script.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Thirdparty_Cttwin10script.Name = "Thirdparty_Cttwin10script"
-        Me.Thirdparty_Cttwin10script.UseVisualStyleBackColor = False
+        resources.ApplyResources(Me.ThirdParty_Simeononsecurity, "ThirdParty_Simeononsecurity")
+        Me.ThirdParty_Simeononsecurity.Name = "ThirdParty_Simeononsecurity"
+        Me.ThirdParty_Simeononsecurity.UseVisualStyleBackColor = True
         '
-        'Programs_Install_Gd
+        'ThirdParty_Cttwin10script
         '
-        resources.ApplyResources(Me.Programs_Install_Gd, "Programs_Install_Gd")
-        Me.Programs_Install_Gd.BackColor = System.Drawing.SystemColors.Control
-        Me.Programs_Install_Gd.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Programs_Install_Gd.Name = "Programs_Install_Gd"
-        Me.Programs_Install_Gd.UseVisualStyleBackColor = False
+        resources.ApplyResources(Me.ThirdParty_Cttwin10script, "ThirdParty_Cttwin10script")
+        Me.ThirdParty_Cttwin10script.BackColor = System.Drawing.SystemColors.Control
+        Me.ThirdParty_Cttwin10script.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.ThirdParty_Cttwin10script.Name = "ThirdParty_Cttwin10script"
+        Me.ThirdParty_Cttwin10script.UseVisualStyleBackColor = False
+        '
+        'Programs_Install_Skype
+        '
+        resources.ApplyResources(Me.Programs_Install_Skype, "Programs_Install_Skype")
+        Me.Programs_Install_Skype.Name = "Programs_Install_Skype"
+        Me.Programs_Install_Skype.UseVisualStyleBackColor = True
         '
         'Container
         '
@@ -290,7 +306,7 @@ Partial Class Container
     Private WithEvents Programs_Install_Brave As Button
     Private WithEvents Programs_Install_Mt As Button
     Private WithEvents SystemAdministration_SystemReadiness As Button
-    Private WithEvents Thirdparty_Cttwin10script As Button
+    Private WithEvents ThirdParty_Cttwin10script As Button
     Private WithEvents SystemAdministration_RemoveAllUwpApps As Button
     Private WithEvents SystemAdministration_RemoveNonCriticalUwpApps As Button
     Private WithEvents SystemAdministration_ReinstallAllUwpApps As Button
@@ -298,4 +314,6 @@ Partial Class Container
     Private WithEvents Programs_Install_Vscm As Button
     Private WithEvents Programs_Install_Vs As Button
     Private WithEvents Programs_Install_Gd As Button
+    Private WithEvents ThirdParty_Simeononsecurity As Button
+    Private WithEvents Programs_Install_Skype As Button
 End Class
