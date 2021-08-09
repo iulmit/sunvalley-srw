@@ -112,16 +112,22 @@ ${ProgramsSetup_Install_Vscodium}.AutoSize                      = $true
 ${ProgramsSetup_Install_Vscodium}.Location                      = New-Object System.Drawing.Point(20,480)
 ${ProgramsSetup_Install_Vscodium}.Font                          = New-Object System.Drawing.Font('Microsoft Sans Serif',20)
 
+${ProgramsSetup_Install_Telegramdesktop}                        = New-Object System.Windows.Forms.Button
+${ProgramsSetup_Install_Telegramdesktop}.Text                   = "Install Telegram Desktop"
+${ProgramsSetup_Install_Telegramdesktop}.AutoSize               = $true
+${ProgramsSetup_Install_Telegramdesktop}.Location               = New-Object System.Drawing.Point(20,530)
+${ProgramsSetup_Install_Telegramdesktop}.Font                   = New-Object System.Drawing.Font('Microsoft Sans Serif',20)
+
 ${ProgramsSetup_Download_NVCleanstall}                          = New-Object System.Windows.Forms.Button
 ${ProgramsSetup_Download_NVCleanstall}.Text                     = "Download NVCleanstall"
 ${ProgramsSetup_Download_NVCleanstall}.AutoSize                 = $true
-${ProgramsSetup_Download_NVCleanstall}.Location                 = New-Object System.Drawing.Point(20,530)
+${ProgramsSetup_Download_NVCleanstall}.Location                 = New-Object System.Drawing.Point(20,580)
 ${ProgramsSetup_Download_NVCleanstall}.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',20)
 
 ${ProgramsSetup_Download_SDI}                                   = New-Object System.Windows.Forms.Button
 ${ProgramsSetup_Download_SDI}.Text                              = "Download SDI"
 ${ProgramsSetup_Download_SDI}.AutoSize                          = $true
-${ProgramsSetup_Download_SDI}.Location                          = New-Object System.Drawing.Point(20,580)
+${ProgramsSetup_Download_SDI}.Location                          = New-Object System.Drawing.Point(20,630)
 ${ProgramsSetup_Download_SDI}.Font                              = New-Object System.Drawing.Font('Microsoft Sans Serif',20)
 
 ${SystemAdministration}                                         = New-Object System.Windows.Forms.Panel
@@ -174,44 +180,50 @@ ${ThirdpartyContainer_CttWin10script}.Font                      = New-Object Sys
 
 ${ProgramsSetup_Install_7Zip}.Add_Click({
     Write-Host "Installing 7-Zip... "
-    winget install 7zip.7zip -y
+    winget install 7zip.7zip
     ${WShell}.Popup("Operation completed",0,"$(${ProgramsSetup_Install_7Zip}.Text)", 0x0)
 })
 
 ${ProgramsSetup_Install_Steam}.Add_Click({
     Write-Host "Installing Steam... "
-    winget install Valve.Steam -y
+    winget install Valve.Steam
     ${WShell}.Popup("Operation completed",0,"$(${ProgramsSetup_Install_Steam}.Text)", 0x0)
 })
 
 ${ProgramsSetup_Install_Egl}.Add_Click({
     Write-Host "Installing Epic Games Launcher... "
-    winget install EpicGames.EpicGamesLauncher -y
+    winget install EpicGames.EpicGamesLauncher
     ${WShell}.Popup("Operation completed",0,"$(${ProgramsSetup_Install_Egl}.Text)", 0x0)
 })
 
 ${ProgramsSetup_Install_EADesktop}.Add_Click({
     Write-Host "Installing EA Desktop... "
-    choco install ElectronicArts.EADesktop -y
+    choco install ElectronicArts.EADesktop
     ${WShell}.Popup("Operation completed",0,"$(${ProgramsSetup_Install_EADesktop}.Text)", 0x0)
 })
 
 ${ProgramsSetup_Install_Spotify}.Add_Click({
     Write-Host "Installing Spotify... "
-    winget install Spotify.Spotify -y
+    winget install Spotify.Spotify
     ${WShell}.Popup("Operation completed",0,"$(${ProgramsSetup_Install_Spotify}.Text)", 0x0)
 })
 
 ${ProgramsSetup_Install_Discord}.Add_Click({
     Write-Host "Installing Discord... "
-    winget install Discord.Discord -y
+    winget install Discord.Discord
     ${WShell}.Popup("Operation completed",0,"$(${ProgramsSetup_Install_Discord}.Text)", 0x0)
 })
 
 ${ProgramsSetup_Install_Bleachbit}.Add_Click({
     Write-Host "Installing BleachBit... "
-    winget install Bleachbit.BleachBit -y
+    winget install Bleachbit.BleachBit
     ${WShell}.Popup("Operation completed",0,"$(${ProgramsSetup_Install_Bleachbit}.Text)", 0x0)
+})
+
+${ProgramsSetup_Install_Powertoys}.Add_Click({
+    Write-Host "Installing PowerToys..."
+    winget install Microsoft.PowerToys
+    ${WShell}.Popup("Operation completed",0,"$(${ProgramsSetup_Install_Powertoys}.Text)", 0x0)
 })
 
 ${ProgramsSetup_Download_NVCleanstall}.Add_Click({
@@ -223,8 +235,14 @@ ${ProgramsSetup_Download_NVCleanstall}.Add_Click({
 
 ${ProgramsSetup_Install_Vscodium}.Add_Click({
     Write-Host "Installing VSCodium... "
-    winget install VSCodium.VSCodium -y
+    winget install VSCodium.VSCodium
     ${WShell}.Popup("Operation completed",0,"$(${ProgramsSetup_Install_Bleachbit}.Text)", 0x0)
+})
+
+${ProgramsSetup_Install_Telegramdesktop}.Add_Click({
+    Write-Host "Installing Telegram Desktop..."
+    winget install Telegram.TelegramDesktop
+    ${WShell}.Popup("Operation completed",0,"$(${ProgramsSetup_Install_Telegramdesktop}.Text)", 0x0)
 })
 
 ${ProgramsSetup_Download_SDI}.Add_Click({
@@ -358,14 +376,16 @@ ${SystemReadiness_Apply}.Add_Click({
             Set-Service "dmwappushservice" -StartupType Disabled
                                
             Import-Module BitsTransfer 2>&1
+            cd $env:TEMP
             Write-Host "==> Downloading O&O ShutUp10..."
-            Start-BitsTransfer -Source "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe" -Destination $($env:TEMP)\OOSU10.exe 2>&1
+            Start-BitsTransfer -Source "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe" -Destination OOSU10.exe 2>&1
                 
             Write-Host "    --> Downloading gfelipe099's O&O ShutUp10 privacy file..."
-            Start-BitsTransfer -Source "https://raw.githubusercontent.com/gfelipe099/threshold-srb/master/ooshutup10.cfg" -Destination $($env:TEMP)\ooshutup10.cfg 2>&1
+            Start-BitsTransfer -Source "https://raw.githubusercontent.com/gfelipe099/threshold-srb/master/ooshutup10.cfg" -Destination ooshutup10.cfg 2>&1
 
             Write-Host "    --> Applying privacy policies from O&O ShutUp10 privacy file..."
-            cd $env:TEMP; .\OOSU10.exe ooshutup10.cfg /quiet; cd $PSScriptRoot
+            .\OOSU10.exe ooshutup10.cfg /quiet
+            cd $PSScriptRoot
             Remove-Module BitsTransfer
 
             # Miscellaneous settings
@@ -587,13 +607,6 @@ ${SystemReadiness_Apply}.Add_Click({
             Write-Host ('        - Found ' + $wof.Count + ' Windows optional feature(s) on this system')
             $wof | ForEach-Object {
                 Write-Host "            > Removing optional feature: $_..."
-                Where-Object {$_ -notlike "*LegacyComponents*"} |
-                Where-Object {$_ -notlike "*DirectPlay*"} |
-                Where-Object {$_ -notlike "*NetFx3*"} |
-                Where-Object {$_ -notlike "*NetFx4-Advsrvs*"} |
-                Where-Object {$_ -notlike "*WCF-Services45*"} |
-                Where-Object {$_ -notlike "*WCF-TCP-PortSharing45*"} |
-                Where-Object {$_ -notlike "*Windows-Defender-Default-Definitions*"} |
                 Disable-WindowsOptionalFeature -FeatureName $_ -Online -NoRestart -ErrorAction SilentlyContinue -WarningAction SilentlyContinue
             }
 
@@ -602,7 +615,7 @@ ${SystemReadiness_Apply}.Add_Click({
             Write-Host ('        - Found ' + $wc.Count + ' Windows capabilitities...')
             $wc | ForEach-Object {
                 Write-Host "            > Removing capatiblity: $_..."
-                Where-Object {$_ -notlike "*Notepad*"} | Remove-WindowsCapability -Name $_ -Online -ErrorAction SilentlyContinue -WarningAction SilentlyContinue 2>&1
+                Remove-WindowsCapability -Name $_ -Online -ErrorAction SilentlyContinue -WarningAction SilentlyContinue 2>&1
             }
 
             Write-Host "==> Uninstalling UWP apps except critical ones..."
