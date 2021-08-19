@@ -24,30 +24,34 @@ Partial Class Container
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Container))
         Me.Programs = New System.Windows.Forms.GroupBox()
-        Me.Programs_Install_Gd = New System.Windows.Forms.Button()
-        Me.Programs_Install_Vs = New System.Windows.Forms.Button()
-        Me.Programs_Install_Vscm = New System.Windows.Forms.Button()
-        Me.Programs_Install_Td = New System.Windows.Forms.Button()
-        Me.Programs_Install_Mt = New System.Windows.Forms.Button()
+        Me.Programs_Install_Xampp = New System.Windows.Forms.Button()
+        Me.Programs_Install_Bleachbit = New System.Windows.Forms.Button()
+        Me.Programs_Install_WindowsTerminal = New System.Windows.Forms.Button()
+        Me.Programs_Install_Skype = New System.Windows.Forms.Button()
+        Me.Programs_Install_GithubDesktop = New System.Windows.Forms.Button()
+        Me.Programs_Install_VsCode = New System.Windows.Forms.Button()
+        Me.Programs_Install_VsCodium = New System.Windows.Forms.Button()
+        Me.Programs_Install_TelegramDesktop = New System.Windows.Forms.Button()
+        Me.Programs_Install_MicrosoftTeams = New System.Windows.Forms.Button()
         Me.Programs_Install_Brave = New System.Windows.Forms.Button()
-        Me.Programs_Install_As = New System.Windows.Forms.Button()
-        Me.Programs_Install_Kdec = New System.Windows.Forms.Button()
+        Me.Programs_Install_AndroidStudio = New System.Windows.Forms.Button()
+        Me.Programs_Install_KdeConnect = New System.Windows.Forms.Button()
         Me.Programs_Install_Gimp = New System.Windows.Forms.Button()
-        Me.Programs_Install_Sdi = New System.Windows.Forms.Button()
+        Me.Programs_Install_SnappyDriverInstaller = New System.Windows.Forms.Button()
         Me.Programs_Install_Discord = New System.Windows.Forms.Button()
-        Me.Programs_Install_Ead = New System.Windows.Forms.Button()
-        Me.Programs_Install_Egl = New System.Windows.Forms.Button()
+        Me.Programs_Install_EaDesktop = New System.Windows.Forms.Button()
+        Me.Programs_Install_EpicGamesLauncher = New System.Windows.Forms.Button()
         Me.Programs_Install_Steam = New System.Windows.Forms.Button()
         Me.Programs_Install_7zip = New System.Windows.Forms.Button()
         Me.SystemAdministration = New System.Windows.Forms.GroupBox()
         Me.SystemAdministration_ReinstallAllUwpApps = New System.Windows.Forms.Button()
-        Me.SystemAdministration_RemoveNonCriticalUwpApps = New System.Windows.Forms.Button()
+        Me.SystemAdministration_RemoveAllNonCriticalUwpApps = New System.Windows.Forms.Button()
         Me.SystemAdministration_RemoveAllUwpApps = New System.Windows.Forms.Button()
         Me.SystemAdministration_SystemReadiness = New System.Windows.Forms.Button()
         Me.ThirdParty = New System.Windows.Forms.GroupBox()
         Me.ThirdParty_Simeononsecurity = New System.Windows.Forms.Button()
         Me.ThirdParty_Cttwin10script = New System.Windows.Forms.Button()
-        Me.Programs_Install_Skype = New System.Windows.Forms.Button()
+        Me.Programs_Install_Spotify = New System.Windows.Forms.Button()
         Me.Programs.SuspendLayout()
         Me.SystemAdministration.SuspendLayout()
         Me.ThirdParty.SuspendLayout()
@@ -56,65 +60,95 @@ Partial Class Container
         'Programs
         '
         resources.ApplyResources(Me.Programs, "Programs")
+        Me.Programs.Controls.Add(Me.Programs_Install_Spotify)
+        Me.Programs.Controls.Add(Me.Programs_Install_Xampp)
+        Me.Programs.Controls.Add(Me.Programs_Install_Bleachbit)
+        Me.Programs.Controls.Add(Me.Programs_Install_WindowsTerminal)
         Me.Programs.Controls.Add(Me.Programs_Install_Skype)
-        Me.Programs.Controls.Add(Me.Programs_Install_Gd)
-        Me.Programs.Controls.Add(Me.Programs_Install_Vs)
-        Me.Programs.Controls.Add(Me.Programs_Install_Vscm)
-        Me.Programs.Controls.Add(Me.Programs_Install_Td)
-        Me.Programs.Controls.Add(Me.Programs_Install_Mt)
+        Me.Programs.Controls.Add(Me.Programs_Install_GithubDesktop)
+        Me.Programs.Controls.Add(Me.Programs_Install_VsCode)
+        Me.Programs.Controls.Add(Me.Programs_Install_VsCodium)
+        Me.Programs.Controls.Add(Me.Programs_Install_TelegramDesktop)
+        Me.Programs.Controls.Add(Me.Programs_Install_MicrosoftTeams)
         Me.Programs.Controls.Add(Me.Programs_Install_Brave)
-        Me.Programs.Controls.Add(Me.Programs_Install_As)
-        Me.Programs.Controls.Add(Me.Programs_Install_Kdec)
+        Me.Programs.Controls.Add(Me.Programs_Install_AndroidStudio)
+        Me.Programs.Controls.Add(Me.Programs_Install_KdeConnect)
         Me.Programs.Controls.Add(Me.Programs_Install_Gimp)
-        Me.Programs.Controls.Add(Me.Programs_Install_Sdi)
+        Me.Programs.Controls.Add(Me.Programs_Install_SnappyDriverInstaller)
         Me.Programs.Controls.Add(Me.Programs_Install_Discord)
-        Me.Programs.Controls.Add(Me.Programs_Install_Ead)
-        Me.Programs.Controls.Add(Me.Programs_Install_Egl)
+        Me.Programs.Controls.Add(Me.Programs_Install_EaDesktop)
+        Me.Programs.Controls.Add(Me.Programs_Install_EpicGamesLauncher)
         Me.Programs.Controls.Add(Me.Programs_Install_Steam)
         Me.Programs.Controls.Add(Me.Programs_Install_7zip)
         Me.Programs.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.Programs.Name = "Programs"
         Me.Programs.TabStop = False
+        Me.Programs.Tag = "Programs"
         '
-        'Programs_Install_Gd
+        'Programs_Install_Xampp
         '
-        resources.ApplyResources(Me.Programs_Install_Gd, "Programs_Install_Gd")
-        Me.Programs_Install_Gd.BackColor = System.Drawing.SystemColors.Control
-        Me.Programs_Install_Gd.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Programs_Install_Gd.Name = "Programs_Install_Gd"
-        Me.Programs_Install_Gd.UseVisualStyleBackColor = False
+        resources.ApplyResources(Me.Programs_Install_Xampp, "Programs_Install_Xampp")
+        Me.Programs_Install_Xampp.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Programs_Install_Xampp.Name = "Programs_Install_Xampp"
+        Me.Programs_Install_Xampp.UseVisualStyleBackColor = True
         '
-        'Programs_Install_Vs
+        'Programs_Install_Bleachbit
         '
-        resources.ApplyResources(Me.Programs_Install_Vs, "Programs_Install_Vs")
-        Me.Programs_Install_Vs.BackColor = System.Drawing.SystemColors.Control
-        Me.Programs_Install_Vs.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Programs_Install_Vs.Name = "Programs_Install_Vs"
-        Me.Programs_Install_Vs.UseVisualStyleBackColor = False
+        resources.ApplyResources(Me.Programs_Install_Bleachbit, "Programs_Install_Bleachbit")
+        Me.Programs_Install_Bleachbit.Name = "Programs_Install_Bleachbit"
+        Me.Programs_Install_Bleachbit.UseVisualStyleBackColor = True
         '
-        'Programs_Install_Vscm
+        'Programs_Install_WindowsTerminal
         '
-        resources.ApplyResources(Me.Programs_Install_Vscm, "Programs_Install_Vscm")
-        Me.Programs_Install_Vscm.BackColor = System.Drawing.SystemColors.Control
-        Me.Programs_Install_Vscm.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Programs_Install_Vscm.Name = "Programs_Install_Vscm"
-        Me.Programs_Install_Vscm.UseVisualStyleBackColor = False
+        resources.ApplyResources(Me.Programs_Install_WindowsTerminal, "Programs_Install_WindowsTerminal")
+        Me.Programs_Install_WindowsTerminal.Name = "Programs_Install_WindowsTerminal"
+        Me.Programs_Install_WindowsTerminal.UseVisualStyleBackColor = True
         '
-        'Programs_Install_Td
+        'Programs_Install_Skype
         '
-        resources.ApplyResources(Me.Programs_Install_Td, "Programs_Install_Td")
-        Me.Programs_Install_Td.BackColor = System.Drawing.SystemColors.Control
-        Me.Programs_Install_Td.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Programs_Install_Td.Name = "Programs_Install_Td"
-        Me.Programs_Install_Td.UseVisualStyleBackColor = False
+        resources.ApplyResources(Me.Programs_Install_Skype, "Programs_Install_Skype")
+        Me.Programs_Install_Skype.Name = "Programs_Install_Skype"
+        Me.Programs_Install_Skype.UseVisualStyleBackColor = True
         '
-        'Programs_Install_Mt
+        'Programs_Install_GithubDesktop
         '
-        resources.ApplyResources(Me.Programs_Install_Mt, "Programs_Install_Mt")
-        Me.Programs_Install_Mt.BackColor = System.Drawing.SystemColors.Control
-        Me.Programs_Install_Mt.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Programs_Install_Mt.Name = "Programs_Install_Mt"
-        Me.Programs_Install_Mt.UseVisualStyleBackColor = False
+        resources.ApplyResources(Me.Programs_Install_GithubDesktop, "Programs_Install_GithubDesktop")
+        Me.Programs_Install_GithubDesktop.BackColor = System.Drawing.SystemColors.Control
+        Me.Programs_Install_GithubDesktop.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Programs_Install_GithubDesktop.Name = "Programs_Install_GithubDesktop"
+        Me.Programs_Install_GithubDesktop.UseVisualStyleBackColor = False
+        '
+        'Programs_Install_VsCode
+        '
+        resources.ApplyResources(Me.Programs_Install_VsCode, "Programs_Install_VsCode")
+        Me.Programs_Install_VsCode.BackColor = System.Drawing.SystemColors.Control
+        Me.Programs_Install_VsCode.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Programs_Install_VsCode.Name = "Programs_Install_VsCode"
+        Me.Programs_Install_VsCode.UseVisualStyleBackColor = False
+        '
+        'Programs_Install_VsCodium
+        '
+        resources.ApplyResources(Me.Programs_Install_VsCodium, "Programs_Install_VsCodium")
+        Me.Programs_Install_VsCodium.BackColor = System.Drawing.SystemColors.Control
+        Me.Programs_Install_VsCodium.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Programs_Install_VsCodium.Name = "Programs_Install_VsCodium"
+        Me.Programs_Install_VsCodium.UseVisualStyleBackColor = False
+        '
+        'Programs_Install_TelegramDesktop
+        '
+        resources.ApplyResources(Me.Programs_Install_TelegramDesktop, "Programs_Install_TelegramDesktop")
+        Me.Programs_Install_TelegramDesktop.BackColor = System.Drawing.SystemColors.Control
+        Me.Programs_Install_TelegramDesktop.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Programs_Install_TelegramDesktop.Name = "Programs_Install_TelegramDesktop"
+        Me.Programs_Install_TelegramDesktop.UseVisualStyleBackColor = False
+        '
+        'Programs_Install_MicrosoftTeams
+        '
+        resources.ApplyResources(Me.Programs_Install_MicrosoftTeams, "Programs_Install_MicrosoftTeams")
+        Me.Programs_Install_MicrosoftTeams.BackColor = System.Drawing.SystemColors.Control
+        Me.Programs_Install_MicrosoftTeams.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Programs_Install_MicrosoftTeams.Name = "Programs_Install_MicrosoftTeams"
+        Me.Programs_Install_MicrosoftTeams.UseVisualStyleBackColor = False
         '
         'Programs_Install_Brave
         '
@@ -124,21 +158,21 @@ Partial Class Container
         Me.Programs_Install_Brave.Name = "Programs_Install_Brave"
         Me.Programs_Install_Brave.UseVisualStyleBackColor = False
         '
-        'Programs_Install_As
+        'Programs_Install_AndroidStudio
         '
-        resources.ApplyResources(Me.Programs_Install_As, "Programs_Install_As")
-        Me.Programs_Install_As.BackColor = System.Drawing.SystemColors.Control
-        Me.Programs_Install_As.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Programs_Install_As.Name = "Programs_Install_As"
-        Me.Programs_Install_As.UseVisualStyleBackColor = False
+        resources.ApplyResources(Me.Programs_Install_AndroidStudio, "Programs_Install_AndroidStudio")
+        Me.Programs_Install_AndroidStudio.BackColor = System.Drawing.SystemColors.Control
+        Me.Programs_Install_AndroidStudio.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Programs_Install_AndroidStudio.Name = "Programs_Install_AndroidStudio"
+        Me.Programs_Install_AndroidStudio.UseVisualStyleBackColor = False
         '
-        'Programs_Install_Kdec
+        'Programs_Install_KdeConnect
         '
-        resources.ApplyResources(Me.Programs_Install_Kdec, "Programs_Install_Kdec")
-        Me.Programs_Install_Kdec.BackColor = System.Drawing.SystemColors.Control
-        Me.Programs_Install_Kdec.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Programs_Install_Kdec.Name = "Programs_Install_Kdec"
-        Me.Programs_Install_Kdec.UseVisualStyleBackColor = False
+        resources.ApplyResources(Me.Programs_Install_KdeConnect, "Programs_Install_KdeConnect")
+        Me.Programs_Install_KdeConnect.BackColor = System.Drawing.SystemColors.Control
+        Me.Programs_Install_KdeConnect.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Programs_Install_KdeConnect.Name = "Programs_Install_KdeConnect"
+        Me.Programs_Install_KdeConnect.UseVisualStyleBackColor = False
         '
         'Programs_Install_Gimp
         '
@@ -148,13 +182,13 @@ Partial Class Container
         Me.Programs_Install_Gimp.Name = "Programs_Install_Gimp"
         Me.Programs_Install_Gimp.UseVisualStyleBackColor = False
         '
-        'Programs_Install_Sdi
+        'Programs_Install_SnappyDriverInstaller
         '
-        resources.ApplyResources(Me.Programs_Install_Sdi, "Programs_Install_Sdi")
-        Me.Programs_Install_Sdi.BackColor = System.Drawing.SystemColors.Control
-        Me.Programs_Install_Sdi.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Programs_Install_Sdi.Name = "Programs_Install_Sdi"
-        Me.Programs_Install_Sdi.UseVisualStyleBackColor = False
+        resources.ApplyResources(Me.Programs_Install_SnappyDriverInstaller, "Programs_Install_SnappyDriverInstaller")
+        Me.Programs_Install_SnappyDriverInstaller.BackColor = System.Drawing.SystemColors.Control
+        Me.Programs_Install_SnappyDriverInstaller.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Programs_Install_SnappyDriverInstaller.Name = "Programs_Install_SnappyDriverInstaller"
+        Me.Programs_Install_SnappyDriverInstaller.UseVisualStyleBackColor = False
         '
         'Programs_Install_Discord
         '
@@ -164,21 +198,21 @@ Partial Class Container
         Me.Programs_Install_Discord.Name = "Programs_Install_Discord"
         Me.Programs_Install_Discord.UseVisualStyleBackColor = False
         '
-        'Programs_Install_Ead
+        'Programs_Install_EaDesktop
         '
-        resources.ApplyResources(Me.Programs_Install_Ead, "Programs_Install_Ead")
-        Me.Programs_Install_Ead.BackColor = System.Drawing.SystemColors.Control
-        Me.Programs_Install_Ead.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Programs_Install_Ead.Name = "Programs_Install_Ead"
-        Me.Programs_Install_Ead.UseVisualStyleBackColor = False
+        resources.ApplyResources(Me.Programs_Install_EaDesktop, "Programs_Install_EaDesktop")
+        Me.Programs_Install_EaDesktop.BackColor = System.Drawing.SystemColors.Control
+        Me.Programs_Install_EaDesktop.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Programs_Install_EaDesktop.Name = "Programs_Install_EaDesktop"
+        Me.Programs_Install_EaDesktop.UseVisualStyleBackColor = False
         '
-        'Programs_Install_Egl
+        'Programs_Install_EpicGamesLauncher
         '
-        resources.ApplyResources(Me.Programs_Install_Egl, "Programs_Install_Egl")
-        Me.Programs_Install_Egl.BackColor = System.Drawing.SystemColors.Control
-        Me.Programs_Install_Egl.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Programs_Install_Egl.Name = "Programs_Install_Egl"
-        Me.Programs_Install_Egl.UseVisualStyleBackColor = False
+        resources.ApplyResources(Me.Programs_Install_EpicGamesLauncher, "Programs_Install_EpicGamesLauncher")
+        Me.Programs_Install_EpicGamesLauncher.BackColor = System.Drawing.SystemColors.Control
+        Me.Programs_Install_EpicGamesLauncher.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Programs_Install_EpicGamesLauncher.Name = "Programs_Install_EpicGamesLauncher"
+        Me.Programs_Install_EpicGamesLauncher.UseVisualStyleBackColor = False
         '
         'Programs_Install_Steam
         '
@@ -201,12 +235,13 @@ Partial Class Container
         resources.ApplyResources(Me.SystemAdministration, "SystemAdministration")
         Me.SystemAdministration.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.SystemAdministration.Controls.Add(Me.SystemAdministration_ReinstallAllUwpApps)
-        Me.SystemAdministration.Controls.Add(Me.SystemAdministration_RemoveNonCriticalUwpApps)
+        Me.SystemAdministration.Controls.Add(Me.SystemAdministration_RemoveAllNonCriticalUwpApps)
         Me.SystemAdministration.Controls.Add(Me.SystemAdministration_RemoveAllUwpApps)
         Me.SystemAdministration.Controls.Add(Me.SystemAdministration_SystemReadiness)
         Me.SystemAdministration.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.SystemAdministration.Name = "SystemAdministration"
         Me.SystemAdministration.TabStop = False
+        Me.SystemAdministration.Tag = "SystemAdministration"
         '
         'SystemAdministration_ReinstallAllUwpApps
         '
@@ -216,13 +251,13 @@ Partial Class Container
         Me.SystemAdministration_ReinstallAllUwpApps.Name = "SystemAdministration_ReinstallAllUwpApps"
         Me.SystemAdministration_ReinstallAllUwpApps.UseVisualStyleBackColor = False
         '
-        'SystemAdministration_RemoveNonCriticalUwpApps
+        'SystemAdministration_RemoveAllNonCriticalUwpApps
         '
-        resources.ApplyResources(Me.SystemAdministration_RemoveNonCriticalUwpApps, "SystemAdministration_RemoveNonCriticalUwpApps")
-        Me.SystemAdministration_RemoveNonCriticalUwpApps.BackColor = System.Drawing.SystemColors.Control
-        Me.SystemAdministration_RemoveNonCriticalUwpApps.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.SystemAdministration_RemoveNonCriticalUwpApps.Name = "SystemAdministration_RemoveNonCriticalUwpApps"
-        Me.SystemAdministration_RemoveNonCriticalUwpApps.UseVisualStyleBackColor = False
+        resources.ApplyResources(Me.SystemAdministration_RemoveAllNonCriticalUwpApps, "SystemAdministration_RemoveAllNonCriticalUwpApps")
+        Me.SystemAdministration_RemoveAllNonCriticalUwpApps.BackColor = System.Drawing.SystemColors.Control
+        Me.SystemAdministration_RemoveAllNonCriticalUwpApps.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.SystemAdministration_RemoveAllNonCriticalUwpApps.Name = "SystemAdministration_RemoveAllNonCriticalUwpApps"
+        Me.SystemAdministration_RemoveAllNonCriticalUwpApps.UseVisualStyleBackColor = False
         '
         'SystemAdministration_RemoveAllUwpApps
         '
@@ -248,6 +283,7 @@ Partial Class Container
         Me.ThirdParty.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.ThirdParty.Name = "ThirdParty"
         Me.ThirdParty.TabStop = False
+        Me.ThirdParty.Tag = "ThirdParty"
         '
         'ThirdParty_Simeononsecurity
         '
@@ -263,11 +299,11 @@ Partial Class Container
         Me.ThirdParty_Cttwin10script.Name = "ThirdParty_Cttwin10script"
         Me.ThirdParty_Cttwin10script.UseVisualStyleBackColor = False
         '
-        'Programs_Install_Skype
+        'Programs_Install_Spotify
         '
-        resources.ApplyResources(Me.Programs_Install_Skype, "Programs_Install_Skype")
-        Me.Programs_Install_Skype.Name = "Programs_Install_Skype"
-        Me.Programs_Install_Skype.UseVisualStyleBackColor = True
+        resources.ApplyResources(Me.Programs_Install_Spotify, "Programs_Install_Spotify")
+        Me.Programs_Install_Spotify.Name = "Programs_Install_Spotify"
+        Me.Programs_Install_Spotify.UseVisualStyleBackColor = True
         '
         'Container
         '
@@ -296,24 +332,28 @@ Partial Class Container
     Private WithEvents ThirdParty As GroupBox
     Private WithEvents Programs_Install_7zip As Button
     Private WithEvents Programs_Install_Steam As Button
-    Private WithEvents Programs_Install_Egl As Button
-    Private WithEvents Programs_Install_Ead As Button
+    Private WithEvents Programs_Install_EpicGamesLauncher As Button
+    Private WithEvents Programs_Install_EaDesktop As Button
     Private WithEvents Programs_Install_Discord As Button
-    Private WithEvents Programs_Install_Sdi As Button
+    Private WithEvents Programs_Install_SnappyDriverInstaller As Button
     Private WithEvents Programs_Install_Gimp As Button
-    Private WithEvents Programs_Install_Kdec As Button
-    Private WithEvents Programs_Install_As As Button
+    Private WithEvents Programs_Install_KdeConnect As Button
+    Private WithEvents Programs_Install_AndroidStudio As Button
     Private WithEvents Programs_Install_Brave As Button
-    Private WithEvents Programs_Install_Mt As Button
+    Private WithEvents Programs_Install_MicrosoftTeams As Button
     Private WithEvents SystemAdministration_SystemReadiness As Button
     Private WithEvents ThirdParty_Cttwin10script As Button
     Private WithEvents SystemAdministration_RemoveAllUwpApps As Button
-    Private WithEvents SystemAdministration_RemoveNonCriticalUwpApps As Button
+    Private WithEvents SystemAdministration_RemoveAllNonCriticalUwpApps As Button
     Private WithEvents SystemAdministration_ReinstallAllUwpApps As Button
-    Private WithEvents Programs_Install_Td As Button
-    Private WithEvents Programs_Install_Vscm As Button
-    Private WithEvents Programs_Install_Vs As Button
-    Private WithEvents Programs_Install_Gd As Button
+    Private WithEvents Programs_Install_TelegramDesktop As Button
+    Private WithEvents Programs_Install_VsCodium As Button
+    Private WithEvents Programs_Install_VsCode As Button
+    Private WithEvents Programs_Install_GithubDesktop As Button
     Private WithEvents ThirdParty_Simeononsecurity As Button
     Private WithEvents Programs_Install_Skype As Button
+    Private WithEvents Programs_Install_WindowsTerminal As Button
+    Private WithEvents Programs_Install_Bleachbit As Button
+    Private WithEvents Programs_Install_Xampp As Button
+    Private WithEvents Programs_Install_Spotify As Button
 End Class

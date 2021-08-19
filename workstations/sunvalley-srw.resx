@@ -57,21 +57,156 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="Programs.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Programs.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
-  <metadata name="Programs_Install_Skype.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="Programs_Install_Spotify.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Programs_Install_Spotify.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Programs_Install_Spotify.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Programs_Install_Spotify.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 599</value>
+  </data>
+  <data name="Programs_Install_Spotify.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 24</value>
+  </data>
+  <data name="Programs_Install_Spotify.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="Programs_Install_Spotify.Text" xml:space="preserve">
+    <value>Install Spotify</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_Spotify.Name" xml:space="preserve">
+    <value>Programs_Install_Spotify</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_Spotify.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_Spotify.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_Spotify.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="Programs_Install_Xampp.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Programs_Install_Xampp.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Programs_Install_Xampp.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="Programs_Install_Xampp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 568</value>
+  </data>
+  <data name="Programs_Install_Xampp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 25</value>
+  </data>
+  <data name="Programs_Install_Xampp.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="Programs_Install_Xampp.Text" xml:space="preserve">
+    <value>Install XAMPP</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_Xampp.Name" xml:space="preserve">
+    <value>Programs_Install_Xampp</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_Xampp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_Xampp.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_Xampp.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="Programs_Install_Bleachbit.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Programs_Install_Bleachbit.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Programs_Install_Bleachbit.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="Programs_Install_Bleachbit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 537</value>
+  </data>
+  <data name="Programs_Install_Bleachbit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 24</value>
+  </data>
+  <data name="Programs_Install_Bleachbit.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="Programs_Install_Bleachbit.Text" xml:space="preserve">
+    <value>Install Bleachbit</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_Bleachbit.Name" xml:space="preserve">
+    <value>Programs_Install_Bleachbit</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_Bleachbit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_Bleachbit.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_Bleachbit.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="Programs_Install_WindowsTerminal.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Programs_Install_WindowsTerminal.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Programs_Install_WindowsTerminal.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="Programs_Install_WindowsTerminal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 506</value>
+  </data>
+  <data name="Programs_Install_WindowsTerminal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 25</value>
+  </data>
+  <data name="Programs_Install_WindowsTerminal.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="Programs_Install_WindowsTerminal.Text" xml:space="preserve">
+    <value>Install Windows Terminal</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_WindowsTerminal.Name" xml:space="preserve">
+    <value>Programs_Install_WindowsTerminal</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_WindowsTerminal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_WindowsTerminal.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_WindowsTerminal.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="Programs_Install_Skype.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="Programs_Install_Skype.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="Programs_Install_Skype.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Programs_Install_Skype.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 473</value>
   </data>
@@ -94,187 +229,187 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Skype.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="Programs_Install_Gd.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Programs_Install_Gd.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="Programs_Install_Gd.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>System</value>
-  </data>
-  <data name="Programs_Install_Gd.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Programs_Install_Gd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 443</value>
-  </data>
-  <data name="Programs_Install_Gd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 24</value>
-  </data>
-  <data name="Programs_Install_Gd.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="Programs_Install_Gd.Text" xml:space="preserve">
-    <value>Install GitHub Desktop</value>
-  </data>
-  <data name="&gt;&gt;Programs_Install_Gd.Name" xml:space="preserve">
-    <value>Programs_Install_Gd</value>
-  </data>
-  <data name="&gt;&gt;Programs_Install_Gd.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Programs_Install_Gd.Parent" xml:space="preserve">
-    <value>Programs</value>
-  </data>
-  <data name="&gt;&gt;Programs_Install_Gd.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <metadata name="Programs_Install_Vs.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Programs_Install_Vs.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="Programs_Install_Vs.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>System</value>
-  </data>
-  <data name="Programs_Install_Vs.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Programs_Install_Vs.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 413</value>
-  </data>
-  <data name="Programs_Install_Vs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 24</value>
-  </data>
-  <data name="Programs_Install_Vs.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="Programs_Install_Vs.Text" xml:space="preserve">
-    <value>Install Visual Studio Code</value>
-  </data>
-  <data name="&gt;&gt;Programs_Install_Vs.Name" xml:space="preserve">
-    <value>Programs_Install_Vs</value>
-  </data>
-  <data name="&gt;&gt;Programs_Install_Vs.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Programs_Install_Vs.Parent" xml:space="preserve">
-    <value>Programs</value>
-  </data>
-  <data name="&gt;&gt;Programs_Install_Vs.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <metadata name="Programs_Install_Vscm.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Programs_Install_Vscm.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="Programs_Install_Vscm.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>System</value>
-  </data>
-  <data name="Programs_Install_Vscm.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Programs_Install_Vscm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 383</value>
-  </data>
-  <data name="Programs_Install_Vscm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 24</value>
-  </data>
-  <data name="Programs_Install_Vscm.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="Programs_Install_Vscm.Text" xml:space="preserve">
-    <value>Install VSCodium</value>
-  </data>
-  <data name="&gt;&gt;Programs_Install_Vscm.Name" xml:space="preserve">
-    <value>Programs_Install_Vscm</value>
-  </data>
-  <data name="&gt;&gt;Programs_Install_Vscm.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Programs_Install_Vscm.Parent" xml:space="preserve">
-    <value>Programs</value>
-  </data>
-  <data name="&gt;&gt;Programs_Install_Vscm.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <metadata name="Programs_Install_Td.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Programs_Install_Td.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="Programs_Install_Td.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>System</value>
-  </data>
-  <data name="Programs_Install_Td.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Programs_Install_Td.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 353</value>
-  </data>
-  <data name="Programs_Install_Td.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 24</value>
-  </data>
-  <data name="Programs_Install_Td.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="Programs_Install_Td.Text" xml:space="preserve">
-    <value>Install Telegram Desktop</value>
-  </data>
-  <data name="&gt;&gt;Programs_Install_Td.Name" xml:space="preserve">
-    <value>Programs_Install_Td</value>
-  </data>
-  <data name="&gt;&gt;Programs_Install_Td.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Programs_Install_Td.Parent" xml:space="preserve">
-    <value>Programs</value>
-  </data>
-  <data name="&gt;&gt;Programs_Install_Td.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <metadata name="Programs_Install_Mt.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="Programs_Install_GithubDesktop.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="Programs_Install_Mt.AutoSize" type="System.Boolean, mscorlib">
+  <data name="Programs_Install_GithubDesktop.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="Programs_Install_Mt.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="Programs_Install_GithubDesktop.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
   </data>
-  <data name="Programs_Install_Mt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="Programs_Install_GithubDesktop.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="Programs_Install_Mt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 323</value>
+  <data name="Programs_Install_GithubDesktop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 443</value>
   </data>
-  <data name="Programs_Install_Mt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 24</value>
+  <data name="Programs_Install_GithubDesktop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 24</value>
   </data>
-  <data name="Programs_Install_Mt.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+  <data name="Programs_Install_GithubDesktop.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
   </data>
-  <data name="Programs_Install_Mt.Text" xml:space="preserve">
-    <value>Install Microsoft Teams</value>
+  <data name="Programs_Install_GithubDesktop.Text" xml:space="preserve">
+    <value>Install GitHub Desktop</value>
   </data>
-  <data name="&gt;&gt;Programs_Install_Mt.Name" xml:space="preserve">
-    <value>Programs_Install_Mt</value>
+  <data name="&gt;&gt;Programs_Install_GithubDesktop.Name" xml:space="preserve">
+    <value>Programs_Install_GithubDesktop</value>
   </data>
-  <data name="&gt;&gt;Programs_Install_Mt.Type" xml:space="preserve">
+  <data name="&gt;&gt;Programs_Install_GithubDesktop.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Programs_Install_Mt.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Programs_Install_GithubDesktop.Parent" xml:space="preserve">
     <value>Programs</value>
   </data>
-  <data name="&gt;&gt;Programs_Install_Mt.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;Programs_Install_GithubDesktop.ZOrder" xml:space="preserve">
     <value>5</value>
+  </data>
+  <metadata name="Programs_Install_VsCode.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Programs_Install_VsCode.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Programs_Install_VsCode.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="Programs_Install_VsCode.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Programs_Install_VsCode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 413</value>
+  </data>
+  <data name="Programs_Install_VsCode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 24</value>
+  </data>
+  <data name="Programs_Install_VsCode.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="Programs_Install_VsCode.Text" xml:space="preserve">
+    <value>Install Visual Studio Code</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_VsCode.Name" xml:space="preserve">
+    <value>Programs_Install_VsCode</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_VsCode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_VsCode.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_VsCode.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <metadata name="Programs_Install_VsCodium.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Programs_Install_VsCodium.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Programs_Install_VsCodium.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="Programs_Install_VsCodium.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Programs_Install_VsCodium.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 383</value>
+  </data>
+  <data name="Programs_Install_VsCodium.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 24</value>
+  </data>
+  <data name="Programs_Install_VsCodium.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="Programs_Install_VsCodium.Text" xml:space="preserve">
+    <value>Install VSCodium</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_VsCodium.Name" xml:space="preserve">
+    <value>Programs_Install_VsCodium</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_VsCodium.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_VsCodium.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_VsCodium.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <metadata name="Programs_Install_TelegramDesktop.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Programs_Install_TelegramDesktop.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Programs_Install_TelegramDesktop.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="Programs_Install_TelegramDesktop.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Programs_Install_TelegramDesktop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 353</value>
+  </data>
+  <data name="Programs_Install_TelegramDesktop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 24</value>
+  </data>
+  <data name="Programs_Install_TelegramDesktop.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="Programs_Install_TelegramDesktop.Text" xml:space="preserve">
+    <value>Install Telegram Desktop</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_TelegramDesktop.Name" xml:space="preserve">
+    <value>Programs_Install_TelegramDesktop</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_TelegramDesktop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_TelegramDesktop.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_TelegramDesktop.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <metadata name="Programs_Install_MicrosoftTeams.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Programs_Install_MicrosoftTeams.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Programs_Install_MicrosoftTeams.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="Programs_Install_MicrosoftTeams.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Programs_Install_MicrosoftTeams.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 323</value>
+  </data>
+  <data name="Programs_Install_MicrosoftTeams.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 24</value>
+  </data>
+  <data name="Programs_Install_MicrosoftTeams.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="Programs_Install_MicrosoftTeams.Text" xml:space="preserve">
+    <value>Install Microsoft Teams</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_MicrosoftTeams.Name" xml:space="preserve">
+    <value>Programs_Install_MicrosoftTeams</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_MicrosoftTeams.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_MicrosoftTeams.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_MicrosoftTeams.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <metadata name="Programs_Install_Brave.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -310,79 +445,79 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Brave.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>10</value>
   </data>
-  <metadata name="Programs_Install_As.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="Programs_Install_AndroidStudio.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="Programs_Install_As.AutoSize" type="System.Boolean, mscorlib">
+  <data name="Programs_Install_AndroidStudio.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="Programs_Install_As.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="Programs_Install_AndroidStudio.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
   </data>
-  <data name="Programs_Install_As.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="Programs_Install_AndroidStudio.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="Programs_Install_As.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="Programs_Install_AndroidStudio.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 263</value>
   </data>
-  <data name="Programs_Install_As.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="Programs_Install_AndroidStudio.Size" type="System.Drawing.Size, System.Drawing">
     <value>135, 24</value>
   </data>
-  <data name="Programs_Install_As.TabIndex" type="System.Int32, mscorlib">
+  <data name="Programs_Install_AndroidStudio.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="Programs_Install_As.Text" xml:space="preserve">
+  <data name="Programs_Install_AndroidStudio.Text" xml:space="preserve">
     <value>Install Android Studio</value>
   </data>
-  <data name="&gt;&gt;Programs_Install_As.Name" xml:space="preserve">
-    <value>Programs_Install_As</value>
+  <data name="&gt;&gt;Programs_Install_AndroidStudio.Name" xml:space="preserve">
+    <value>Programs_Install_AndroidStudio</value>
   </data>
-  <data name="&gt;&gt;Programs_Install_As.Type" xml:space="preserve">
+  <data name="&gt;&gt;Programs_Install_AndroidStudio.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Programs_Install_As.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Programs_Install_AndroidStudio.Parent" xml:space="preserve">
     <value>Programs</value>
   </data>
-  <data name="&gt;&gt;Programs_Install_As.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="&gt;&gt;Programs_Install_AndroidStudio.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
-  <metadata name="Programs_Install_Kdec.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="Programs_Install_KdeConnect.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="Programs_Install_Kdec.AutoSize" type="System.Boolean, mscorlib">
+  <data name="Programs_Install_KdeConnect.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="Programs_Install_Kdec.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="Programs_Install_KdeConnect.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
   </data>
-  <data name="Programs_Install_Kdec.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="Programs_Install_KdeConnect.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="Programs_Install_Kdec.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="Programs_Install_KdeConnect.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 233</value>
   </data>
-  <data name="Programs_Install_Kdec.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="Programs_Install_KdeConnect.Size" type="System.Drawing.Size, System.Drawing">
     <value>124, 24</value>
   </data>
-  <data name="Programs_Install_Kdec.TabIndex" type="System.Int32, mscorlib">
+  <data name="Programs_Install_KdeConnect.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="Programs_Install_Kdec.Text" xml:space="preserve">
+  <data name="Programs_Install_KdeConnect.Text" xml:space="preserve">
     <value>Install KDE Connect</value>
   </data>
-  <data name="&gt;&gt;Programs_Install_Kdec.Name" xml:space="preserve">
-    <value>Programs_Install_Kdec</value>
+  <data name="&gt;&gt;Programs_Install_KdeConnect.Name" xml:space="preserve">
+    <value>Programs_Install_KdeConnect</value>
   </data>
-  <data name="&gt;&gt;Programs_Install_Kdec.Type" xml:space="preserve">
+  <data name="&gt;&gt;Programs_Install_KdeConnect.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Programs_Install_Kdec.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Programs_Install_KdeConnect.Parent" xml:space="preserve">
     <value>Programs</value>
   </data>
-  <data name="&gt;&gt;Programs_Install_Kdec.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="&gt;&gt;Programs_Install_KdeConnect.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
   <metadata name="Programs_Install_Gimp.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -418,43 +553,43 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Gimp.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>13</value>
   </data>
-  <metadata name="Programs_Install_Sdi.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="Programs_Install_SnappyDriverInstaller.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="Programs_Install_Sdi.AutoSize" type="System.Boolean, mscorlib">
+  <data name="Programs_Install_SnappyDriverInstaller.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="Programs_Install_Sdi.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="Programs_Install_SnappyDriverInstaller.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
   </data>
-  <data name="Programs_Install_Sdi.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="Programs_Install_SnappyDriverInstaller.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="Programs_Install_Sdi.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="Programs_Install_SnappyDriverInstaller.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 173</value>
   </data>
-  <data name="Programs_Install_Sdi.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="Programs_Install_SnappyDriverInstaller.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 24</value>
   </data>
-  <data name="Programs_Install_Sdi.TabIndex" type="System.Int32, mscorlib">
+  <data name="Programs_Install_SnappyDriverInstaller.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="Programs_Install_Sdi.Text" xml:space="preserve">
+  <data name="Programs_Install_SnappyDriverInstaller.Text" xml:space="preserve">
     <value>Install Snappy Driver Installer</value>
   </data>
-  <data name="&gt;&gt;Programs_Install_Sdi.Name" xml:space="preserve">
-    <value>Programs_Install_Sdi</value>
+  <data name="&gt;&gt;Programs_Install_SnappyDriverInstaller.Name" xml:space="preserve">
+    <value>Programs_Install_SnappyDriverInstaller</value>
   </data>
-  <data name="&gt;&gt;Programs_Install_Sdi.Type" xml:space="preserve">
+  <data name="&gt;&gt;Programs_Install_SnappyDriverInstaller.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Programs_Install_Sdi.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Programs_Install_SnappyDriverInstaller.Parent" xml:space="preserve">
     <value>Programs</value>
   </data>
-  <data name="&gt;&gt;Programs_Install_Sdi.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="&gt;&gt;Programs_Install_SnappyDriverInstaller.ZOrder" xml:space="preserve">
+    <value>14</value>
   </data>
   <metadata name="Programs_Install_Discord.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -490,79 +625,79 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Discord.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>15</value>
   </data>
-  <metadata name="Programs_Install_Ead.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="Programs_Install_EaDesktop.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="Programs_Install_Ead.AutoSize" type="System.Boolean, mscorlib">
+  <data name="Programs_Install_EaDesktop.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="Programs_Install_Ead.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="Programs_Install_EaDesktop.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
   </data>
-  <data name="Programs_Install_Ead.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="Programs_Install_EaDesktop.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="Programs_Install_Ead.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="Programs_Install_EaDesktop.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 113</value>
   </data>
-  <data name="Programs_Install_Ead.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="Programs_Install_EaDesktop.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 24</value>
   </data>
-  <data name="Programs_Install_Ead.TabIndex" type="System.Int32, mscorlib">
+  <data name="Programs_Install_EaDesktop.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="Programs_Install_Ead.Text" xml:space="preserve">
+  <data name="Programs_Install_EaDesktop.Text" xml:space="preserve">
     <value>Install EA Desktop</value>
   </data>
-  <data name="&gt;&gt;Programs_Install_Ead.Name" xml:space="preserve">
-    <value>Programs_Install_Ead</value>
+  <data name="&gt;&gt;Programs_Install_EaDesktop.Name" xml:space="preserve">
+    <value>Programs_Install_EaDesktop</value>
   </data>
-  <data name="&gt;&gt;Programs_Install_Ead.Type" xml:space="preserve">
+  <data name="&gt;&gt;Programs_Install_EaDesktop.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Programs_Install_Ead.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Programs_Install_EaDesktop.Parent" xml:space="preserve">
     <value>Programs</value>
   </data>
-  <data name="&gt;&gt;Programs_Install_Ead.ZOrder" xml:space="preserve">
-    <value>12</value>
+  <data name="&gt;&gt;Programs_Install_EaDesktop.ZOrder" xml:space="preserve">
+    <value>16</value>
   </data>
-  <metadata name="Programs_Install_Egl.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="Programs_Install_EpicGamesLauncher.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="Programs_Install_Egl.AutoSize" type="System.Boolean, mscorlib">
+  <data name="Programs_Install_EpicGamesLauncher.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="Programs_Install_Egl.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="Programs_Install_EpicGamesLauncher.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
   </data>
-  <data name="Programs_Install_Egl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="Programs_Install_EpicGamesLauncher.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="Programs_Install_Egl.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="Programs_Install_EpicGamesLauncher.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 83</value>
   </data>
-  <data name="Programs_Install_Egl.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="Programs_Install_EpicGamesLauncher.Size" type="System.Drawing.Size, System.Drawing">
     <value>168, 24</value>
   </data>
-  <data name="Programs_Install_Egl.TabIndex" type="System.Int32, mscorlib">
+  <data name="Programs_Install_EpicGamesLauncher.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="Programs_Install_Egl.Text" xml:space="preserve">
+  <data name="Programs_Install_EpicGamesLauncher.Text" xml:space="preserve">
     <value>Install Epic Games Launcher</value>
   </data>
-  <data name="&gt;&gt;Programs_Install_Egl.Name" xml:space="preserve">
-    <value>Programs_Install_Egl</value>
+  <data name="&gt;&gt;Programs_Install_EpicGamesLauncher.Name" xml:space="preserve">
+    <value>Programs_Install_EpicGamesLauncher</value>
   </data>
-  <data name="&gt;&gt;Programs_Install_Egl.Type" xml:space="preserve">
+  <data name="&gt;&gt;Programs_Install_EpicGamesLauncher.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Programs_Install_Egl.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Programs_Install_EpicGamesLauncher.Parent" xml:space="preserve">
     <value>Programs</value>
   </data>
-  <data name="&gt;&gt;Programs_Install_Egl.ZOrder" xml:space="preserve">
-    <value>13</value>
+  <data name="&gt;&gt;Programs_Install_EpicGamesLauncher.ZOrder" xml:space="preserve">
+    <value>17</value>
   </data>
   <metadata name="Programs_Install_Steam.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -595,7 +730,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Steam.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>18</value>
   </data>
   <metadata name="Programs_Install_7zip.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -628,7 +763,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_7zip.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>19</value>
   </data>
   <data name="Programs.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 12</value>
@@ -654,6 +789,9 @@
   <data name="&gt;&gt;Programs.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <metadata name="SystemAdministration.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="SystemAdministration.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Right</value>
   </data>
@@ -693,40 +831,40 @@
   <data name="&gt;&gt;SystemAdministration_ReinstallAllUwpApps.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="SystemAdministration_RemoveNonCriticalUwpApps.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="SystemAdministration_RemoveAllNonCriticalUwpApps.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="SystemAdministration_RemoveNonCriticalUwpApps.AutoSize" type="System.Boolean, mscorlib">
+  <data name="SystemAdministration_RemoveAllNonCriticalUwpApps.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="SystemAdministration_RemoveNonCriticalUwpApps.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="SystemAdministration_RemoveAllNonCriticalUwpApps.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
   </data>
-  <data name="SystemAdministration_RemoveNonCriticalUwpApps.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="SystemAdministration_RemoveAllNonCriticalUwpApps.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="SystemAdministration_RemoveNonCriticalUwpApps.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="SystemAdministration_RemoveAllNonCriticalUwpApps.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 83</value>
   </data>
-  <data name="SystemAdministration_RemoveNonCriticalUwpApps.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="SystemAdministration_RemoveAllNonCriticalUwpApps.Size" type="System.Drawing.Size, System.Drawing">
     <value>185, 24</value>
   </data>
-  <data name="SystemAdministration_RemoveNonCriticalUwpApps.TabIndex" type="System.Int32, mscorlib">
+  <data name="SystemAdministration_RemoveAllNonCriticalUwpApps.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
-  <data name="SystemAdministration_RemoveNonCriticalUwpApps.Text" xml:space="preserve">
+  <data name="SystemAdministration_RemoveAllNonCriticalUwpApps.Text" xml:space="preserve">
     <value>Remove non-critical UWP apps</value>
   </data>
-  <data name="&gt;&gt;SystemAdministration_RemoveNonCriticalUwpApps.Name" xml:space="preserve">
-    <value>SystemAdministration_RemoveNonCriticalUwpApps</value>
+  <data name="&gt;&gt;SystemAdministration_RemoveAllNonCriticalUwpApps.Name" xml:space="preserve">
+    <value>SystemAdministration_RemoveAllNonCriticalUwpApps</value>
   </data>
-  <data name="&gt;&gt;SystemAdministration_RemoveNonCriticalUwpApps.Type" xml:space="preserve">
+  <data name="&gt;&gt;SystemAdministration_RemoveAllNonCriticalUwpApps.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;SystemAdministration_RemoveNonCriticalUwpApps.Parent" xml:space="preserve">
+  <data name="&gt;&gt;SystemAdministration_RemoveAllNonCriticalUwpApps.Parent" xml:space="preserve">
     <value>SystemAdministration</value>
   </data>
-  <data name="&gt;&gt;SystemAdministration_RemoveNonCriticalUwpApps.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;SystemAdministration_RemoveAllNonCriticalUwpApps.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <metadata name="SystemAdministration_RemoveAllUwpApps.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -825,6 +963,9 @@
   <data name="&gt;&gt;SystemAdministration.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <metadata name="ThirdParty.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="ThirdParty.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Right</value>
   </data>

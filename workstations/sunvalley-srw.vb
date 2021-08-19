@@ -54,11 +54,11 @@ Public Class Container
         Process.Start("powershell.exe", "winget install Valve.Steam")
     End Sub
 
-    Private Sub Programs_Install_Egl_Click(sender As Object, e As EventArgs) Handles Programs_Install_Egl.Click
+    Private Sub Programs_Install_Egl_Click(sender As Object, e As EventArgs) Handles Programs_Install_EpicGamesLauncher.Click
         Process.Start("powershell.exe", "winget install EpicGames.EpicGamesLauncher")
     End Sub
 
-    Private Sub Programs_Install_EADesktop_Click(sender As Object, e As EventArgs) Handles Programs_Install_Ead.Click
+    Private Sub Programs_Install_EADesktop_Click(sender As Object, e As EventArgs) Handles Programs_Install_EaDesktop.Click
         Process.Start("powershell.exe", "winget install ElectronicArts.EADesktop")
     End Sub
 
@@ -66,7 +66,7 @@ Public Class Container
         Process.Start("powershell.exe", "winget install Discord.Discord")
     End Sub
 
-    Private Sub Programs_Install_Sdi_Click(sender As Object, e As EventArgs) Handles Programs_Install_Sdi.Click
+    Private Sub Programs_Install_Sdi_Click(sender As Object, e As EventArgs) Handles Programs_Install_SnappyDriverInstaller.Click
         If GetCurrentRole.IsUserAdmin() = True Then
             Using webClient As New WebClient()
                 webClient.Headers.Add(HttpRequestHeader.Cookie)
@@ -82,11 +82,11 @@ Public Class Container
         Process.Start("powershell.exe", "winget install GIMP.GIMP")
     End Sub
 
-    Private Sub Programs_Install_KDE_Connect_Click(sender As Object, e As EventArgs) Handles Programs_Install_Kdec.Click
+    Private Sub Programs_Install_KDE_Connect_Click(sender As Object, e As EventArgs) Handles Programs_Install_KdeConnect.Click
         Process.Start("powershell.exe", "winget install KDE.KDEConnect")
     End Sub
 
-    Private Sub Programs_Install_Android_Studio_Click(sender As Object, e As EventArgs) Handles Programs_Install_As.Click
+    Private Sub Programs_Install_Android_Studio_Click(sender As Object, e As EventArgs) Handles Programs_Install_AndroidStudio.Click
         Process.Start("powershell.exe", "winget install Google.AndroidStudio")
     End Sub
 
@@ -94,28 +94,48 @@ Public Class Container
         Process.Start("powershell.exe", "winget install BraveSoftware.BraveBrowser")
     End Sub
 
-    Private Sub Programs_Install_Microsoft_Teams_Click(sender As Object, e As EventArgs) Handles Programs_Install_Mt.Click
+    Private Sub Programs_Install_Microsoft_Teams_Click(sender As Object, e As EventArgs) Handles Programs_Install_MicrosoftTeams.Click
         Process.Start("powershell.exe", "winget install Microsoft.Teams")
     End Sub
 
-    Private Sub Programs_Install_Td_Click(sender As Object, e As EventArgs) Handles Programs_Install_Td.Click
+    Private Sub Programs_Install_Td_Click(sender As Object, e As EventArgs) Handles Programs_Install_TelegramDesktop.Click
         Process.Start("powershell.exe", "winget install Telegram.TelegramDesktop")
     End Sub
 
-    Private Sub Programs_Install_Vscm_Click(sender As Object, e As EventArgs) Handles Programs_Install_Vscm.Click
+    Private Sub Programs_Install_Vscm_Click(sender As Object, e As EventArgs) Handles Programs_Install_VsCodium.Click
         Process.Start("powershell.exe", "winget install VSCodium.VSCodium")
     End Sub
 
-    Private Sub Programs_Install_Vsc_Click(sender As Object, e As EventArgs) Handles Programs_Install_Vscm.Click
+    Private Sub Programs_Install_Vsc_Click(sender As Object, e As EventArgs) Handles Programs_Install_VsCodium.Click
         Process.Start("powershell.exe", "winget install Microsoft.VisualStudioCode")
     End Sub
 
-    Private Sub Programs_Install_Gd_Click(sender As Object, e As EventArgs) Handles Programs_Install_Gd.Click
+    Private Sub Programs_Install_Gd_Click(sender As Object, e As EventArgs) Handles Programs_Install_GithubDesktop.Click
         Process.Start("powershell.exe", "winget install GitHub.GitHubDesktop")
     End Sub
 
     Private Sub Programs_Install_Skype_Click(sender As Object, e As EventArgs) Handles Programs_Install_Skype.Click
         Process.Start("powershell.exe", "winget install Microsoft.Skype")
+    End Sub
+
+    Private Sub Programs_Install_Wt_Click(sender As Object, e As EventArgs) Handles Programs_Install_WindowsTerminal.Click
+        Process.Start("powershell.exe", "winget install Microsoft.WindowsTerminal")
+    End Sub
+
+    Private Sub Programs_Install_Bt_Click(sender As Object, e As EventArgs) Handles Programs_Install_Bleachbit.Click
+        Process.Start("powershell.exe", "winget install Bleachbit.Bleachbit")
+    End Sub
+
+    Private Sub Programs_Install_Xampp_Click(sender As Object, e As EventArgs) Handles Programs_Install_Xampp.Click
+        Process.Start("powershell", "winget install ApacheFriends.Xampp")
+    End Sub
+
+    Private Sub Programs_Install_Spotify_Click(sender As Object, e As EventArgs) Handles Programs_Install_Spotify.Click
+        If GetCurrentRole.IsUserAdmin() = False Then
+            Process.Start("powershell", "winget install Spotify.Spotify")
+        Else
+            MessageBox.Show("Cannot install this program with Administrator privileges. Try again as a normal user.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
     End Sub
 
     Private Sub SystemAdministration_SystemReadiness_Click(sender As Object, e As EventArgs) Handles SystemAdministration_SystemReadiness.Click
@@ -149,7 +169,7 @@ Public Class Container
         End If
     End Sub
 
-    Private Sub SystemAdministration_RemoveNonCriticalUwpApps_Click(sender As Object, e As EventArgs) Handles SystemAdministration_RemoveNonCriticalUwpApps.Click
+    Private Sub SystemAdministration_RemoveAllNonCriticalUwpApps_Click(sender As Object, e As EventArgs) Handles SystemAdministration_RemoveAllNonCriticalUwpApps.Click
         If GetCurrentRole.IsUserAdmin() = True Then
             Process.Start("powershell.exe", "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/gfelipe099/sunvalley-srw/sunvalley-v2/modules/RemoveAllNonCriticalUwpApps.ps1'))")
         Else
@@ -188,6 +208,5 @@ Public Class Container
             End If
         End If
     End Sub
-
 
 End Class
