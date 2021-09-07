@@ -1,8 +1,8 @@
 #define MyAppName "System Readiness for Workstations"
-#define MyAppVersion "0.0.4.0"
-#define MyAppURL "https://github.com/gfelipe099/sunvalley-srw"
+#define MyAppVersion "0.0.5.0"
+#define MyAppURL "https://github.com/mrkenhoo/sunvalley-srw"
 #define MyAppExeName "sunvalley-srw.exe"
-#define MyUsername "gfelipe099"
+#define MyUsername "mrkenhoo"
 
 [Setup]
 AppId={{28B11907-066D-4911-BA15-E70234360C28}
@@ -12,8 +12,8 @@ AppVerName={#MyAppName} {#MyAppVersion}
 AppPublisherURL={#MyAppURL}
 AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}/releases
-DefaultDirName={autopf}\Liam Powell\sunvalley-srw
-DefaultGroupName=Liam Powell\sunvalley-srw
+DefaultDirName={autopf}\{#MyUsername}\sunvalley-srw
+DefaultGroupName={#MyUsername}\sunvalley-srw
 AllowNoIcons=yes
 LicenseFile=C:\Users\{#MyUsername}\Documents\GitHub\sunvalley-srw\LICENSE
 PrivilegesRequiredOverridesAllowed=dialog

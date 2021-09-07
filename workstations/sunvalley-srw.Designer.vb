@@ -24,6 +24,7 @@ Partial Class Container
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Container))
         Me.Programs = New System.Windows.Forms.GroupBox()
+        Me.Programs_Install_Spotify = New System.Windows.Forms.Button()
         Me.Programs_Install_Xampp = New System.Windows.Forms.Button()
         Me.Programs_Install_Bleachbit = New System.Windows.Forms.Button()
         Me.Programs_Install_WindowsTerminal = New System.Windows.Forms.Button()
@@ -51,7 +52,7 @@ Partial Class Container
         Me.ThirdParty = New System.Windows.Forms.GroupBox()
         Me.ThirdParty_Simeononsecurity = New System.Windows.Forms.Button()
         Me.ThirdParty_Cttwin10script = New System.Windows.Forms.Button()
-        Me.Programs_Install_Spotify = New System.Windows.Forms.Button()
+        Me.SystemAdministration_SystemReadinessLite = New System.Windows.Forms.Button()
         Me.Programs.SuspendLayout()
         Me.SystemAdministration.SuspendLayout()
         Me.ThirdParty.SuspendLayout()
@@ -85,6 +86,12 @@ Partial Class Container
         Me.Programs.TabStop = False
         Me.Programs.Tag = "Programs"
         '
+        'Programs_Install_Spotify
+        '
+        resources.ApplyResources(Me.Programs_Install_Spotify, "Programs_Install_Spotify")
+        Me.Programs_Install_Spotify.Name = "Programs_Install_Spotify"
+        Me.Programs_Install_Spotify.UseVisualStyleBackColor = True
+        '
         'Programs_Install_Xampp
         '
         resources.ApplyResources(Me.Programs_Install_Xampp, "Programs_Install_Xampp")
@@ -116,7 +123,7 @@ Partial Class Container
         Me.Programs_Install_GithubDesktop.BackColor = System.Drawing.SystemColors.Control
         Me.Programs_Install_GithubDesktop.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Programs_Install_GithubDesktop.Name = "Programs_Install_GithubDesktop"
-        Me.Programs_Install_GithubDesktop.UseVisualStyleBackColor = False
+        Me.Programs_Install_GithubDesktop.UseVisualStyleBackColor = True
         '
         'Programs_Install_VsCode
         '
@@ -124,7 +131,7 @@ Partial Class Container
         Me.Programs_Install_VsCode.BackColor = System.Drawing.SystemColors.Control
         Me.Programs_Install_VsCode.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Programs_Install_VsCode.Name = "Programs_Install_VsCode"
-        Me.Programs_Install_VsCode.UseVisualStyleBackColor = False
+        Me.Programs_Install_VsCode.UseVisualStyleBackColor = True
         '
         'Programs_Install_VsCodium
         '
@@ -132,7 +139,7 @@ Partial Class Container
         Me.Programs_Install_VsCodium.BackColor = System.Drawing.SystemColors.Control
         Me.Programs_Install_VsCodium.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Programs_Install_VsCodium.Name = "Programs_Install_VsCodium"
-        Me.Programs_Install_VsCodium.UseVisualStyleBackColor = False
+        Me.Programs_Install_VsCodium.UseVisualStyleBackColor = True
         '
         'Programs_Install_TelegramDesktop
         '
@@ -140,7 +147,7 @@ Partial Class Container
         Me.Programs_Install_TelegramDesktop.BackColor = System.Drawing.SystemColors.Control
         Me.Programs_Install_TelegramDesktop.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Programs_Install_TelegramDesktop.Name = "Programs_Install_TelegramDesktop"
-        Me.Programs_Install_TelegramDesktop.UseVisualStyleBackColor = False
+        Me.Programs_Install_TelegramDesktop.UseVisualStyleBackColor = True
         '
         'Programs_Install_MicrosoftTeams
         '
@@ -148,7 +155,7 @@ Partial Class Container
         Me.Programs_Install_MicrosoftTeams.BackColor = System.Drawing.SystemColors.Control
         Me.Programs_Install_MicrosoftTeams.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Programs_Install_MicrosoftTeams.Name = "Programs_Install_MicrosoftTeams"
-        Me.Programs_Install_MicrosoftTeams.UseVisualStyleBackColor = False
+        Me.Programs_Install_MicrosoftTeams.UseVisualStyleBackColor = True
         '
         'Programs_Install_Brave
         '
@@ -156,7 +163,7 @@ Partial Class Container
         Me.Programs_Install_Brave.BackColor = System.Drawing.SystemColors.Control
         Me.Programs_Install_Brave.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Programs_Install_Brave.Name = "Programs_Install_Brave"
-        Me.Programs_Install_Brave.UseVisualStyleBackColor = False
+        Me.Programs_Install_Brave.UseVisualStyleBackColor = True
         '
         'Programs_Install_AndroidStudio
         '
@@ -164,7 +171,7 @@ Partial Class Container
         Me.Programs_Install_AndroidStudio.BackColor = System.Drawing.SystemColors.Control
         Me.Programs_Install_AndroidStudio.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Programs_Install_AndroidStudio.Name = "Programs_Install_AndroidStudio"
-        Me.Programs_Install_AndroidStudio.UseVisualStyleBackColor = False
+        Me.Programs_Install_AndroidStudio.UseVisualStyleBackColor = True
         '
         'Programs_Install_KdeConnect
         '
@@ -172,7 +179,7 @@ Partial Class Container
         Me.Programs_Install_KdeConnect.BackColor = System.Drawing.SystemColors.Control
         Me.Programs_Install_KdeConnect.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Programs_Install_KdeConnect.Name = "Programs_Install_KdeConnect"
-        Me.Programs_Install_KdeConnect.UseVisualStyleBackColor = False
+        Me.Programs_Install_KdeConnect.UseVisualStyleBackColor = True
         '
         'Programs_Install_Gimp
         '
@@ -180,7 +187,7 @@ Partial Class Container
         Me.Programs_Install_Gimp.BackColor = System.Drawing.SystemColors.Control
         Me.Programs_Install_Gimp.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Programs_Install_Gimp.Name = "Programs_Install_Gimp"
-        Me.Programs_Install_Gimp.UseVisualStyleBackColor = False
+        Me.Programs_Install_Gimp.UseVisualStyleBackColor = True
         '
         'Programs_Install_SnappyDriverInstaller
         '
@@ -188,7 +195,7 @@ Partial Class Container
         Me.Programs_Install_SnappyDriverInstaller.BackColor = System.Drawing.SystemColors.Control
         Me.Programs_Install_SnappyDriverInstaller.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Programs_Install_SnappyDriverInstaller.Name = "Programs_Install_SnappyDriverInstaller"
-        Me.Programs_Install_SnappyDriverInstaller.UseVisualStyleBackColor = False
+        Me.Programs_Install_SnappyDriverInstaller.UseVisualStyleBackColor = True
         '
         'Programs_Install_Discord
         '
@@ -196,7 +203,7 @@ Partial Class Container
         Me.Programs_Install_Discord.BackColor = System.Drawing.SystemColors.Control
         Me.Programs_Install_Discord.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Programs_Install_Discord.Name = "Programs_Install_Discord"
-        Me.Programs_Install_Discord.UseVisualStyleBackColor = False
+        Me.Programs_Install_Discord.UseVisualStyleBackColor = True
         '
         'Programs_Install_EaDesktop
         '
@@ -204,7 +211,7 @@ Partial Class Container
         Me.Programs_Install_EaDesktop.BackColor = System.Drawing.SystemColors.Control
         Me.Programs_Install_EaDesktop.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Programs_Install_EaDesktop.Name = "Programs_Install_EaDesktop"
-        Me.Programs_Install_EaDesktop.UseVisualStyleBackColor = False
+        Me.Programs_Install_EaDesktop.UseVisualStyleBackColor = True
         '
         'Programs_Install_EpicGamesLauncher
         '
@@ -212,7 +219,7 @@ Partial Class Container
         Me.Programs_Install_EpicGamesLauncher.BackColor = System.Drawing.SystemColors.Control
         Me.Programs_Install_EpicGamesLauncher.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Programs_Install_EpicGamesLauncher.Name = "Programs_Install_EpicGamesLauncher"
-        Me.Programs_Install_EpicGamesLauncher.UseVisualStyleBackColor = False
+        Me.Programs_Install_EpicGamesLauncher.UseVisualStyleBackColor = True
         '
         'Programs_Install_Steam
         '
@@ -220,7 +227,7 @@ Partial Class Container
         Me.Programs_Install_Steam.BackColor = System.Drawing.SystemColors.Control
         Me.Programs_Install_Steam.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Programs_Install_Steam.Name = "Programs_Install_Steam"
-        Me.Programs_Install_Steam.UseVisualStyleBackColor = False
+        Me.Programs_Install_Steam.UseVisualStyleBackColor = True
         '
         'Programs_Install_7zip
         '
@@ -228,12 +235,13 @@ Partial Class Container
         Me.Programs_Install_7zip.BackColor = System.Drawing.SystemColors.Control
         Me.Programs_Install_7zip.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Programs_Install_7zip.Name = "Programs_Install_7zip"
-        Me.Programs_Install_7zip.UseVisualStyleBackColor = False
+        Me.Programs_Install_7zip.UseVisualStyleBackColor = True
         '
         'SystemAdministration
         '
         resources.ApplyResources(Me.SystemAdministration, "SystemAdministration")
         Me.SystemAdministration.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.SystemAdministration.Controls.Add(Me.SystemAdministration_SystemReadinessLite)
         Me.SystemAdministration.Controls.Add(Me.SystemAdministration_ReinstallAllUwpApps)
         Me.SystemAdministration.Controls.Add(Me.SystemAdministration_RemoveAllNonCriticalUwpApps)
         Me.SystemAdministration.Controls.Add(Me.SystemAdministration_RemoveAllUwpApps)
@@ -249,7 +257,7 @@ Partial Class Container
         Me.SystemAdministration_ReinstallAllUwpApps.BackColor = System.Drawing.SystemColors.Control
         Me.SystemAdministration_ReinstallAllUwpApps.ForeColor = System.Drawing.SystemColors.ControlText
         Me.SystemAdministration_ReinstallAllUwpApps.Name = "SystemAdministration_ReinstallAllUwpApps"
-        Me.SystemAdministration_ReinstallAllUwpApps.UseVisualStyleBackColor = False
+        Me.SystemAdministration_ReinstallAllUwpApps.UseVisualStyleBackColor = True
         '
         'SystemAdministration_RemoveAllNonCriticalUwpApps
         '
@@ -257,7 +265,7 @@ Partial Class Container
         Me.SystemAdministration_RemoveAllNonCriticalUwpApps.BackColor = System.Drawing.SystemColors.Control
         Me.SystemAdministration_RemoveAllNonCriticalUwpApps.ForeColor = System.Drawing.SystemColors.ControlText
         Me.SystemAdministration_RemoveAllNonCriticalUwpApps.Name = "SystemAdministration_RemoveAllNonCriticalUwpApps"
-        Me.SystemAdministration_RemoveAllNonCriticalUwpApps.UseVisualStyleBackColor = False
+        Me.SystemAdministration_RemoveAllNonCriticalUwpApps.UseVisualStyleBackColor = True
         '
         'SystemAdministration_RemoveAllUwpApps
         '
@@ -265,7 +273,7 @@ Partial Class Container
         Me.SystemAdministration_RemoveAllUwpApps.BackColor = System.Drawing.SystemColors.Control
         Me.SystemAdministration_RemoveAllUwpApps.ForeColor = System.Drawing.SystemColors.ControlText
         Me.SystemAdministration_RemoveAllUwpApps.Name = "SystemAdministration_RemoveAllUwpApps"
-        Me.SystemAdministration_RemoveAllUwpApps.UseVisualStyleBackColor = False
+        Me.SystemAdministration_RemoveAllUwpApps.UseVisualStyleBackColor = True
         '
         'SystemAdministration_SystemReadiness
         '
@@ -273,7 +281,7 @@ Partial Class Container
         Me.SystemAdministration_SystemReadiness.BackColor = System.Drawing.SystemColors.Control
         Me.SystemAdministration_SystemReadiness.ForeColor = System.Drawing.SystemColors.ControlText
         Me.SystemAdministration_SystemReadiness.Name = "SystemAdministration_SystemReadiness"
-        Me.SystemAdministration_SystemReadiness.UseVisualStyleBackColor = False
+        Me.SystemAdministration_SystemReadiness.UseVisualStyleBackColor = True
         '
         'ThirdParty
         '
@@ -297,13 +305,15 @@ Partial Class Container
         Me.ThirdParty_Cttwin10script.BackColor = System.Drawing.SystemColors.Control
         Me.ThirdParty_Cttwin10script.ForeColor = System.Drawing.SystemColors.ControlText
         Me.ThirdParty_Cttwin10script.Name = "ThirdParty_Cttwin10script"
-        Me.ThirdParty_Cttwin10script.UseVisualStyleBackColor = False
+        Me.ThirdParty_Cttwin10script.UseVisualStyleBackColor = True
         '
-        'Programs_Install_Spotify
+        'SystemAdministration_SystemReadinessLite
         '
-        resources.ApplyResources(Me.Programs_Install_Spotify, "Programs_Install_Spotify")
-        Me.Programs_Install_Spotify.Name = "Programs_Install_Spotify"
-        Me.Programs_Install_Spotify.UseVisualStyleBackColor = True
+        resources.ApplyResources(Me.SystemAdministration_SystemReadinessLite, "SystemAdministration_SystemReadinessLite")
+        Me.SystemAdministration_SystemReadinessLite.BackColor = System.Drawing.SystemColors.Control
+        Me.SystemAdministration_SystemReadinessLite.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.SystemAdministration_SystemReadinessLite.Name = "SystemAdministration_SystemReadinessLite"
+        Me.SystemAdministration_SystemReadinessLite.UseVisualStyleBackColor = True
         '
         'Container
         '
@@ -356,4 +366,5 @@ Partial Class Container
     Private WithEvents Programs_Install_Bleachbit As Button
     Private WithEvents Programs_Install_Xampp As Button
     Private WithEvents Programs_Install_Spotify As Button
+    Private WithEvents SystemAdministration_SystemReadinessLite As Button
 End Class

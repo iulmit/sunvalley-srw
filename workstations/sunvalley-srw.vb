@@ -153,8 +153,25 @@ Public Class Container
             End If
         End If
     End Sub
+
+    Private Sub SystemAdministration_SystemReadinessLite_Click(sender As Object, e As EventArgs) Handles SystemAdministration_SystemReadinessLite.Click
+        Dim Message = "System Readiness Lite is a stripped down version which only configures group policies on the system. This is the recommended option for almost everyone. Do you want to continue?"
+        Dim Caption = "Information"
+        Dim ButtonLayout = MessageBoxButtons.YesNo
+        Dim Icon = MessageBoxIcon.Information
+        Dim Result As DialogResult
+        Result = MessageBox.Show(Message, Caption, ButtonLayout, Icon)
+        If Result = DialogResult.Yes Then
+            If GetCurrentRole.IsUserAdmin() = True Then
+                Process.Start("powershell.exe", "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/gfelipe099/sunvalley-srw/sunvalley-v2/modules/ApplySystemReadinessLite.ps1'))")
+            Else
+                MessageBox.Show("You need Administrator privileges to do this.", "Access denied", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
+        End If
+    End Sub
+
     Private Sub SystemAdministration_RemoveAllUwpApps_Click(sender As Object, e As EventArgs) Handles SystemAdministration_RemoveAllUwpApps.Click
-        Dim Message = "This will break your system somehow, only recommended to power users. Are you sure you want to continue?"
+        Dim Message = "This will break your system somehow and so it's only recommended to power users. Are you sure you want to continue?"
         Dim Caption = "Warning"
         Dim ButtonLayout = MessageBoxButtons.YesNo
         Dim Icon = MessageBoxIcon.Warning
@@ -204,9 +221,16 @@ Public Class Container
             If GetCurrentRole.IsUserAdmin() = True Then
                 Process.Start("powershell.exe", "iwr -useb 'https://simeononsecurity.ch/scripts/windowsoptimizeandharden.ps1'|iex")
             Else
-                MessageBox.Show("You need Administrator privileges to do this.", "Access denied", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                MessageBox.Show("You need Administrator privileges to execute this script.", "Access denied", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
         End If
     End Sub
 
+    Private Sub Programs_Enter(sender As Object, e As EventArgs) Handles Programs.Enter
+
+    End Sub
+
+    Private Sub Programs_Install_VsCode_Click(sender As Object, e As EventArgs) Handles Programs_Install_VsCode.Click
+
+    End Sub
 End Class

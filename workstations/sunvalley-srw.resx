@@ -795,6 +795,42 @@
   <data name="SystemAdministration.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Right</value>
   </data>
+  <metadata name="SystemAdministration_SystemReadinessLite.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="SystemAdministration_SystemReadinessLite.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SystemAdministration_SystemReadinessLite.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="SystemAdministration_SystemReadinessLite.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="SystemAdministration_SystemReadinessLite.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 53</value>
+  </data>
+  <data name="SystemAdministration_SystemReadinessLite.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 24</value>
+  </data>
+  <data name="SystemAdministration_SystemReadinessLite.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="SystemAdministration_SystemReadinessLite.Text" xml:space="preserve">
+    <value>Apply System Readiness (Lite)</value>
+  </data>
+  <data name="&gt;&gt;SystemAdministration_SystemReadinessLite.Name" xml:space="preserve">
+    <value>SystemAdministration_SystemReadinessLite</value>
+  </data>
+  <data name="&gt;&gt;SystemAdministration_SystemReadinessLite.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SystemAdministration_SystemReadinessLite.Parent" xml:space="preserve">
+    <value>SystemAdministration</value>
+  </data>
+  <data name="&gt;&gt;SystemAdministration_SystemReadinessLite.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="SystemAdministration_ReinstallAllUwpApps.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -808,7 +844,7 @@
     <value>NoControl</value>
   </data>
   <data name="SystemAdministration_ReinstallAllUwpApps.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 113</value>
+    <value>12, 143</value>
   </data>
   <data name="SystemAdministration_ReinstallAllUwpApps.Size" type="System.Drawing.Size, System.Drawing">
     <value>122, 24</value>
@@ -829,7 +865,7 @@
     <value>SystemAdministration</value>
   </data>
   <data name="&gt;&gt;SystemAdministration_ReinstallAllUwpApps.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <metadata name="SystemAdministration_RemoveAllNonCriticalUwpApps.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -844,7 +880,7 @@
     <value>NoControl</value>
   </data>
   <data name="SystemAdministration_RemoveAllNonCriticalUwpApps.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 83</value>
+    <value>12, 113</value>
   </data>
   <data name="SystemAdministration_RemoveAllNonCriticalUwpApps.Size" type="System.Drawing.Size, System.Drawing">
     <value>185, 24</value>
@@ -865,7 +901,7 @@
     <value>SystemAdministration</value>
   </data>
   <data name="&gt;&gt;SystemAdministration_RemoveAllNonCriticalUwpApps.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <metadata name="SystemAdministration_RemoveAllUwpApps.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -880,7 +916,7 @@
     <value>NoControl</value>
   </data>
   <data name="SystemAdministration_RemoveAllUwpApps.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 53</value>
+    <value>12, 83</value>
   </data>
   <data name="SystemAdministration_RemoveAllUwpApps.Size" type="System.Drawing.Size, System.Drawing">
     <value>136, 24</value>
@@ -901,7 +937,7 @@
     <value>SystemAdministration</value>
   </data>
   <data name="&gt;&gt;SystemAdministration_RemoveAllUwpApps.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <metadata name="SystemAdministration_SystemReadiness.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -937,7 +973,7 @@
     <value>SystemAdministration</value>
   </data>
   <data name="&gt;&gt;SystemAdministration_SystemReadiness.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="SystemAdministration.Location" type="System.Drawing.Point, System.Drawing">
     <value>518, 12</value>
