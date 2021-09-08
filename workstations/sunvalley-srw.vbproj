@@ -21,9 +21,9 @@
     <Description>System Readiness for Workstations is an automated privacy-focused configuration tool which debloats and tweaks any compatible Windows version and edition to improve it's performance and reduce the user's footprint as much as possible.</Description>
     <Copyright>GNU General Public License v3.0</Copyright>
     <PackageReleaseNotes>* Added content:
-    - System Readiness Lite
-
-* Minor tweaks to improve the program's behaviour.</PackageReleaseNotes>
+    - Update winget sources
+* Fixed incorrect VSCodium and VSCode packages when installing them
+* Code improvements</PackageReleaseNotes>
     <DelaySign>false</DelaySign>
     <AssemblyVersion>0.0.5.1</AssemblyVersion>
     <FileVersion>0.0.5.1</FileVersion>

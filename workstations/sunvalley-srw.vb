@@ -1,7 +1,8 @@
-﻿Imports System.Security.Principal
+﻿Imports System.ComponentModel
 Imports System.IO
 Imports System.IO.Compression
 Imports System.Net
+Imports System.Security.Principal
 
 Module GetCurrentRole
     Public Function IsUserAdmin() As Boolean
@@ -14,7 +15,7 @@ End Module
 Module Zipper
     Public Function Extract(FileName, OutputPath)
         Dim InstallDir = Path.Combine(Environment.GetEnvironmentVariable("ProgramFiles") + OutputPath)
-        If System.IO.Directory.Exists(InstallDir) Then
+        If System.IO.Directory.Exists(OutputPath) Then
             Dim Message = "The directory " + OutputPath + " already exists. Do you want to reinstall it?"
             Dim Caption = "Warning"
             Dim ButtonLayout = MessageBoxButtons.YesNo
@@ -22,9 +23,9 @@ Module Zipper
             Dim Result As DialogResult
             Result = MessageBox.Show(Message, Caption, ButtonLayout, Icon)
             If Result = DialogResult.Yes Then
-                System.IO.Directory.Delete(OutputPath)
+                System.IO.Directory.Delete(InstallDir)
                 If System.IO.File.Exists(FileName) Then
-                    ZipFile.ExtractToDirectory(FileName, InstallDir)
+                    ZipFile.ExtractToDirectory(FileName, OutputPath)
                     If System.IO.Directory.Exists(InstallDir) Then
                         MessageBox.Show("Installation successful", FileName, MessageBoxButtons.OK, MessageBoxIcon.Information)
                     End If
@@ -44,6 +45,37 @@ Public Class Container
             Dim Icon = MessageBoxIcon.Warning
             MessageBox.Show(Message, Caption, ButtonLayout, Icon)
         End If
+    End Sub
+
+    Private Sub Updater_Click(sender As Object, e As EventArgs) Handles Programs_CheckForUpdates.Click
+        Dim Message = "Are you sure you want to check for updates?"
+        Dim Caption = "Warning"
+        Dim ButtonLayout = MessageBoxButtons.YesNo
+        Dim Icon = MessageBoxIcon.Warning
+        Dim Result As DialogResult
+        Result = MessageBox.Show(Message, Caption, ButtonLayout, Icon)
+        If Result = DialogResult.Yes Then
+            Updater.RunWorkerAsync()
+        Else
+            MessageBox.Show("Will not check for updates.", "Update cancelled", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End If
+    End Sub
+
+    Private Sub Updater_ProgressChanged(sender As Object, e As ProgressChangedEventArgs) Handles Updater.ProgressChanged
+        Updater.WorkerReportsProgress = e.ProgressPercentage
+    End Sub
+
+    Private Sub Updater_DoWork(sender As Object, e As DoWorkEventArgs) Handles Updater.DoWork
+        If Updater.IsBusy = False Then
+            Updater.RunWorkerAsync(Process.Start("powershell.exe", "winget sources update"))
+        Else
+            Dim Result As DialogResult
+            Result = MessageBox.Show("Cannot check for updates now. Error code: UPDATER_IS_BUSY", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
+    End Sub
+
+    Private Sub Updater_RunWorkerDone(sender As Object, e As RunWorkerCompletedEventArgs) Handles Updater.RunWorkerCompleted
+        Updater.Dispose()
     End Sub
 
     Private Sub Programs_Install_7zip_Click(sender As Object, e As EventArgs) Handles Programs_Install_7zip.Click
@@ -98,19 +130,19 @@ Public Class Container
         Process.Start("powershell.exe", "winget install Microsoft.Teams")
     End Sub
 
-    Private Sub Programs_Install_Td_Click(sender As Object, e As EventArgs) Handles Programs_Install_TelegramDesktop.Click
+    Private Sub Programs_Install_TelegramDesktop_Click(sender As Object, e As EventArgs) Handles Programs_Install_TelegramDesktop.Click
         Process.Start("powershell.exe", "winget install Telegram.TelegramDesktop")
     End Sub
 
-    Private Sub Programs_Install_Vscm_Click(sender As Object, e As EventArgs) Handles Programs_Install_VsCodium.Click
+    Private Sub Programs_Install_VsCodium_Click(sender As Object, e As EventArgs) Handles Programs_Install_VsCodium.Click
         Process.Start("powershell.exe", "winget install VSCodium.VSCodium")
     End Sub
 
-    Private Sub Programs_Install_Vsc_Click(sender As Object, e As EventArgs) Handles Programs_Install_VsCodium.Click
+    Private Sub Programs_Install_VsCode_Click(sender As Object, e As EventArgs) Handles Programs_Install_VsCode.Click
         Process.Start("powershell.exe", "winget install Microsoft.VisualStudioCode")
     End Sub
 
-    Private Sub Programs_Install_Gd_Click(sender As Object, e As EventArgs) Handles Programs_Install_GithubDesktop.Click
+    Private Sub Programs_Install_GithubDesktop_Click(sender As Object, e As EventArgs) Handles Programs_Install_GithubDesktop.Click
         Process.Start("powershell.exe", "winget install GitHub.GitHubDesktop")
     End Sub
 
@@ -118,11 +150,11 @@ Public Class Container
         Process.Start("powershell.exe", "winget install Microsoft.Skype")
     End Sub
 
-    Private Sub Programs_Install_Wt_Click(sender As Object, e As EventArgs) Handles Programs_Install_WindowsTerminal.Click
+    Private Sub Programs_Install_WindowsTerminal_Click(sender As Object, e As EventArgs) Handles Programs_Install_WindowsTerminal.Click
         Process.Start("powershell.exe", "winget install Microsoft.WindowsTerminal")
     End Sub
 
-    Private Sub Programs_Install_Bt_Click(sender As Object, e As EventArgs) Handles Programs_Install_Bleachbit.Click
+    Private Sub Programs_Install_BleachBit_Click(sender As Object, e As EventArgs) Handles Programs_Install_BleachBit.Click
         Process.Start("powershell.exe", "winget install Bleachbit.Bleachbit")
     End Sub
 
@@ -226,11 +258,4 @@ Public Class Container
         End If
     End Sub
 
-    Private Sub Programs_Enter(sender As Object, e As EventArgs) Handles Programs.Enter
-
-    End Sub
-
-    Private Sub Programs_Install_VsCode_Click(sender As Object, e As EventArgs) Handles Programs_Install_VsCode.Click
-
-    End Sub
 End Class

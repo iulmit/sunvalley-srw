@@ -57,24 +57,54 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="Programs.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Programs.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
-  <metadata name="Programs_Install_Spotify.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="Programs_CheckForUpdates.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Programs_CheckForUpdates.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Programs_CheckForUpdates.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="Programs_CheckForUpdates.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Programs_CheckForUpdates.Location" type="System.Drawing.Point, System.Drawing">
+    <value>347, 22</value>
+  </data>
+  <data name="Programs_CheckForUpdates.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 27</value>
+  </data>
+  <data name="Programs_CheckForUpdates.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="Programs_CheckForUpdates.Text" xml:space="preserve">
+    <value>Update winget sources</value>
+  </data>
+  <data name="&gt;&gt;Programs_CheckForUpdates.Name" xml:space="preserve">
+    <value>Programs_CheckForUpdates</value>
+  </data>
+  <data name="&gt;&gt;Programs_CheckForUpdates.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Programs_CheckForUpdates.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Programs_CheckForUpdates.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="Programs_Install_Spotify.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="Programs_Install_Spotify.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Programs_Install_Spotify.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 599</value>
   </data>
@@ -97,11 +127,8 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Spotify.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
-  <metadata name="Programs_Install_Xampp.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="Programs_Install_Xampp.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -130,44 +157,38 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Xampp.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <metadata name="Programs_Install_Bleachbit.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Programs_Install_Bleachbit.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="Programs_Install_Bleachbit.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>System</value>
-  </data>
-  <data name="Programs_Install_Bleachbit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 537</value>
-  </data>
-  <data name="Programs_Install_Bleachbit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 24</value>
-  </data>
-  <data name="Programs_Install_Bleachbit.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="Programs_Install_Bleachbit.Text" xml:space="preserve">
-    <value>Install Bleachbit</value>
-  </data>
-  <data name="&gt;&gt;Programs_Install_Bleachbit.Name" xml:space="preserve">
-    <value>Programs_Install_Bleachbit</value>
-  </data>
-  <data name="&gt;&gt;Programs_Install_Bleachbit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Programs_Install_Bleachbit.Parent" xml:space="preserve">
-    <value>Programs</value>
-  </data>
-  <data name="&gt;&gt;Programs_Install_Bleachbit.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <metadata name="Programs_Install_WindowsTerminal.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="Programs_Install_BleachBit.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </metadata>
+  </data>
+  <data name="Programs_Install_BleachBit.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="Programs_Install_BleachBit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 537</value>
+  </data>
+  <data name="Programs_Install_BleachBit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 24</value>
+  </data>
+  <data name="Programs_Install_BleachBit.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="Programs_Install_BleachBit.Text" xml:space="preserve">
+    <value>Install BleachBit</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_BleachBit.Name" xml:space="preserve">
+    <value>Programs_Install_BleachBit</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_BleachBit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_BleachBit.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_BleachBit.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="Programs_Install_WindowsTerminal.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -196,11 +217,8 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_WindowsTerminal.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
-  <metadata name="Programs_Install_Skype.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="Programs_Install_Skype.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -229,11 +247,8 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Skype.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
-  <metadata name="Programs_Install_GithubDesktop.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="Programs_Install_GithubDesktop.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -265,11 +280,8 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_GithubDesktop.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
-  <metadata name="Programs_Install_VsCode.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="Programs_Install_VsCode.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -301,11 +313,8 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_VsCode.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
-  <metadata name="Programs_Install_VsCodium.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="Programs_Install_VsCodium.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -337,11 +346,8 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_VsCodium.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
-  <metadata name="Programs_Install_TelegramDesktop.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="Programs_Install_TelegramDesktop.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -373,11 +379,8 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_TelegramDesktop.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
-  <metadata name="Programs_Install_MicrosoftTeams.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="Programs_Install_MicrosoftTeams.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -409,11 +412,8 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_MicrosoftTeams.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
-  <metadata name="Programs_Install_Brave.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="Programs_Install_Brave.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -445,11 +445,8 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Brave.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
-  <metadata name="Programs_Install_AndroidStudio.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="Programs_Install_AndroidStudio.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -481,11 +478,8 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_AndroidStudio.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
-  <metadata name="Programs_Install_KdeConnect.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="Programs_Install_KdeConnect.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -517,11 +511,8 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_KdeConnect.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
-  <metadata name="Programs_Install_Gimp.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="Programs_Install_Gimp.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -553,11 +544,8 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Gimp.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
-  <metadata name="Programs_Install_SnappyDriverInstaller.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="Programs_Install_SnappyDriverInstaller.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -589,11 +577,8 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_SnappyDriverInstaller.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
-  <metadata name="Programs_Install_Discord.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="Programs_Install_Discord.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -625,11 +610,8 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Discord.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
-  <metadata name="Programs_Install_EaDesktop.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="Programs_Install_EaDesktop.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -661,11 +643,8 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_EaDesktop.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
-  <metadata name="Programs_Install_EpicGamesLauncher.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="Programs_Install_EpicGamesLauncher.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -697,11 +676,8 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_EpicGamesLauncher.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
-  <metadata name="Programs_Install_Steam.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="Programs_Install_Steam.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -730,11 +706,8 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Steam.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>19</value>
   </data>
-  <metadata name="Programs_Install_7zip.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="Programs_Install_7zip.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -763,7 +736,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_7zip.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>20</value>
   </data>
   <data name="Programs.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 12</value>
@@ -789,35 +762,8 @@
   <data name="&gt;&gt;Programs.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <metadata name="SystemAdministration.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="SystemAdministration.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Right</value>
-  </data>
-  <metadata name="SystemAdministration_SystemReadinessLite.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="SystemAdministration_SystemReadinessLite.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="SystemAdministration_SystemReadinessLite.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>System</value>
-  </data>
-  <data name="SystemAdministration_SystemReadinessLite.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="SystemAdministration_SystemReadinessLite.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 53</value>
-  </data>
-  <data name="SystemAdministration_SystemReadinessLite.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 24</value>
-  </data>
-  <data name="SystemAdministration_SystemReadinessLite.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="SystemAdministration_SystemReadinessLite.Text" xml:space="preserve">
-    <value>Apply System Readiness (Lite)</value>
   </data>
   <data name="&gt;&gt;SystemAdministration_SystemReadinessLite.Name" xml:space="preserve">
     <value>SystemAdministration_SystemReadinessLite</value>
@@ -831,30 +777,6 @@
   <data name="&gt;&gt;SystemAdministration_SystemReadinessLite.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="SystemAdministration_ReinstallAllUwpApps.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="SystemAdministration_ReinstallAllUwpApps.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="SystemAdministration_ReinstallAllUwpApps.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>System</value>
-  </data>
-  <data name="SystemAdministration_ReinstallAllUwpApps.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="SystemAdministration_ReinstallAllUwpApps.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 143</value>
-  </data>
-  <data name="SystemAdministration_ReinstallAllUwpApps.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 24</value>
-  </data>
-  <data name="SystemAdministration_ReinstallAllUwpApps.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="SystemAdministration_ReinstallAllUwpApps.Text" xml:space="preserve">
-    <value>Reinstall UWP apps</value>
-  </data>
   <data name="&gt;&gt;SystemAdministration_ReinstallAllUwpApps.Name" xml:space="preserve">
     <value>SystemAdministration_ReinstallAllUwpApps</value>
   </data>
@@ -866,30 +788,6 @@
   </data>
   <data name="&gt;&gt;SystemAdministration_ReinstallAllUwpApps.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <metadata name="SystemAdministration_RemoveAllNonCriticalUwpApps.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="SystemAdministration_RemoveAllNonCriticalUwpApps.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="SystemAdministration_RemoveAllNonCriticalUwpApps.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>System</value>
-  </data>
-  <data name="SystemAdministration_RemoveAllNonCriticalUwpApps.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="SystemAdministration_RemoveAllNonCriticalUwpApps.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 113</value>
-  </data>
-  <data name="SystemAdministration_RemoveAllNonCriticalUwpApps.Size" type="System.Drawing.Size, System.Drawing">
-    <value>185, 24</value>
-  </data>
-  <data name="SystemAdministration_RemoveAllNonCriticalUwpApps.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="SystemAdministration_RemoveAllNonCriticalUwpApps.Text" xml:space="preserve">
-    <value>Remove non-critical UWP apps</value>
   </data>
   <data name="&gt;&gt;SystemAdministration_RemoveAllNonCriticalUwpApps.Name" xml:space="preserve">
     <value>SystemAdministration_RemoveAllNonCriticalUwpApps</value>
@@ -903,30 +801,6 @@
   <data name="&gt;&gt;SystemAdministration_RemoveAllNonCriticalUwpApps.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <metadata name="SystemAdministration_RemoveAllUwpApps.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="SystemAdministration_RemoveAllUwpApps.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="SystemAdministration_RemoveAllUwpApps.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>System</value>
-  </data>
-  <data name="SystemAdministration_RemoveAllUwpApps.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="SystemAdministration_RemoveAllUwpApps.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 83</value>
-  </data>
-  <data name="SystemAdministration_RemoveAllUwpApps.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 24</value>
-  </data>
-  <data name="SystemAdministration_RemoveAllUwpApps.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="SystemAdministration_RemoveAllUwpApps.Text" xml:space="preserve">
-    <value>Remove all UWP apps</value>
-  </data>
   <data name="&gt;&gt;SystemAdministration_RemoveAllUwpApps.Name" xml:space="preserve">
     <value>SystemAdministration_RemoveAllUwpApps</value>
   </data>
@@ -938,30 +812,6 @@
   </data>
   <data name="&gt;&gt;SystemAdministration_RemoveAllUwpApps.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <metadata name="SystemAdministration_SystemReadiness.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="SystemAdministration_SystemReadiness.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="SystemAdministration_SystemReadiness.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>System</value>
-  </data>
-  <data name="SystemAdministration_SystemReadiness.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="SystemAdministration_SystemReadiness.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 23</value>
-  </data>
-  <data name="SystemAdministration_SystemReadiness.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 24</value>
-  </data>
-  <data name="SystemAdministration_SystemReadiness.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="SystemAdministration_SystemReadiness.Text" xml:space="preserve">
-    <value>Apply System Readiness</value>
   </data>
   <data name="&gt;&gt;SystemAdministration_SystemReadiness.Name" xml:space="preserve">
     <value>SystemAdministration_SystemReadiness</value>
@@ -999,32 +849,173 @@
   <data name="&gt;&gt;SystemAdministration.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <metadata name="ThirdParty.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="ThirdParty.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Right</value>
-  </data>
-  <metadata name="ThirdParty_Simeononsecurity.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="ThirdParty_Simeononsecurity.AutoSize" type="System.Boolean, mscorlib">
+  <data name="SystemAdministration_SystemReadinessLite.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="ThirdParty_Simeononsecurity.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="SystemAdministration_SystemReadinessLite.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
   </data>
-  <data name="ThirdParty_Simeononsecurity.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="SystemAdministration_SystemReadinessLite.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="SystemAdministration_SystemReadinessLite.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 52</value>
   </data>
-  <data name="ThirdParty_Simeononsecurity.Size" type="System.Drawing.Size, System.Drawing">
-    <value>345, 24</value>
+  <data name="SystemAdministration_SystemReadinessLite.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 24</value>
   </data>
-  <data name="ThirdParty_Simeononsecurity.TabIndex" type="System.Int32, mscorlib">
+  <data name="SystemAdministration_SystemReadinessLite.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="SystemAdministration_SystemReadinessLite.Text" xml:space="preserve">
+    <value>Apply System Readiness (Lite)</value>
+  </data>
+  <data name="&gt;&gt;SystemAdministration_SystemReadinessLite.Name" xml:space="preserve">
+    <value>SystemAdministration_SystemReadinessLite</value>
+  </data>
+  <data name="&gt;&gt;SystemAdministration_SystemReadinessLite.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SystemAdministration_SystemReadinessLite.Parent" xml:space="preserve">
+    <value>SystemAdministration</value>
+  </data>
+  <data name="&gt;&gt;SystemAdministration_SystemReadinessLite.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="SystemAdministration_ReinstallAllUwpApps.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SystemAdministration_ReinstallAllUwpApps.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="SystemAdministration_ReinstallAllUwpApps.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="SystemAdministration_ReinstallAllUwpApps.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 142</value>
+  </data>
+  <data name="SystemAdministration_ReinstallAllUwpApps.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 24</value>
+  </data>
+  <data name="SystemAdministration_ReinstallAllUwpApps.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="SystemAdministration_ReinstallAllUwpApps.Text" xml:space="preserve">
+    <value>Reinstall UWP apps</value>
+  </data>
+  <data name="&gt;&gt;SystemAdministration_ReinstallAllUwpApps.Name" xml:space="preserve">
+    <value>SystemAdministration_ReinstallAllUwpApps</value>
+  </data>
+  <data name="&gt;&gt;SystemAdministration_ReinstallAllUwpApps.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SystemAdministration_ReinstallAllUwpApps.Parent" xml:space="preserve">
+    <value>SystemAdministration</value>
+  </data>
+  <data name="&gt;&gt;SystemAdministration_ReinstallAllUwpApps.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="SystemAdministration_RemoveAllNonCriticalUwpApps.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SystemAdministration_RemoveAllNonCriticalUwpApps.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="SystemAdministration_RemoveAllNonCriticalUwpApps.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="SystemAdministration_RemoveAllNonCriticalUwpApps.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 112</value>
+  </data>
+  <data name="SystemAdministration_RemoveAllNonCriticalUwpApps.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 24</value>
+  </data>
+  <data name="SystemAdministration_RemoveAllNonCriticalUwpApps.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="SystemAdministration_RemoveAllNonCriticalUwpApps.Text" xml:space="preserve">
+    <value>Remove non-critical UWP apps</value>
+  </data>
+  <data name="&gt;&gt;SystemAdministration_RemoveAllNonCriticalUwpApps.Name" xml:space="preserve">
+    <value>SystemAdministration_RemoveAllNonCriticalUwpApps</value>
+  </data>
+  <data name="&gt;&gt;SystemAdministration_RemoveAllNonCriticalUwpApps.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SystemAdministration_RemoveAllNonCriticalUwpApps.Parent" xml:space="preserve">
+    <value>SystemAdministration</value>
+  </data>
+  <data name="&gt;&gt;SystemAdministration_RemoveAllNonCriticalUwpApps.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="SystemAdministration_RemoveAllUwpApps.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SystemAdministration_RemoveAllUwpApps.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="SystemAdministration_RemoveAllUwpApps.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="SystemAdministration_RemoveAllUwpApps.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 82</value>
+  </data>
+  <data name="SystemAdministration_RemoveAllUwpApps.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 24</value>
+  </data>
+  <data name="SystemAdministration_RemoveAllUwpApps.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="SystemAdministration_RemoveAllUwpApps.Text" xml:space="preserve">
+    <value>Remove all UWP apps</value>
+  </data>
+  <data name="&gt;&gt;SystemAdministration_RemoveAllUwpApps.Name" xml:space="preserve">
+    <value>SystemAdministration_RemoveAllUwpApps</value>
+  </data>
+  <data name="&gt;&gt;SystemAdministration_RemoveAllUwpApps.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SystemAdministration_RemoveAllUwpApps.Parent" xml:space="preserve">
+    <value>SystemAdministration</value>
+  </data>
+  <data name="&gt;&gt;SystemAdministration_RemoveAllUwpApps.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="SystemAdministration_SystemReadiness.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SystemAdministration_SystemReadiness.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="SystemAdministration_SystemReadiness.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="SystemAdministration_SystemReadiness.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 22</value>
+  </data>
+  <data name="SystemAdministration_SystemReadiness.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 24</value>
+  </data>
+  <data name="SystemAdministration_SystemReadiness.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="SystemAdministration_SystemReadiness.Text" xml:space="preserve">
+    <value>Apply System Readiness</value>
+  </data>
+  <data name="&gt;&gt;SystemAdministration_SystemReadiness.Name" xml:space="preserve">
+    <value>SystemAdministration_SystemReadiness</value>
+  </data>
+  <data name="&gt;&gt;SystemAdministration_SystemReadiness.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SystemAdministration_SystemReadiness.Parent" xml:space="preserve">
+    <value>SystemAdministration</value>
+  </data>
+  <data name="&gt;&gt;SystemAdministration_SystemReadiness.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="ThirdParty_Simeononsecurity.Text" xml:space="preserve">
-    <value>Run simeononsecurity's Windows-Optimize-Harden-Debloat </value>
+  <data name="ThirdParty.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Right</value>
   </data>
   <data name="&gt;&gt;ThirdParty_Simeononsecurity.Name" xml:space="preserve">
     <value>ThirdParty_Simeononsecurity</value>
@@ -1037,30 +1028,6 @@
   </data>
   <data name="&gt;&gt;ThirdParty_Simeononsecurity.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <metadata name="ThirdParty_Cttwin10script.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="ThirdParty_Cttwin10script.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="ThirdParty_Cttwin10script.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>System</value>
-  </data>
-  <data name="ThirdParty_Cttwin10script.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="ThirdParty_Cttwin10script.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 22</value>
-  </data>
-  <data name="ThirdParty_Cttwin10script.Size" type="System.Drawing.Size, System.Drawing">
-    <value>192, 24</value>
-  </data>
-  <data name="ThirdParty_Cttwin10script.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="ThirdParty_Cttwin10script.Text" xml:space="preserve">
-    <value>Run ChrisTitusTech's win10script</value>
   </data>
   <data name="&gt;&gt;ThirdParty_Cttwin10script.Name" xml:space="preserve">
     <value>ThirdParty_Cttwin10script</value>
@@ -1098,10 +1065,73 @@
   <data name="&gt;&gt;ThirdParty.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="ThirdParty_Simeononsecurity.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="ThirdParty_Simeononsecurity.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="ThirdParty_Simeononsecurity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 52</value>
+  </data>
+  <data name="ThirdParty_Simeononsecurity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>345, 24</value>
+  </data>
+  <data name="ThirdParty_Simeononsecurity.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="ThirdParty_Simeononsecurity.Text" xml:space="preserve">
+    <value>Run simeononsecurity's Windows-Optimize-Harden-Debloat </value>
+  </data>
+  <data name="&gt;&gt;ThirdParty_Simeononsecurity.Name" xml:space="preserve">
+    <value>ThirdParty_Simeononsecurity</value>
+  </data>
+  <data name="&gt;&gt;ThirdParty_Simeononsecurity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ThirdParty_Simeononsecurity.Parent" xml:space="preserve">
+    <value>ThirdParty</value>
+  </data>
+  <data name="&gt;&gt;ThirdParty_Simeononsecurity.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ThirdParty_Cttwin10script.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ThirdParty_Cttwin10script.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="ThirdParty_Cttwin10script.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ThirdParty_Cttwin10script.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 22</value>
+  </data>
+  <data name="ThirdParty_Cttwin10script.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 24</value>
+  </data>
+  <data name="ThirdParty_Cttwin10script.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="ThirdParty_Cttwin10script.Text" xml:space="preserve">
+    <value>Run ChrisTitusTech's win10script</value>
+  </data>
+  <data name="&gt;&gt;ThirdParty_Cttwin10script.Name" xml:space="preserve">
+    <value>ThirdParty_Cttwin10script</value>
+  </data>
+  <data name="&gt;&gt;ThirdParty_Cttwin10script.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ThirdParty_Cttwin10script.Parent" xml:space="preserve">
+    <value>ThirdParty</value>
+  </data>
+  <data name="&gt;&gt;ThirdParty_Cttwin10script.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="Updater.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>132, 17</value>
   </metadata>
-  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
@@ -1112,6 +1142,12 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>System Readiness for Workstations</value>
+  </data>
+  <data name="&gt;&gt;Updater.Name" xml:space="preserve">
+    <value>Updater</value>
+  </data>
+  <data name="&gt;&gt;Updater.Type" xml:space="preserve">
+    <value>System.ComponentModel.BackgroundWorker, System.ComponentModel.EventBasedAsync, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Container</value>

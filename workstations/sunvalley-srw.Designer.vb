@@ -24,9 +24,10 @@ Partial Class Container
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Container))
         Me.Programs = New System.Windows.Forms.GroupBox()
+        Me.Programs_CheckForUpdates = New System.Windows.Forms.Button()
         Me.Programs_Install_Spotify = New System.Windows.Forms.Button()
         Me.Programs_Install_Xampp = New System.Windows.Forms.Button()
-        Me.Programs_Install_Bleachbit = New System.Windows.Forms.Button()
+        Me.Programs_Install_BleachBit = New System.Windows.Forms.Button()
         Me.Programs_Install_WindowsTerminal = New System.Windows.Forms.Button()
         Me.Programs_Install_Skype = New System.Windows.Forms.Button()
         Me.Programs_Install_GithubDesktop = New System.Windows.Forms.Button()
@@ -45,6 +46,7 @@ Partial Class Container
         Me.Programs_Install_Steam = New System.Windows.Forms.Button()
         Me.Programs_Install_7zip = New System.Windows.Forms.Button()
         Me.SystemAdministration = New System.Windows.Forms.GroupBox()
+        Me.SystemAdministration_SystemReadinessLite = New System.Windows.Forms.Button()
         Me.SystemAdministration_ReinstallAllUwpApps = New System.Windows.Forms.Button()
         Me.SystemAdministration_RemoveAllNonCriticalUwpApps = New System.Windows.Forms.Button()
         Me.SystemAdministration_RemoveAllUwpApps = New System.Windows.Forms.Button()
@@ -52,7 +54,7 @@ Partial Class Container
         Me.ThirdParty = New System.Windows.Forms.GroupBox()
         Me.ThirdParty_Simeononsecurity = New System.Windows.Forms.Button()
         Me.ThirdParty_Cttwin10script = New System.Windows.Forms.Button()
-        Me.SystemAdministration_SystemReadinessLite = New System.Windows.Forms.Button()
+        Me.Updater = New System.ComponentModel.BackgroundWorker()
         Me.Programs.SuspendLayout()
         Me.SystemAdministration.SuspendLayout()
         Me.ThirdParty.SuspendLayout()
@@ -61,9 +63,10 @@ Partial Class Container
         'Programs
         '
         resources.ApplyResources(Me.Programs, "Programs")
+        Me.Programs.Controls.Add(Me.Programs_CheckForUpdates)
         Me.Programs.Controls.Add(Me.Programs_Install_Spotify)
         Me.Programs.Controls.Add(Me.Programs_Install_Xampp)
-        Me.Programs.Controls.Add(Me.Programs_Install_Bleachbit)
+        Me.Programs.Controls.Add(Me.Programs_Install_BleachBit)
         Me.Programs.Controls.Add(Me.Programs_Install_WindowsTerminal)
         Me.Programs.Controls.Add(Me.Programs_Install_Skype)
         Me.Programs.Controls.Add(Me.Programs_Install_GithubDesktop)
@@ -86,6 +89,12 @@ Partial Class Container
         Me.Programs.TabStop = False
         Me.Programs.Tag = "Programs"
         '
+        'Programs_CheckForUpdates
+        '
+        resources.ApplyResources(Me.Programs_CheckForUpdates, "Programs_CheckForUpdates")
+        Me.Programs_CheckForUpdates.Name = "Programs_CheckForUpdates"
+        Me.Programs_CheckForUpdates.UseVisualStyleBackColor = True
+        '
         'Programs_Install_Spotify
         '
         resources.ApplyResources(Me.Programs_Install_Spotify, "Programs_Install_Spotify")
@@ -99,11 +108,11 @@ Partial Class Container
         Me.Programs_Install_Xampp.Name = "Programs_Install_Xampp"
         Me.Programs_Install_Xampp.UseVisualStyleBackColor = True
         '
-        'Programs_Install_Bleachbit
+        'Programs_Install_BleachBit
         '
-        resources.ApplyResources(Me.Programs_Install_Bleachbit, "Programs_Install_Bleachbit")
-        Me.Programs_Install_Bleachbit.Name = "Programs_Install_Bleachbit"
-        Me.Programs_Install_Bleachbit.UseVisualStyleBackColor = True
+        resources.ApplyResources(Me.Programs_Install_BleachBit, "Programs_Install_BleachBit")
+        Me.Programs_Install_BleachBit.Name = "Programs_Install_BleachBit"
+        Me.Programs_Install_BleachBit.UseVisualStyleBackColor = True
         '
         'Programs_Install_WindowsTerminal
         '
@@ -251,6 +260,14 @@ Partial Class Container
         Me.SystemAdministration.TabStop = False
         Me.SystemAdministration.Tag = "SystemAdministration"
         '
+        'SystemAdministration_SystemReadinessLite
+        '
+        resources.ApplyResources(Me.SystemAdministration_SystemReadinessLite, "SystemAdministration_SystemReadinessLite")
+        Me.SystemAdministration_SystemReadinessLite.BackColor = System.Drawing.SystemColors.Control
+        Me.SystemAdministration_SystemReadinessLite.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.SystemAdministration_SystemReadinessLite.Name = "SystemAdministration_SystemReadinessLite"
+        Me.SystemAdministration_SystemReadinessLite.UseVisualStyleBackColor = True
+        '
         'SystemAdministration_ReinstallAllUwpApps
         '
         resources.ApplyResources(Me.SystemAdministration_ReinstallAllUwpApps, "SystemAdministration_ReinstallAllUwpApps")
@@ -307,13 +324,8 @@ Partial Class Container
         Me.ThirdParty_Cttwin10script.Name = "ThirdParty_Cttwin10script"
         Me.ThirdParty_Cttwin10script.UseVisualStyleBackColor = True
         '
-        'SystemAdministration_SystemReadinessLite
+        'Updater
         '
-        resources.ApplyResources(Me.SystemAdministration_SystemReadinessLite, "SystemAdministration_SystemReadinessLite")
-        Me.SystemAdministration_SystemReadinessLite.BackColor = System.Drawing.SystemColors.Control
-        Me.SystemAdministration_SystemReadinessLite.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.SystemAdministration_SystemReadinessLite.Name = "SystemAdministration_SystemReadinessLite"
-        Me.SystemAdministration_SystemReadinessLite.UseVisualStyleBackColor = True
         '
         'Container
         '
@@ -363,8 +375,10 @@ Partial Class Container
     Private WithEvents ThirdParty_Simeononsecurity As Button
     Private WithEvents Programs_Install_Skype As Button
     Private WithEvents Programs_Install_WindowsTerminal As Button
-    Private WithEvents Programs_Install_Bleachbit As Button
+    Private WithEvents Programs_Install_BleachBit As Button
     Private WithEvents Programs_Install_Xampp As Button
     Private WithEvents Programs_Install_Spotify As Button
     Private WithEvents SystemAdministration_SystemReadinessLite As Button
+    Private WithEvents Programs_CheckForUpdates As Button
+    Private WithEvents Updater As System.ComponentModel.BackgroundWorker
 End Class
