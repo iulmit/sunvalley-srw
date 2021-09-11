@@ -1,4 +1,4 @@
-# sunvalley-srw v2
+# sunvalley-srw v1
 
 ## What is this?
 System Readiness for Workstations is an automated privacy-focused configuration tool which debloats and tweaks Windows 11 Pro N for Workstations to improve it's performance and reduce the user's footprint.
