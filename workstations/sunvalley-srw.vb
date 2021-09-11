@@ -1,5 +1,4 @@
-﻿Imports System.ComponentModel
-Imports System.IO
+﻿Imports System.IO
 Imports System.IO.Compression
 Imports System.Net
 Imports System.Security.Principal
@@ -37,6 +36,7 @@ Module Zipper
 End Module
 
 Public Class Container
+
     Private Sub Container_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If GetCurrentRole.IsUserAdmin() = False Then
             Dim Message = "Some functionalities have been blocked because this program was not executed as Administrator."
@@ -47,37 +47,19 @@ Public Class Container
         End If
     End Sub
 
-    Private Sub Updater_Click(sender As Object, e As EventArgs) Handles Programs_CheckForUpdates.Click
-        Dim Message = "Are you sure you want to check for updates?"
+    Private Sub Programs_CheckForUpdates_Click(sender As Object, e As EventArgs) Handles Programs_CheckForUpdates.Click
+        Dim Message = "Are you sure you want to update winget sources?"
         Dim Caption = "Warning"
         Dim ButtonLayout = MessageBoxButtons.YesNo
         Dim Icon = MessageBoxIcon.Warning
         Dim Result As DialogResult
         Result = MessageBox.Show(Message, Caption, ButtonLayout, Icon)
         If Result = DialogResult.Yes Then
-            Updater.RunWorkerAsync()
+            Process.Start("powershell.exe", "winget source update")
         Else
             MessageBox.Show("Will not check for updates.", "Update cancelled", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
     End Sub
-
-    Private Sub Updater_ProgressChanged(sender As Object, e As ProgressChangedEventArgs) Handles Updater.ProgressChanged
-        Updater.WorkerReportsProgress = e.ProgressPercentage
-    End Sub
-
-    Private Sub Updater_DoWork(sender As Object, e As DoWorkEventArgs) Handles Updater.DoWork
-        If Updater.IsBusy = False Then
-            Updater.RunWorkerAsync(Process.Start("powershell.exe", "winget sources update"))
-        Else
-            Dim Result As DialogResult
-            Result = MessageBox.Show("Cannot check for updates now. Error code: UPDATER_IS_BUSY", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End If
-    End Sub
-
-    Private Sub Updater_RunWorkerDone(sender As Object, e As RunWorkerCompletedEventArgs) Handles Updater.RunWorkerCompleted
-        Updater.Dispose()
-    End Sub
-
     Private Sub Programs_Install_7zip_Click(sender As Object, e As EventArgs) Handles Programs_Install_7zip.Click
         Process.Start("powershell.exe", "winget install 7zip.7zip")
     End Sub

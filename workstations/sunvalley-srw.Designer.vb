@@ -54,7 +54,6 @@ Partial Class Container
         Me.ThirdParty = New System.Windows.Forms.GroupBox()
         Me.ThirdParty_Simeononsecurity = New System.Windows.Forms.Button()
         Me.ThirdParty_Cttwin10script = New System.Windows.Forms.Button()
-        Me.Updater = New System.ComponentModel.BackgroundWorker()
         Me.Programs.SuspendLayout()
         Me.SystemAdministration.SuspendLayout()
         Me.ThirdParty.SuspendLayout()
@@ -324,17 +323,15 @@ Partial Class Container
         Me.ThirdParty_Cttwin10script.Name = "ThirdParty_Cttwin10script"
         Me.ThirdParty_Cttwin10script.UseVisualStyleBackColor = True
         '
-        'Updater
-        '
-        '
         'Container
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit
-        Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
         resources.ApplyResources(Me, "$this")
+        Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Controls.Add(Me.ThirdParty)
         Me.Controls.Add(Me.SystemAdministration)
         Me.Controls.Add(Me.Programs)
+        Me.DoubleBuffered = True
         Me.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
@@ -380,5 +377,4 @@ Partial Class Container
     Private WithEvents Programs_Install_Spotify As Button
     Private WithEvents SystemAdministration_SystemReadinessLite As Button
     Private WithEvents Programs_CheckForUpdates As Button
-    Private WithEvents Updater As System.ComponentModel.BackgroundWorker
 End Class
