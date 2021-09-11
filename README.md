@@ -5,6 +5,6 @@ System Readiness for Workstations is an automated privacy-focused configuration 
 
 ## Getting started
 Get started by opening PowerShell as administrator, then copy and right-click on the PowerShell window, this command:
-> `iex (New-Object Net.WebClient).DownloadString('https://git.io/JcZRV')`
+> `iex (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/mrkenhoo/sunvalley-srw/sunvalley-v1/sunvalley-srw.ps1')`
 
-Or, if you prefer, allow the execution of untrusted scripts on PowerShell by using `Set-ExecutionPolicy unrestricted`. Afterwards, click [here](https://raw.githubusercontent.com/gfelipe099/sunvalley-srw/master/sunvalley-srw.ps1) to download the script and execute it yourself using `.\threshold-srw.ps1`.
+Or, if you prefer, allow the execution of untrusted scripts on PowerShell by using `Set-ExecutionPolicy unrestricted`. Afterwards, click [here](https://raw.githubusercontent.com/mrkenhoo/sunvalley-srw/sunvalley-v1/sunvalley-srw.ps1) to download the script and execute it yourself using `.\threshold-srw.ps1`.
