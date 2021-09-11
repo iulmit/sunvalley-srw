@@ -6,7 +6,7 @@
     <RootNamespace>Container</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>0.0.5.2</Version>
+    <Version>0.0.5.3</Version>
     <Authors>Ken Hoo</Authors>
     <Company />
     <NeutralLanguage>en-US</NeutralLanguage>
@@ -17,13 +17,19 @@
     <RepositoryUrl>https://github.com/mrkenhoo/sunvalley-srw/tree/sunvalley-v2</RepositoryUrl>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>kenhoo.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>mrkenhoo.pfx</AssemblyOriginatorKeyFile>
     <Description>System Readiness for Workstations is an automated privacy-focused configuration tool which debloats and tweaks any compatible Windows version and edition to improve it's performance and reduce the user's footprint as much as possible.</Description>
     <Copyright>GNU General Public License v3.0</Copyright>
-    <PackageReleaseNotes>* Clicking on 'Update winget sources' will now work and with a simplified method without BackgroundWorkers.</PackageReleaseNotes>
+    <PackageReleaseNotes>* Added content:
+    - Transmission
+    - Google Drive
+    - OneDrive
+    - CrystalDiskInfo
+
+* Module links updated to new URLs</PackageReleaseNotes>
     <DelaySign>false</DelaySign>
-    <AssemblyVersion>0.0.5.2</AssemblyVersion>
-    <FileVersion>0.0.5.2</FileVersion>
+    <AssemblyVersion>0.0.5.3</AssemblyVersion>
+    <FileVersion>0.0.5.3</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
