@@ -157,7 +157,7 @@ Public Class Container
     End Sub
 
     Private Sub Programs_Install_GoogleDrive_Click(sender As Object, e As EventArgs) Handles Programs_Install_GoogleDrive.Click
-        Process.Start("powershell.exe", "winget instal Google.Drive")
+        Process.Start("powershell.exe", "winget install Google.Drive")
     End Sub
 
     Private Sub Programs_Install_OneDrive_Click(sender As Object, e As EventArgs) Handles Programs_Install_OneDrive.Click
