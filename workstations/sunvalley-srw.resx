@@ -64,10 +64,44 @@
   <data name="Programs.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
-  <metadata name="Programs_Install_CrystalDiskInfo.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="Programs_UpgradeAll.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Programs_UpgradeAll.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Programs_UpgradeAll.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Programs_UpgradeAll.Location" type="System.Drawing.Point, System.Drawing">
+    <value>342, 54</value>
+  </data>
+  <data name="Programs_UpgradeAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 27</value>
+  </data>
+  <data name="Programs_UpgradeAll.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="Programs_UpgradeAll.Text" xml:space="preserve">
+    <value>Upgrade all packages</value>
+  </data>
+  <data name="&gt;&gt;Programs_UpgradeAll.Name" xml:space="preserve">
+    <value>Programs_UpgradeAll</value>
+  </data>
+  <data name="&gt;&gt;Programs_UpgradeAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Programs_UpgradeAll.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Programs_UpgradeAll.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="Programs_Install_CrystalDiskInfo.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="Programs_Install_CrystalDiskInfo.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -77,7 +111,6 @@
   <data name="Programs_Install_CrystalDiskInfo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Programs_Install_CrystalDiskInfo.Location" type="System.Drawing.Point, System.Drawing">
     <value>186, 53</value>
   </data>
@@ -100,7 +133,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_CrystalDiskInfo.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <metadata name="Programs_Install_OneDrive.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -136,7 +169,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_OneDrive.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <metadata name="Programs_Install_GoogleDrive.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -169,7 +202,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_GoogleDrive.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <metadata name="Programs_Install_Transmission.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -202,7 +235,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Transmission.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <metadata name="Programs_CheckForUpdates.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -238,7 +271,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_CheckForUpdates.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <metadata name="Programs_Install_Spotify.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -271,7 +304,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Spotify.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <metadata name="Programs_Install_Xampp.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -304,7 +337,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Xampp.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <metadata name="Programs_Install_BleachBit.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -337,7 +370,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_BleachBit.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <metadata name="Programs_Install_WindowsTerminal.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -370,7 +403,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_WindowsTerminal.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <metadata name="Programs_Install_Skype.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -403,7 +436,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Skype.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <metadata name="Programs_Install_GithubDesktop.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -439,7 +472,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_GithubDesktop.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <metadata name="Programs_Install_VsCode.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -475,7 +508,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_VsCode.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <metadata name="Programs_Install_VsCodium.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -511,7 +544,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_VsCodium.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <metadata name="Programs_Install_TelegramDesktop.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -547,7 +580,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_TelegramDesktop.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <metadata name="Programs_Install_MicrosoftTeams.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -583,7 +616,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_MicrosoftTeams.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <metadata name="Programs_Install_Brave.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -619,7 +652,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Brave.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <metadata name="Programs_Install_AndroidStudio.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -655,7 +688,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_AndroidStudio.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <metadata name="Programs_Install_KdeConnect.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -691,7 +724,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_KdeConnect.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <metadata name="Programs_Install_Gimp.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -727,7 +760,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Gimp.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>19</value>
   </data>
   <metadata name="Programs_Install_SnappyDriverInstaller.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -763,7 +796,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_SnappyDriverInstaller.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>20</value>
   </data>
   <metadata name="Programs_Install_Discord.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -799,7 +832,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Discord.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>21</value>
   </data>
   <metadata name="Programs_Install_EaDesktop.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -835,7 +868,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_EaDesktop.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>22</value>
   </data>
   <metadata name="Programs_Install_EpicGamesLauncher.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -871,7 +904,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_EpicGamesLauncher.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>23</value>
   </data>
   <metadata name="Programs_Install_Steam.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -904,7 +937,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Steam.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>24</value>
   </data>
   <metadata name="Programs_Install_7zip.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -937,7 +970,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_7zip.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>25</value>
   </data>
   <data name="Programs.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 12</value>

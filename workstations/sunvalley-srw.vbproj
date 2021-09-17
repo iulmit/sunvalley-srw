@@ -6,7 +6,7 @@
     <RootNamespace>Container</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>0.0.5.4</Version>
+    <Version>0.0.5.5</Version>
     <Authors>Ken Hoo</Authors>
     <Company />
     <NeutralLanguage>en-US</NeutralLanguage>
@@ -20,10 +20,13 @@
     <AssemblyOriginatorKeyFile>mrkenhoo.pfx</AssemblyOriginatorKeyFile>
     <Description>System Readiness for Workstations is an automated privacy-focused configuration tool which debloats and tweaks any compatible Windows version and edition to improve it's performance and reduce the user's footprint as much as possible.</Description>
     <Copyright>GNU General Public License v3.0</Copyright>
-    <PackageReleaseNotes>* Fixed a command typo in 'Install Google Drive' button.</PackageReleaseNotes>
+    <PackageReleaseNotes>* Added content:
+    - Upgrade all packages
+
+* Dependencies now are all baked-in, no need to install .NET Core 3.1 anymore.</PackageReleaseNotes>
     <DelaySign>false</DelaySign>
-    <AssemblyVersion>0.0.5.4</AssemblyVersion>
-    <FileVersion>0.0.5.4</FileVersion>
+    <AssemblyVersion>0.0.5.5</AssemblyVersion>
+    <FileVersion>0.0.5.5</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

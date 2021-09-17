@@ -24,6 +24,10 @@ Partial Class Container
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Container))
         Me.Programs = New System.Windows.Forms.GroupBox()
+        Me.Programs_Install_CrystalDiskInfo = New System.Windows.Forms.Button()
+        Me.Programs_Install_OneDrive = New System.Windows.Forms.Button()
+        Me.Programs_Install_GoogleDrive = New System.Windows.Forms.Button()
+        Me.Programs_Install_Transmission = New System.Windows.Forms.Button()
         Me.Programs_CheckForUpdates = New System.Windows.Forms.Button()
         Me.Programs_Install_Spotify = New System.Windows.Forms.Button()
         Me.Programs_Install_Xampp = New System.Windows.Forms.Button()
@@ -54,10 +58,7 @@ Partial Class Container
         Me.ThirdParty = New System.Windows.Forms.GroupBox()
         Me.ThirdParty_Simeononsecurity = New System.Windows.Forms.Button()
         Me.ThirdParty_Cttwin10script = New System.Windows.Forms.Button()
-        Me.Programs_Install_Transmission = New System.Windows.Forms.Button()
-        Me.Programs_Install_GoogleDrive = New System.Windows.Forms.Button()
-        Me.Programs_Install_OneDrive = New System.Windows.Forms.Button()
-        Me.Programs_Install_CrystalDiskInfo = New System.Windows.Forms.Button()
+        Me.Programs_UpgradeAll = New System.Windows.Forms.Button()
         Me.Programs.SuspendLayout()
         Me.SystemAdministration.SuspendLayout()
         Me.ThirdParty.SuspendLayout()
@@ -66,6 +67,7 @@ Partial Class Container
         'Programs
         '
         resources.ApplyResources(Me.Programs, "Programs")
+        Me.Programs.Controls.Add(Me.Programs_UpgradeAll)
         Me.Programs.Controls.Add(Me.Programs_Install_CrystalDiskInfo)
         Me.Programs.Controls.Add(Me.Programs_Install_OneDrive)
         Me.Programs.Controls.Add(Me.Programs_Install_GoogleDrive)
@@ -95,6 +97,30 @@ Partial Class Container
         Me.Programs.Name = "Programs"
         Me.Programs.TabStop = False
         Me.Programs.Tag = "Programs"
+        '
+        'Programs_Install_CrystalDiskInfo
+        '
+        resources.ApplyResources(Me.Programs_Install_CrystalDiskInfo, "Programs_Install_CrystalDiskInfo")
+        Me.Programs_Install_CrystalDiskInfo.Name = "Programs_Install_CrystalDiskInfo"
+        Me.Programs_Install_CrystalDiskInfo.UseVisualStyleBackColor = True
+        '
+        'Programs_Install_OneDrive
+        '
+        resources.ApplyResources(Me.Programs_Install_OneDrive, "Programs_Install_OneDrive")
+        Me.Programs_Install_OneDrive.Name = "Programs_Install_OneDrive"
+        Me.Programs_Install_OneDrive.UseVisualStyleBackColor = True
+        '
+        'Programs_Install_GoogleDrive
+        '
+        resources.ApplyResources(Me.Programs_Install_GoogleDrive, "Programs_Install_GoogleDrive")
+        Me.Programs_Install_GoogleDrive.Name = "Programs_Install_GoogleDrive"
+        Me.Programs_Install_GoogleDrive.UseVisualStyleBackColor = True
+        '
+        'Programs_Install_Transmission
+        '
+        resources.ApplyResources(Me.Programs_Install_Transmission, "Programs_Install_Transmission")
+        Me.Programs_Install_Transmission.Name = "Programs_Install_Transmission"
+        Me.Programs_Install_Transmission.UseVisualStyleBackColor = True
         '
         'Programs_CheckForUpdates
         '
@@ -331,29 +357,11 @@ Partial Class Container
         Me.ThirdParty_Cttwin10script.Name = "ThirdParty_Cttwin10script"
         Me.ThirdParty_Cttwin10script.UseVisualStyleBackColor = True
         '
-        'Programs_Install_Transmission
+        'Programs_UpgradeAll
         '
-        resources.ApplyResources(Me.Programs_Install_Transmission, "Programs_Install_Transmission")
-        Me.Programs_Install_Transmission.Name = "Programs_Install_Transmission"
-        Me.Programs_Install_Transmission.UseVisualStyleBackColor = True
-        '
-        'Programs_Install_GoogleDrive
-        '
-        resources.ApplyResources(Me.Programs_Install_GoogleDrive, "Programs_Install_GoogleDrive")
-        Me.Programs_Install_GoogleDrive.Name = "Programs_Install_GoogleDrive"
-        Me.Programs_Install_GoogleDrive.UseVisualStyleBackColor = True
-        '
-        'Programs_Install_OneDrive
-        '
-        resources.ApplyResources(Me.Programs_Install_OneDrive, "Programs_Install_OneDrive")
-        Me.Programs_Install_OneDrive.Name = "Programs_Install_OneDrive"
-        Me.Programs_Install_OneDrive.UseVisualStyleBackColor = True
-        '
-        'Programs_Install_CrystalDiskInfo
-        '
-        resources.ApplyResources(Me.Programs_Install_CrystalDiskInfo, "Programs_Install_CrystalDiskInfo")
-        Me.Programs_Install_CrystalDiskInfo.Name = "Programs_Install_CrystalDiskInfo"
-        Me.Programs_Install_CrystalDiskInfo.UseVisualStyleBackColor = True
+        resources.ApplyResources(Me.Programs_UpgradeAll, "Programs_UpgradeAll")
+        Me.Programs_UpgradeAll.Name = "Programs_UpgradeAll"
+        Me.Programs_UpgradeAll.UseVisualStyleBackColor = True
         '
         'Container
         '
@@ -413,4 +421,5 @@ Partial Class Container
     Private WithEvents Programs_Install_GoogleDrive As Button
     Private WithEvents Programs_Install_CrystalDiskInfo As Button
     Private WithEvents Programs_Install_OneDrive As Button
+    Private WithEvents Programs_UpgradeAll As Button
 End Class

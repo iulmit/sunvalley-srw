@@ -60,6 +60,21 @@ Public Class Container
             MessageBox.Show("Will not check for updates.", "Update cancelled", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
     End Sub
+
+    Private Sub Programs_UpgradeAll_Click(sender As Object, e As EventArgs) Handles Programs_UpgradeAll.Click
+        Dim Message = "Are you sure you want to upgrade all winget packages?"
+        Dim Caption = "Warning"
+        Dim ButtonLayout = MessageBoxButtons.YesNo
+        Dim Icon = MessageBoxIcon.Warning
+        Dim Result As DialogResult
+        Result = MessageBox.Show(Message, Caption, ButtonLayout, Icon)
+        If Result = DialogResult.Yes Then
+            Process.Start("powershell.exe", "winget upgrade --all")
+        Else
+            MessageBox.Show("Will not upgrade any packages.", "Upgrade cancelled", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End If
+    End Sub
+
     Private Sub Programs_Install_7zip_Click(sender As Object, e As EventArgs) Handles Programs_Install_7zip.Click
         Process.Start("powershell.exe", "winget install 7zip.7zip")
     End Sub
