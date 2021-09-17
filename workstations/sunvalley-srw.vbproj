@@ -22,6 +22,7 @@
     <Copyright>GNU General Public License v3.0</Copyright>
     <PackageReleaseNotes>* Added content:
     - Upgrade all packages
+    - Inno Setup
 
 * Dependencies now are all baked-in, no need to install .NET Core 3.1 anymore.</PackageReleaseNotes>
     <DelaySign>false</DelaySign>

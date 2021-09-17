@@ -1,10 +1,13 @@
 #define MyAppName "System Readiness for Workstations"
-#define MyAppVersion "0.0.5.4"
+#define MyAppVersion "0.0.5.5"
+#define MyAppVersionAlt "0_0_5_5"
 #define MyAppURL "https://github.com/mrkenhoo/sunvalley-srw"
 #define MyAppExeName "sunvalley-srw.exe"
 #define MyUsername "mrkenhoo"
 
 [Setup]
+SignTool=default $f
+SignedUninstaller=yes
 AppId={{28B11907-066D-4911-BA15-E70234360C28}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
@@ -32,8 +35,8 @@ Name: "spanish"; MessagesFile: "compiler:Languages\Spanish.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "C:\Users\{#MyUsername}\Documents\GitHub\sunvalley-srw\workstations\bin\Release\netcoreapp3.1\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\{#MyUsername}\Documents\GitHub\sunvalley-srw\workstations\bin\Release\netcoreapp3.1\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Users\{#MyUsername}\Documents\GitHub\sunvalley-srw\workstations\bin\publish\Application Files\sunvalley-srw_{#MyAppVersionAlt}\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\{#MyUsername}\Documents\GitHub\sunvalley-srw\workstations\bin\publish\Application Files\sunvalley-srw_{#MyAppVersionAlt}\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 [Icons]
 Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
