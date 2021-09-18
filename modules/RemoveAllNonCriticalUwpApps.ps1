@@ -1,6 +1,6 @@
   
 #
-# Created by Liam Powell (gfelipe099)
+# Created by Ken Hoo (mrkenhoo)
 # RemoveAllNonCriticalUwpApps module for sunvalley-srw
 #
 
