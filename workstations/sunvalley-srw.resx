@@ -64,19 +64,88 @@
   <data name="Programs.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
-  <metadata name="Programs_Install_InnoSetup.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="Programs_Install_Winget.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Programs_Install_Winget.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Programs_Install_Winget.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="Programs_Install_Winget.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Programs_Install_Winget.Location" type="System.Drawing.Point, System.Drawing">
+    <value>342, 83</value>
+  </data>
+  <data name="Programs_Install_Winget.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 24</value>
+  </data>
+  <data name="Programs_Install_Winget.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="Programs_Install_Winget.Text" xml:space="preserve">
+    <value>Install winget</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_Winget.Name" xml:space="preserve">
+    <value>Programs_Install_Winget</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_Winget.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_Winget.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_Winget.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="Programs_Install_Bitwarden.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Programs_Install_Bitwarden.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Programs_Install_Bitwarden.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="Programs_Install_Bitwarden.Location" type="System.Drawing.Point, System.Drawing">
+    <value>186, 113</value>
+  </data>
+  <data name="Programs_Install_Bitwarden.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 24</value>
+  </data>
+  <data name="Programs_Install_Bitwarden.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="Programs_Install_Bitwarden.Text" xml:space="preserve">
+    <value>Install Bitwarden</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_Bitwarden.Name" xml:space="preserve">
+    <value>Programs_Install_Bitwarden</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_Bitwarden.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_Bitwarden.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Programs_Install_Bitwarden.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="Programs_Install_InnoSetup.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="Programs_Install_InnoSetup.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="Programs_Install_InnoSetup.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Programs_Install_InnoSetup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>186, 84</value>
+    <value>186, 83</value>
   </data>
   <data name="Programs_Install_InnoSetup.Size" type="System.Drawing.Size, System.Drawing">
     <value>112, 25</value>
@@ -97,7 +166,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_InnoSetup.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <metadata name="Programs_UpgradeAll.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -109,7 +178,7 @@
     <value>System</value>
   </data>
   <data name="Programs_UpgradeAll.Location" type="System.Drawing.Point, System.Drawing">
-    <value>342, 54</value>
+    <value>342, 53</value>
   </data>
   <data name="Programs_UpgradeAll.Size" type="System.Drawing.Size, System.Drawing">
     <value>133, 27</value>
@@ -130,7 +199,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_UpgradeAll.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <metadata name="Programs_Install_CrystalDiskInfo.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -166,7 +235,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_CrystalDiskInfo.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <metadata name="Programs_Install_OneDrive.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -202,7 +271,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_OneDrive.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <metadata name="Programs_Install_GoogleDrive.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -235,7 +304,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_GoogleDrive.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <metadata name="Programs_Install_Transmission.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -268,7 +337,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Transmission.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <metadata name="Programs_CheckForUpdates.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -283,7 +352,7 @@
     <value>NoControl</value>
   </data>
   <data name="Programs_CheckForUpdates.Location" type="System.Drawing.Point, System.Drawing">
-    <value>342, 21</value>
+    <value>342, 22</value>
   </data>
   <data name="Programs_CheckForUpdates.Size" type="System.Drawing.Size, System.Drawing">
     <value>141, 27</value>
@@ -304,7 +373,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_CheckForUpdates.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <metadata name="Programs_Install_Spotify.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -337,7 +406,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Spotify.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <metadata name="Programs_Install_Xampp.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -370,7 +439,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Xampp.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <metadata name="Programs_Install_BleachBit.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -403,7 +472,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_BleachBit.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <metadata name="Programs_Install_WindowsTerminal.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -436,7 +505,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_WindowsTerminal.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
   <metadata name="Programs_Install_Skype.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -469,7 +538,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Skype.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
   <metadata name="Programs_Install_GithubDesktop.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -505,7 +574,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_GithubDesktop.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <metadata name="Programs_Install_VsCode.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -541,7 +610,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_VsCode.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>15</value>
   </data>
   <metadata name="Programs_Install_VsCodium.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -577,7 +646,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_VsCodium.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>16</value>
   </data>
   <metadata name="Programs_Install_TelegramDesktop.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -613,7 +682,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_TelegramDesktop.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>17</value>
   </data>
   <metadata name="Programs_Install_MicrosoftTeams.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -649,7 +718,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_MicrosoftTeams.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>18</value>
   </data>
   <metadata name="Programs_Install_Brave.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -685,7 +754,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Brave.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>19</value>
   </data>
   <metadata name="Programs_Install_AndroidStudio.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -721,7 +790,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_AndroidStudio.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>20</value>
   </data>
   <metadata name="Programs_Install_KdeConnect.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -757,7 +826,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_KdeConnect.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>21</value>
   </data>
   <metadata name="Programs_Install_Gimp.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -793,7 +862,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Gimp.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>22</value>
   </data>
   <metadata name="Programs_Install_SnappyDriverInstaller.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -829,7 +898,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_SnappyDriverInstaller.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>23</value>
   </data>
   <metadata name="Programs_Install_Discord.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -865,7 +934,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Discord.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>24</value>
   </data>
   <metadata name="Programs_Install_EaDesktop.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -901,7 +970,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_EaDesktop.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>25</value>
   </data>
   <metadata name="Programs_Install_EpicGamesLauncher.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -937,7 +1006,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_EpicGamesLauncher.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>26</value>
   </data>
   <metadata name="Programs_Install_Steam.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -970,7 +1039,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_Steam.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>27</value>
   </data>
   <metadata name="Programs_Install_7zip.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1003,7 +1072,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Programs_Install_7zip.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>28</value>
   </data>
   <data name="Programs.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 12</value>
@@ -1035,6 +1104,72 @@
   <data name="SystemAdministration.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Right</value>
   </data>
+  <metadata name="SystemAdministration_RemoveAllWindowsCapabilities.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="SystemAdministration_RemoveAllWindowsCapabilities.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SystemAdministration_RemoveAllWindowsCapabilities.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="SystemAdministration_RemoveAllWindowsCapabilities.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 203</value>
+  </data>
+  <data name="SystemAdministration_RemoveAllWindowsCapabilities.Size" type="System.Drawing.Size, System.Drawing">
+    <value>193, 25</value>
+  </data>
+  <data name="SystemAdministration_RemoveAllWindowsCapabilities.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="SystemAdministration_RemoveAllWindowsCapabilities.Text" xml:space="preserve">
+    <value>Remove all Windows capabilities</value>
+  </data>
+  <data name="&gt;&gt;SystemAdministration_RemoveAllWindowsCapabilities.Name" xml:space="preserve">
+    <value>SystemAdministration_RemoveAllWindowsCapabilities</value>
+  </data>
+  <data name="&gt;&gt;SystemAdministration_RemoveAllWindowsCapabilities.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SystemAdministration_RemoveAllWindowsCapabilities.Parent" xml:space="preserve">
+    <value>SystemAdministration</value>
+  </data>
+  <data name="&gt;&gt;SystemAdministration_RemoveAllWindowsCapabilities.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="SystemAdministration_DisableAllWindowsOptionalFeatures.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="SystemAdministration_DisableAllWindowsOptionalFeatures.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SystemAdministration_DisableAllWindowsOptionalFeatures.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="SystemAdministration_DisableAllWindowsOptionalFeatures.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 173</value>
+  </data>
+  <data name="SystemAdministration_DisableAllWindowsOptionalFeatures.Size" type="System.Drawing.Size, System.Drawing">
+    <value>218, 25</value>
+  </data>
+  <data name="SystemAdministration_DisableAllWindowsOptionalFeatures.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="SystemAdministration_DisableAllWindowsOptionalFeatures.Text" xml:space="preserve">
+    <value>Disable all Windows optional features</value>
+  </data>
+  <data name="&gt;&gt;SystemAdministration_DisableAllWindowsOptionalFeatures.Name" xml:space="preserve">
+    <value>SystemAdministration_DisableAllWindowsOptionalFeatures</value>
+  </data>
+  <data name="&gt;&gt;SystemAdministration_DisableAllWindowsOptionalFeatures.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SystemAdministration_DisableAllWindowsOptionalFeatures.Parent" xml:space="preserve">
+    <value>SystemAdministration</value>
+  </data>
+  <data name="&gt;&gt;SystemAdministration_DisableAllWindowsOptionalFeatures.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <metadata name="SystemAdministration_SystemReadinessLite.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -1048,7 +1183,7 @@
     <value>NoControl</value>
   </data>
   <data name="SystemAdministration_SystemReadinessLite.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 52</value>
+    <value>12, 53</value>
   </data>
   <data name="SystemAdministration_SystemReadinessLite.Size" type="System.Drawing.Size, System.Drawing">
     <value>178, 24</value>
@@ -1069,7 +1204,7 @@
     <value>SystemAdministration</value>
   </data>
   <data name="&gt;&gt;SystemAdministration_SystemReadinessLite.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <metadata name="SystemAdministration_ReinstallAllUwpApps.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1105,7 +1240,7 @@
     <value>SystemAdministration</value>
   </data>
   <data name="&gt;&gt;SystemAdministration_ReinstallAllUwpApps.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <metadata name="SystemAdministration_RemoveAllNonCriticalUwpApps.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1141,7 +1276,7 @@
     <value>SystemAdministration</value>
   </data>
   <data name="&gt;&gt;SystemAdministration_RemoveAllNonCriticalUwpApps.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <metadata name="SystemAdministration_RemoveAllUwpApps.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1156,7 +1291,7 @@
     <value>NoControl</value>
   </data>
   <data name="SystemAdministration_RemoveAllUwpApps.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 82</value>
+    <value>12, 83</value>
   </data>
   <data name="SystemAdministration_RemoveAllUwpApps.Size" type="System.Drawing.Size, System.Drawing">
     <value>136, 24</value>
@@ -1177,7 +1312,7 @@
     <value>SystemAdministration</value>
   </data>
   <data name="&gt;&gt;SystemAdministration_RemoveAllUwpApps.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <metadata name="SystemAdministration_SystemReadiness.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1213,7 +1348,7 @@
     <value>SystemAdministration</value>
   </data>
   <data name="&gt;&gt;SystemAdministration_SystemReadiness.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="SystemAdministration.Location" type="System.Drawing.Point, System.Drawing">
     <value>518, 12</value>

@@ -24,6 +24,9 @@ Partial Class Container
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Container))
         Me.Programs = New System.Windows.Forms.GroupBox()
+        Me.Programs_Install_Winget = New System.Windows.Forms.Button()
+        Me.Programs_Install_Bitwarden = New System.Windows.Forms.Button()
+        Me.Programs_Install_InnoSetup = New System.Windows.Forms.Button()
         Me.Programs_UpgradeAll = New System.Windows.Forms.Button()
         Me.Programs_Install_CrystalDiskInfo = New System.Windows.Forms.Button()
         Me.Programs_Install_OneDrive = New System.Windows.Forms.Button()
@@ -51,6 +54,8 @@ Partial Class Container
         Me.Programs_Install_Steam = New System.Windows.Forms.Button()
         Me.Programs_Install_7zip = New System.Windows.Forms.Button()
         Me.SystemAdministration = New System.Windows.Forms.GroupBox()
+        Me.SystemAdministration_RemoveAllWindowsCapabilities = New System.Windows.Forms.Button()
+        Me.SystemAdministration_DisableAllWindowsOptionalFeatures = New System.Windows.Forms.Button()
         Me.SystemAdministration_SystemReadinessLite = New System.Windows.Forms.Button()
         Me.SystemAdministration_ReinstallAllUwpApps = New System.Windows.Forms.Button()
         Me.SystemAdministration_RemoveAllNonCriticalUwpApps = New System.Windows.Forms.Button()
@@ -59,7 +64,6 @@ Partial Class Container
         Me.ThirdParty = New System.Windows.Forms.GroupBox()
         Me.ThirdParty_Simeononsecurity = New System.Windows.Forms.Button()
         Me.ThirdParty_Cttwin10script = New System.Windows.Forms.Button()
-        Me.Programs_Install_InnoSetup = New System.Windows.Forms.Button()
         Me.Programs.SuspendLayout()
         Me.SystemAdministration.SuspendLayout()
         Me.ThirdParty.SuspendLayout()
@@ -68,6 +72,8 @@ Partial Class Container
         'Programs
         '
         resources.ApplyResources(Me.Programs, "Programs")
+        Me.Programs.Controls.Add(Me.Programs_Install_Winget)
+        Me.Programs.Controls.Add(Me.Programs_Install_Bitwarden)
         Me.Programs.Controls.Add(Me.Programs_Install_InnoSetup)
         Me.Programs.Controls.Add(Me.Programs_UpgradeAll)
         Me.Programs.Controls.Add(Me.Programs_Install_CrystalDiskInfo)
@@ -99,6 +105,24 @@ Partial Class Container
         Me.Programs.Name = "Programs"
         Me.Programs.TabStop = False
         Me.Programs.Tag = "Programs"
+        '
+        'Programs_Install_Winget
+        '
+        resources.ApplyResources(Me.Programs_Install_Winget, "Programs_Install_Winget")
+        Me.Programs_Install_Winget.Name = "Programs_Install_Winget"
+        Me.Programs_Install_Winget.UseVisualStyleBackColor = True
+        '
+        'Programs_Install_Bitwarden
+        '
+        resources.ApplyResources(Me.Programs_Install_Bitwarden, "Programs_Install_Bitwarden")
+        Me.Programs_Install_Bitwarden.Name = "Programs_Install_Bitwarden"
+        Me.Programs_Install_Bitwarden.UseVisualStyleBackColor = True
+        '
+        'Programs_Install_InnoSetup
+        '
+        resources.ApplyResources(Me.Programs_Install_InnoSetup, "Programs_Install_InnoSetup")
+        Me.Programs_Install_InnoSetup.Name = "Programs_Install_InnoSetup"
+        Me.Programs_Install_InnoSetup.UseVisualStyleBackColor = True
         '
         'Programs_UpgradeAll
         '
@@ -291,6 +315,8 @@ Partial Class Container
         '
         resources.ApplyResources(Me.SystemAdministration, "SystemAdministration")
         Me.SystemAdministration.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.SystemAdministration.Controls.Add(Me.SystemAdministration_RemoveAllWindowsCapabilities)
+        Me.SystemAdministration.Controls.Add(Me.SystemAdministration_DisableAllWindowsOptionalFeatures)
         Me.SystemAdministration.Controls.Add(Me.SystemAdministration_SystemReadinessLite)
         Me.SystemAdministration.Controls.Add(Me.SystemAdministration_ReinstallAllUwpApps)
         Me.SystemAdministration.Controls.Add(Me.SystemAdministration_RemoveAllNonCriticalUwpApps)
@@ -300,6 +326,18 @@ Partial Class Container
         Me.SystemAdministration.Name = "SystemAdministration"
         Me.SystemAdministration.TabStop = False
         Me.SystemAdministration.Tag = "SystemAdministration"
+        '
+        'SystemAdministration_RemoveAllWindowsCapabilities
+        '
+        resources.ApplyResources(Me.SystemAdministration_RemoveAllWindowsCapabilities, "SystemAdministration_RemoveAllWindowsCapabilities")
+        Me.SystemAdministration_RemoveAllWindowsCapabilities.Name = "SystemAdministration_RemoveAllWindowsCapabilities"
+        Me.SystemAdministration_RemoveAllWindowsCapabilities.UseVisualStyleBackColor = True
+        '
+        'SystemAdministration_DisableAllWindowsOptionalFeatures
+        '
+        resources.ApplyResources(Me.SystemAdministration_DisableAllWindowsOptionalFeatures, "SystemAdministration_DisableAllWindowsOptionalFeatures")
+        Me.SystemAdministration_DisableAllWindowsOptionalFeatures.Name = "SystemAdministration_DisableAllWindowsOptionalFeatures"
+        Me.SystemAdministration_DisableAllWindowsOptionalFeatures.UseVisualStyleBackColor = True
         '
         'SystemAdministration_SystemReadinessLite
         '
@@ -365,12 +403,6 @@ Partial Class Container
         Me.ThirdParty_Cttwin10script.Name = "ThirdParty_Cttwin10script"
         Me.ThirdParty_Cttwin10script.UseVisualStyleBackColor = True
         '
-        'Programs_Install_InnoSetup
-        '
-        resources.ApplyResources(Me.Programs_Install_InnoSetup, "Programs_Install_InnoSetup")
-        Me.Programs_Install_InnoSetup.Name = "Programs_Install_InnoSetup"
-        Me.Programs_Install_InnoSetup.UseVisualStyleBackColor = True
-        '
         'Container
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit
@@ -431,4 +463,8 @@ Partial Class Container
     Private WithEvents Programs_Install_OneDrive As Button
     Private WithEvents Programs_UpgradeAll As Button
     Private WithEvents Programs_Install_InnoSetup As Button
+    Private WithEvents SystemAdministration_DisableAllWindowsOptionalFeatures As Button
+    Private WithEvents Programs_Install_Bitwarden As Button
+    Private WithEvents SystemAdministration_RemoveAllWindowsCapabilities As Button
+    Private WithEvents Programs_Install_Winget As Button
 End Class

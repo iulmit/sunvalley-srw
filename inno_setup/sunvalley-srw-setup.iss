@@ -1,6 +1,6 @@
 #define MyAppName "System Readiness for Workstations"
-#define MyAppVersion "0.0.5.5"
-#define MyAppVersionAlt "0_0_5_5"
+#define MyAppVersion "0.0.6.0"
+#define MyAppVersionAlt "0_0_6_0"
 #define MyAppURL "https://github.com/mrkenhoo/sunvalley-srw"
 #define MyAppExeName "sunvalley-srw.exe"
 #define MyUsername "mrkenhoo"

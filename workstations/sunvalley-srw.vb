@@ -12,9 +12,9 @@ Module GetCurrentRole
 End Module
 
 Module Zipper
-    Public Function Extract(FileName, OutputPath)
-        Dim InstallDir = Path.Combine(Environment.GetEnvironmentVariable("ProgramFiles") + OutputPath)
-        If System.IO.Directory.Exists(OutputPath) Then
+    Public Function Extract(FileName As String, OutputPath As String) As String
+        Dim InstallDir As String = Path.Combine(CStr(Environment.SpecialFolder.CommonProgramFilesX86 + CType(OutputPath, Environment.SpecialFolder)))
+        If System.IO.Directory.Exists(InstallDir) Then
             Dim Message = "The directory " + OutputPath + " already exists. Do you want to reinstall it?"
             Dim Caption = "Warning"
             Dim ButtonLayout = MessageBoxButtons.YesNo
@@ -22,16 +22,29 @@ Module Zipper
             Dim Result As DialogResult
             Result = MessageBox.Show(Message, Caption, ButtonLayout, Icon)
             If Result = DialogResult.Yes Then
-                System.IO.Directory.Delete(InstallDir)
+                System.IO.Directory.Delete(OutputPath)
                 If System.IO.File.Exists(FileName) Then
-                    ZipFile.ExtractToDirectory(FileName, OutputPath)
-                    If System.IO.Directory.Exists(InstallDir) Then
+                    ZipFile.ExtractToDirectory(FileName, InstallDir)
+                    If System.IO.Directory.Exists(OutputPath) Then
                         MessageBox.Show("Installation successful", FileName, MessageBoxButtons.OK, MessageBoxIcon.Information)
                     End If
                 End If
             End If
         End If
-        Return 0
+        Return CStr(True)
+    End Function
+End Module
+
+Module DependenciesChecker
+    Public Function IsWingetInstalled() As Boolean
+        Dim LocalWindowsAppsDir As String = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\Microsoft\WindowsApps\"
+        Dim ExecutableExists As Boolean
+        If System.IO.File.Exists(LocalWindowsAppsDir + "winget.exe") Then
+            ExecutableExists = True
+        Else
+            ExecutableExists = False
+        End If
+        Return ExecutableExists
     End Function
 End Module
 
@@ -39,7 +52,7 @@ Public Class Container
 
     Private Sub Container_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If GetCurrentRole.IsUserAdmin() = False Then
-            Dim Message = "Some functionalities have been blocked because this program was not executed as Administrator."
+            Dim Message = "Some functionalities have been blocked because this program was not executed As Administrator."
             Dim Caption = "Low privileges"
             Dim ButtonLayout = MessageBoxButtons.OK
             Dim Icon = MessageBoxIcon.Warning
@@ -48,57 +61,91 @@ Public Class Container
     End Sub
 
     Private Sub Programs_CheckForUpdates_Click(sender As Object, e As EventArgs) Handles Programs_CheckForUpdates.Click
-        Dim Message = "Are you sure you want to update winget sources?"
-        Dim Caption = "Warning"
-        Dim ButtonLayout = MessageBoxButtons.YesNo
-        Dim Icon = MessageBoxIcon.Warning
-        Dim Result As DialogResult
-        Result = MessageBox.Show(Message, Caption, ButtonLayout, Icon)
-        If Result = DialogResult.Yes Then
-            Process.Start("powershell.exe", "winget source update")
+        If DependenciesChecker.IsWingetInstalled() = False Then
+            MessageBox.Show("Windows Package Manager (winget) was not found on this system. Please install it and try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Else
-            MessageBox.Show("Will not check for updates.", "Update cancelled", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Dim Message = "Are you sure you want to update winget sources?"
+            Dim Caption = "Warning"
+            Dim ButtonLayout = MessageBoxButtons.YesNo
+            Dim Icon = MessageBoxIcon.Warning
+            Dim Result As DialogResult
+            Result = MessageBox.Show(Message, Caption, ButtonLayout, Icon)
+            If Result = DialogResult.Yes Then
+                Process.Start("powershell.exe", "winget source update")
+            Else
+                MessageBox.Show("Will Not check For updates.", "Update cancelled", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            End If
         End If
     End Sub
 
     Private Sub Programs_UpgradeAll_Click(sender As Object, e As EventArgs) Handles Programs_UpgradeAll.Click
-        Dim Message = "Are you sure you want to upgrade all winget packages?"
-        Dim Caption = "Warning"
-        Dim ButtonLayout = MessageBoxButtons.YesNo
-        Dim Icon = MessageBoxIcon.Warning
-        Dim Result As DialogResult
-        Result = MessageBox.Show(Message, Caption, ButtonLayout, Icon)
-        If Result = DialogResult.Yes Then
-            Process.Start("powershell.exe", "winget upgrade --all")
+        If DependenciesChecker.IsWingetInstalled() = False Then
+            MessageBox.Show("Windows Package Manager (winget) was not found on this system. Please install it and try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Else
-            MessageBox.Show("Will not upgrade any packages.", "Upgrade cancelled", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Dim Message = "Are you sure you want to upgrade all winget packages?"
+            Dim Caption = "Warning"
+            Dim ButtonLayout = MessageBoxButtons.YesNo
+            Dim Icon = MessageBoxIcon.Warning
+            Dim Result As DialogResult
+            Result = MessageBox.Show(Message, Caption, ButtonLayout, Icon)
+            If Result = DialogResult.Yes Then
+                Process.Start("powershell.exe", "winget upgrade --all")
+            Else
+                MessageBox.Show("Will not upgrade any packages.", "Upgrade cancelled", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            End If
+        End If
+    End Sub
+
+    Private Sub Programs_Install_Winget_Click(sender As Object, e As EventArgs) Handles Programs_Install_Winget.Click
+        If DependenciesChecker.IsWingetInstalled() = True Then
+            MessageBox.Show("Windows Package Manager (winget) is already installed on this system. Please install it and try again.", "Already installed", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        Else
+            Process.Start("powershell.exe", "Start-Process ms-appinstaller:?source=https://aka.ms/getwinget")
         End If
     End Sub
 
     Private Sub Programs_Install_7zip_Click(sender As Object, e As EventArgs) Handles Programs_Install_7zip.Click
-        Process.Start("powershell.exe", "winget install 7zip.7zip")
+        If DependenciesChecker.IsWingetInstalled() = False Then
+            MessageBox.Show("Windows Package Manager (winget) was not found on this system. Please install it and try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            Process.Start("powershell.exe", "winget install 7zip.7zip")
+        End If
     End Sub
 
     Private Sub Programs_Install_Steam_Click(sender As Object, e As EventArgs) Handles Programs_Install_Steam.Click
-        Process.Start("powershell.exe", "winget install Valve.Steam")
+        If DependenciesChecker.IsWingetInstalled() = False Then
+            Process.Start("powershell.exe", "winget install Valve.Steam")
+        End If
     End Sub
 
     Private Sub Programs_Install_Egl_Click(sender As Object, e As EventArgs) Handles Programs_Install_EpicGamesLauncher.Click
-        Process.Start("powershell.exe", "winget install EpicGames.EpicGamesLauncher")
+        If DependenciesChecker.IsWingetInstalled() = False Then
+            MessageBox.Show("Windows Package Manager (winget) was not found on this system. Please install it and try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            Process.Start("powershell.exe", "winget install EpicGames.EpicGamesLauncher")
+        End If
     End Sub
 
-    Private Sub Programs_Install_EADesktop_Click(sender As Object, e As EventArgs) Handles Programs_Install_EaDesktop.Click
-        Process.Start("powershell.exe", "winget install ElectronicArts.EADesktop")
+    Private Sub Programs_Install_EaDesktop_Click(sender As Object, e As EventArgs) Handles Programs_Install_EaDesktop.Click
+        If DependenciesChecker.IsWingetInstalled() = False Then
+            MessageBox.Show("Windows Package Manager (winget) was not found on this system. Please install it and try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            Process.Start("powershell.exe", "winget install ElectronicArts.EADesktop")
+        End If
     End Sub
 
     Private Sub Programs_Install_Discord_Click(sender As Object, e As EventArgs) Handles Programs_Install_Discord.Click
-        Process.Start("powershell.exe", "winget install Discord.Discord")
+        If DependenciesChecker.IsWingetInstalled() = False Then
+            MessageBox.Show("Windows Package Manager (winget) was not found on this system. Please install it and try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            Process.Start("powershell.exe", "winget install Discord.Discord")
+        End If
     End Sub
 
-    Private Sub Programs_Install_Sdi_Click(sender As Object, e As EventArgs) Handles Programs_Install_SnappyDriverInstaller.Click
+    Private Sub Programs_Install_SnappyDriverInstaller_Click(sender As Object, e As EventArgs) Handles Programs_Install_SnappyDriverInstaller.Click
         If GetCurrentRole.IsUserAdmin() = True Then
             Using webClient As New WebClient()
-                webClient.Headers.Add(HttpRequestHeader.Cookie)
+                webClient.Headers.Add(CStr(HttpRequestHeader.Cookie))
                 webClient.DownloadFile("http://sdi-tool.org/releases/SDI_R2102.zip", "SDI_R2102.zip")
             End Using
             Zipper.Extract("SDI_R2102.zip", "Snappy Driver Installer")
@@ -108,55 +155,107 @@ Public Class Container
     End Sub
 
     Private Sub Programs_Install_Gimp_Click(sender As Object, e As EventArgs) Handles Programs_Install_Gimp.Click
-        Process.Start("powershell.exe", "winget install GIMP.GIMP")
+        If DependenciesChecker.IsWingetInstalled() = False Then
+            MessageBox.Show("Windows Package Manager (winget) was not found on this system. Please install it and try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            Process.Start("powershell.exe", "winget install GIMP.GIMP")
+        End If
     End Sub
 
     Private Sub Programs_Install_KDE_Connect_Click(sender As Object, e As EventArgs) Handles Programs_Install_KdeConnect.Click
-        Process.Start("powershell.exe", "winget install KDE.KDEConnect")
+        If DependenciesChecker.IsWingetInstalled() = False Then
+            MessageBox.Show("Windows Package Manager (winget) was not found on this system. Please install it and try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            Process.Start("powershell.exe", "winget install KDE.KDEConnect")
+        End If
     End Sub
 
     Private Sub Programs_Install_Android_Studio_Click(sender As Object, e As EventArgs) Handles Programs_Install_AndroidStudio.Click
-        Process.Start("powershell.exe", "winget install Google.AndroidStudio")
+        If DependenciesChecker.IsWingetInstalled() = False Then
+            MessageBox.Show("Windows Package Manager (winget) was not found on this system. Please install it and try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            Process.Start("powershell.exe", "winget install Google.AndroidStudio")
+        End If
     End Sub
 
     Private Sub Programs_Install_Brave_Click(sender As Object, e As EventArgs) Handles Programs_Install_Brave.Click
-        Process.Start("powershell.exe", "winget install BraveSoftware.BraveBrowser")
+        If DependenciesChecker.IsWingetInstalled() = False Then
+            MessageBox.Show("Windows Package Manager (winget) was not found on this system. Please install it and try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            Process.Start("powershell.exe", "winget install BraveSoftware.BraveBrowser")
+        End If
     End Sub
 
     Private Sub Programs_Install_Microsoft_Teams_Click(sender As Object, e As EventArgs) Handles Programs_Install_MicrosoftTeams.Click
-        Process.Start("powershell.exe", "winget install Microsoft.Teams")
+        If DependenciesChecker.IsWingetInstalled() = False Then
+            MessageBox.Show("Windows Package Manager (winget) was not found on this system. Please install it and try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            Process.Start("powershell.exe", "winget install Microsoft.Teams")
+        End If
     End Sub
 
     Private Sub Programs_Install_TelegramDesktop_Click(sender As Object, e As EventArgs) Handles Programs_Install_TelegramDesktop.Click
-        Process.Start("powershell.exe", "winget install Telegram.TelegramDesktop")
+        If DependenciesChecker.IsWingetInstalled() = False Then
+            MessageBox.Show("Windows Package Manager (winget) was not found on this system. Please install it and try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            Process.Start("powershell.exe", "winget install Telegram.TelegramDesktop")
+        End If
     End Sub
 
     Private Sub Programs_Install_VsCodium_Click(sender As Object, e As EventArgs) Handles Programs_Install_VsCodium.Click
-        Process.Start("powershell.exe", "winget install VSCodium.VSCodium")
+        If DependenciesChecker.IsWingetInstalled() = False Then
+            MessageBox.Show("Windows Package Manager (winget) was not found on this system. Please install it and try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            Process.Start("powershell.exe", "winget install VSCodium.VSCodium")
+        End If
     End Sub
 
     Private Sub Programs_Install_VsCode_Click(sender As Object, e As EventArgs) Handles Programs_Install_VsCode.Click
-        Process.Start("powershell.exe", "winget install Microsoft.VisualStudioCode")
+        If DependenciesChecker.IsWingetInstalled() = False Then
+            MessageBox.Show("Windows Package Manager (winget) was not found on this system. Please install it and try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            Process.Start("powershell.exe", "winget install Microsoft.VisualStudioCode")
+        End If
     End Sub
 
     Private Sub Programs_Install_GithubDesktop_Click(sender As Object, e As EventArgs) Handles Programs_Install_GithubDesktop.Click
-        Process.Start("powershell.exe", "winget install GitHub.GitHubDesktop")
+        If DependenciesChecker.IsWingetInstalled() = False Then
+            MessageBox.Show("Windows Package Manager (winget) was not found on this system. Please install it and try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            Process.Start("powershell.exe", "winget install GitHub.GitHubDesktop")
+        End If
     End Sub
 
     Private Sub Programs_Install_Skype_Click(sender As Object, e As EventArgs) Handles Programs_Install_Skype.Click
-        Process.Start("powershell.exe", "winget install Microsoft.Skype")
+        If DependenciesChecker.IsWingetInstalled() = False Then
+            MessageBox.Show("Windows Package Manager (winget) was not found on this system. Please install it and try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            Process.Start("powershell.exe", "winget install Microsoft.Skype")
+        End If
     End Sub
 
     Private Sub Programs_Install_WindowsTerminal_Click(sender As Object, e As EventArgs) Handles Programs_Install_WindowsTerminal.Click
-        Process.Start("powershell.exe", "winget install Microsoft.WindowsTerminal")
+        If DependenciesChecker.IsWingetInstalled() = False Then
+            MessageBox.Show("Windows Package Manager (winget) was not found on this system. Please install it and try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            Process.Start("powershell.exe", "winget install Microsoft.WindowsTerminal")
+        End If
     End Sub
 
     Private Sub Programs_Install_BleachBit_Click(sender As Object, e As EventArgs) Handles Programs_Install_BleachBit.Click
-        Process.Start("powershell.exe", "winget install Bleachbit.Bleachbit")
+        If DependenciesChecker.IsWingetInstalled() = False Then
+            MessageBox.Show("Windows Package Manager (winget) was not found on this system. Please install it and try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            Process.Start("powershell.exe", "winget install Bleachbit.Bleachbit")
+        End If
     End Sub
 
     Private Sub Programs_Install_Xampp_Click(sender As Object, e As EventArgs) Handles Programs_Install_Xampp.Click
-        Process.Start("powershell", "winget install ApacheFriends.Xampp")
+        If DependenciesChecker.IsWingetInstalled() = False Then
+            MessageBox.Show("Windows Package Manager (winget) was not found on this system. Please install it and try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            Process.Start("powershell", "winget install ApacheFriends.Xampp")
+        End If
     End Sub
 
     Private Sub Programs_Install_Spotify_Click(sender As Object, e As EventArgs) Handles Programs_Install_Spotify.Click
@@ -168,23 +267,55 @@ Public Class Container
     End Sub
 
     Private Sub Programs_Install_Transmission_Click(sender As Object, e As EventArgs) Handles Programs_Install_Transmission.Click
-        Process.Start("powershell.exe", "winget install Transmission.Transmission")
+        If DependenciesChecker.IsWingetInstalled() = False Then
+            MessageBox.Show("Windows Package Manager (winget) was not found on this system. Please install it and try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            Process.Start("powershell.exe", "winget install Transmission.Transmission")
+        End If
     End Sub
 
     Private Sub Programs_Install_GoogleDrive_Click(sender As Object, e As EventArgs) Handles Programs_Install_GoogleDrive.Click
-        Process.Start("powershell.exe", "winget install Google.Drive")
+        If DependenciesChecker.IsWingetInstalled() = False Then
+            MessageBox.Show("Windows Package Manager (winget) was not found on this system. Please install it and try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            Process.Start("powershell.exe", "winget install Google.Drive")
+        End If
     End Sub
 
     Private Sub Programs_Install_OneDrive_Click(sender As Object, e As EventArgs) Handles Programs_Install_OneDrive.Click
-        Process.Start("powershell.exe", "winget install Microsoft.OneDrive")
+        If DependenciesChecker.IsWingetInstalled() = False Then
+            MessageBox.Show("Windows Package Manager (winget) was not found on this system. Please install it and try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            Process.Start("powershell.exe", "winget install Microsoft.OneDrive")
+        End If
     End Sub
 
     Private Sub Programs_Install_CrystalDiskInfo_Click(sender As Object, e As EventArgs) Handles Programs_Install_CrystalDiskInfo.Click
-        Process.Start("powershell.exe", "winget install CrystalDewWorld.CrystalDiskInfo")
+        If DependenciesChecker.IsWingetInstalled() = False Then
+            MessageBox.Show("Windows Package Manager (winget) was not found on this system. Please install it and try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            Process.Start("powershell.exe", "winget install CrystalDewWorld.CrystalDiskInfo")
+        End If
+    End Sub
+
+    Private Sub Programs_Install_InnoSetup_Click(sender As Object, e As EventArgs) Handles Programs_Install_InnoSetup.Click
+        If DependenciesChecker.IsWingetInstalled() = False Then
+            MessageBox.Show("Windows Package Manager (winget) was not found on this system. Please install it and try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            Process.Start("powershell.exe", "winget install JRSoftware.InnoSetup")
+        End If
+    End Sub
+
+    Private Sub Programs_Install_Bitwarden_Click(sender As Object, e As EventArgs) Handles Programs_Install_Bitwarden.Click
+        If DependenciesChecker.IsWingetInstalled() = False Then
+            MessageBox.Show("Windows Package Manager (winget) was not found on this system. Please install it and try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            Process.Start("powershell.exe", "winget install Bitwarden.Bitwarden")
+        End If
     End Sub
 
     Private Sub SystemAdministration_SystemReadiness_Click(sender As Object, e As EventArgs) Handles SystemAdministration_SystemReadiness.Click
-        Dim Message = "System Readiness is not made for everyone as it breaks functionalities which are useful to people. Are you sure you want to continue?"
+        Dim Message = "System Readiness is likely to break the system to the point where only power users will be able to use it. Are you sure you want to continue?"
         Dim Caption = "Warning"
         Dim ButtonLayout = MessageBoxButtons.YesNo
         Dim Icon = MessageBoxIcon.Warning
@@ -192,9 +323,9 @@ Public Class Container
         Result = MessageBox.Show(Message, Caption, ButtonLayout, Icon)
         If Result = DialogResult.Yes Then
             If GetCurrentRole.IsUserAdmin() = True Then
-                Process.Start("powershell.exe", "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/gfelipe099/sunvalley-srw/sunvalley-v2/modules/ApplySystemReadiness.ps1'))")
+                Process.Start("powershell.exe", "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/mrkenhoo/sunvalley-srw/main/modules/ApplySystemReadiness.ps1'))")
             Else
-                MessageBox.Show("You need Administrator privileges to do this.", "Access denied", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("You need Administrator privileges to do this.", "Access denied", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
         End If
     End Sub
@@ -242,6 +373,22 @@ Public Class Container
     Private Sub SystemAdministration_ReinstallAllUwpApps_Click(sender As Object, e As EventArgs) Handles SystemAdministration_ReinstallAllUwpApps.Click
         If GetCurrentRole.IsUserAdmin() = True Then
             Process.Start("powershell.exe", "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/mrkenhoo/sunvalley-srw/main/modules/ReinstallAllUwpApps.ps1'))")
+        Else
+            MessageBox.Show("You need Administrator privileges to do this.", "Access denied", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
+    End Sub
+
+    Private Sub SystemAdministration_DisableAllWindowsFeatures_Click(sender As Object, e As EventArgs) Handles SystemAdministration_DisableAllWindowsOptionalFeatures.Click
+        If GetCurrentRole.IsUserAdmin() = True Then
+            Process.Start("powershell.exe", "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/mrkenhoo/sunvalley-srw/main/modules/DisableAllWindowsOptionalFeatures.ps1'))")
+        Else
+            MessageBox.Show("You need Administrator privileges to do this.", "Access denied", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
+    End Sub
+
+    Private Sub SystemAdministration_RemoveAllWindowsCapabilities_Click(sender As Object, e As EventArgs) Handles SystemAdministration_RemoveAllWindowsCapabilities.Click
+        If GetCurrentRole.IsUserAdmin() = True Then
+            Process.Start("powershell.exe", "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/mrkenhoo/sunvalley-srw/main/modules/RemoveAllWindowsCapabilities.ps1'))")
         Else
             MessageBox.Show("You need Administrator privileges to do this.", "Access denied", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
