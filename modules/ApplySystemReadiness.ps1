@@ -314,19 +314,3 @@ wmic recoveros set AutoReboot = False
 
 Write-Host "    --> Disabling system crash dumping..."
 wmic recoveros set DebugInfoType = 0
-
-Write-Host ""; Write-Host "    --> Windows optional features"
-$wof = (Get-WindowsOptionalFeature -FeatureName '*' -Online).FeatureName
-Write-Host ('        -> Found ' + $wof.Count + ' Windows optional feature(s) on this system')
-$wof | ForEach-Object {
-    Write-Host "            - Removing optional feature: $_..."
-    Disable-WindowsOptionalFeature -FeatureName $_ -Online -NoRestart -ErrorAction SilentlyContinue -WarningAction SilentlyContinue
-}
-
-Write-Host ""; Write-Host "==> Windows capabilities"
-$wc = (Get-WindowsCapability -Online).Name
-Write-Host ('        -> Found ' + $wc.Count + ' Windows capabilities...')
-$wc | ForEach-Object {
-    Write-Host "            - Removing capability: $_..."
-    Remove-WindowsCapability -Name $_ -Online -ErrorAction SilentlyContinue -WarningAction SilentlyContinue
-}
