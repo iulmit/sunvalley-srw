@@ -24,6 +24,13 @@ Partial Class Container
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Container))
         Me.Programs = New System.Windows.Forms.GroupBox()
+        Me.Programs_Install_PSNow = New System.Windows.Forms.Button()
+        Me.Programs_Install_mRemoteNG = New System.Windows.Forms.Button()
+        Me.Programs_Install_AMD_Ryzen_Master = New System.Windows.Forms.Button()
+        Me.Programs_Install_GeForce_Experience = New System.Windows.Forms.Button()
+        Me.Programs_Install_GeForce_Now = New System.Windows.Forms.Button()
+        Me.Programs_Install_VisualStudio2019Enterprise = New System.Windows.Forms.Button()
+        Me.Programs_Install_VisualStudio2019Community = New System.Windows.Forms.Button()
         Me.Programs_Install_Winget = New System.Windows.Forms.Button()
         Me.Programs_Install_Bitwarden = New System.Windows.Forms.Button()
         Me.Programs_Install_InnoSetup = New System.Windows.Forms.Button()
@@ -64,6 +71,7 @@ Partial Class Container
         Me.ThirdParty = New System.Windows.Forms.GroupBox()
         Me.ThirdParty_Simeononsecurity = New System.Windows.Forms.Button()
         Me.ThirdParty_Cttwin10script = New System.Windows.Forms.Button()
+        Me.Programs_Install_LightShot = New System.Windows.Forms.Button()
         Me.Programs.SuspendLayout()
         Me.SystemAdministration.SuspendLayout()
         Me.ThirdParty.SuspendLayout()
@@ -72,6 +80,14 @@ Partial Class Container
         'Programs
         '
         resources.ApplyResources(Me.Programs, "Programs")
+        Me.Programs.Controls.Add(Me.Programs_Install_LightShot)
+        Me.Programs.Controls.Add(Me.Programs_Install_PSNow)
+        Me.Programs.Controls.Add(Me.Programs_Install_mRemoteNG)
+        Me.Programs.Controls.Add(Me.Programs_Install_AMD_Ryzen_Master)
+        Me.Programs.Controls.Add(Me.Programs_Install_GeForce_Experience)
+        Me.Programs.Controls.Add(Me.Programs_Install_GeForce_Now)
+        Me.Programs.Controls.Add(Me.Programs_Install_VisualStudio2019Enterprise)
+        Me.Programs.Controls.Add(Me.Programs_Install_VisualStudio2019Community)
         Me.Programs.Controls.Add(Me.Programs_Install_Winget)
         Me.Programs.Controls.Add(Me.Programs_Install_Bitwarden)
         Me.Programs.Controls.Add(Me.Programs_Install_InnoSetup)
@@ -105,6 +121,48 @@ Partial Class Container
         Me.Programs.Name = "Programs"
         Me.Programs.TabStop = False
         Me.Programs.Tag = "Programs"
+        '
+        'Programs_Install_PSNow
+        '
+        resources.ApplyResources(Me.Programs_Install_PSNow, "Programs_Install_PSNow")
+        Me.Programs_Install_PSNow.Name = "Programs_Install_PSNow"
+        Me.Programs_Install_PSNow.UseVisualStyleBackColor = True
+        '
+        'Programs_Install_mRemoteNG
+        '
+        resources.ApplyResources(Me.Programs_Install_mRemoteNG, "Programs_Install_mRemoteNG")
+        Me.Programs_Install_mRemoteNG.Name = "Programs_Install_mRemoteNG"
+        Me.Programs_Install_mRemoteNG.UseVisualStyleBackColor = True
+        '
+        'Programs_Install_AMD_Ryzen_Master
+        '
+        resources.ApplyResources(Me.Programs_Install_AMD_Ryzen_Master, "Programs_Install_AMD_Ryzen_Master")
+        Me.Programs_Install_AMD_Ryzen_Master.Name = "Programs_Install_AMD_Ryzen_Master"
+        Me.Programs_Install_AMD_Ryzen_Master.UseVisualStyleBackColor = True
+        '
+        'Programs_Install_GeForce_Experience
+        '
+        resources.ApplyResources(Me.Programs_Install_GeForce_Experience, "Programs_Install_GeForce_Experience")
+        Me.Programs_Install_GeForce_Experience.Name = "Programs_Install_GeForce_Experience"
+        Me.Programs_Install_GeForce_Experience.UseVisualStyleBackColor = True
+        '
+        'Programs_Install_GeForce_Now
+        '
+        resources.ApplyResources(Me.Programs_Install_GeForce_Now, "Programs_Install_GeForce_Now")
+        Me.Programs_Install_GeForce_Now.Name = "Programs_Install_GeForce_Now"
+        Me.Programs_Install_GeForce_Now.UseVisualStyleBackColor = True
+        '
+        'Programs_Install_VisualStudio2019Enterprise
+        '
+        resources.ApplyResources(Me.Programs_Install_VisualStudio2019Enterprise, "Programs_Install_VisualStudio2019Enterprise")
+        Me.Programs_Install_VisualStudio2019Enterprise.Name = "Programs_Install_VisualStudio2019Enterprise"
+        Me.Programs_Install_VisualStudio2019Enterprise.UseVisualStyleBackColor = True
+        '
+        'Programs_Install_VisualStudio2019Community
+        '
+        resources.ApplyResources(Me.Programs_Install_VisualStudio2019Community, "Programs_Install_VisualStudio2019Community")
+        Me.Programs_Install_VisualStudio2019Community.Name = "Programs_Install_VisualStudio2019Community"
+        Me.Programs_Install_VisualStudio2019Community.UseVisualStyleBackColor = True
         '
         'Programs_Install_Winget
         '
@@ -403,6 +461,12 @@ Partial Class Container
         Me.ThirdParty_Cttwin10script.Name = "ThirdParty_Cttwin10script"
         Me.ThirdParty_Cttwin10script.UseVisualStyleBackColor = True
         '
+        'Programs_Install_LightShot
+        '
+        resources.ApplyResources(Me.Programs_Install_LightShot, "Programs_Install_LightShot")
+        Me.Programs_Install_LightShot.Name = "Programs_Install_LightShot"
+        Me.Programs_Install_LightShot.UseVisualStyleBackColor = True
+        '
         'Container
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit
@@ -467,4 +531,12 @@ Partial Class Container
     Private WithEvents Programs_Install_Bitwarden As Button
     Private WithEvents SystemAdministration_RemoveAllWindowsCapabilities As Button
     Private WithEvents Programs_Install_Winget As Button
+    Private WithEvents Programs_Install_VisualStudio2019Enterprise As Button
+    Private WithEvents Programs_Install_VisualStudio2019Community As Button
+    Private WithEvents Programs_Install_GeForce_Experience As Button
+    Private WithEvents Programs_Install_GeForce_Now As Button
+    Private WithEvents Programs_Install_AMD_Ryzen_Master As Button
+    Private WithEvents Programs_Install_mRemoteNG As Button
+    Private WithEvents Programs_Install_PSNow As Button
+    Private WithEvents Programs_Install_LightShot As Button
 End Class

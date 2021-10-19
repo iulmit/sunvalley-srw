@@ -48,6 +48,22 @@ Module DependenciesChecker
     End Function
 End Module
 
+Module ProgramsChecker
+    Public Function IsItInstalled(directory As String, executable As String) As Boolean
+        Dim ProgramFilesDirX86 As String = Environment.GetFolderPath(Environment.SpecialFolder.CommonProgramFilesX86) + directory
+        Dim ProgramFilesDir As String = Environment.GetFolderPath(Environment.SpecialFolder.CommonProgramFiles) + directory
+        Dim ExecutableExists As Boolean
+        If System.IO.File.Exists(ProgramFilesDirX86 + executable) Then
+            ExecutableExists = True
+        ElseIf System.IO.File.Exists(ProgramFilesDir + executable) Then
+            ExecutableExists = True
+        Else
+            ExecutableExists = False
+        End If
+        Return ExecutableExists
+    End Function
+End Module
+
 Public Class Container
 
     Private Sub Container_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -98,7 +114,7 @@ Public Class Container
 
     Private Sub Programs_Install_Winget_Click(sender As Object, e As EventArgs) Handles Programs_Install_Winget.Click
         If DependenciesChecker.IsWingetInstalled() = True Then
-            MessageBox.Show("Windows Package Manager (winget) is already installed on this system. Please install it and try again.", "Already installed", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            MessageBox.Show("Windows Package Manager (winget) is already installed on this system.", "Already installed", MessageBoxButtons.OK, MessageBoxIcon.Information)
         Else
             Process.Start("powershell.exe", "Start-Process ms-appinstaller:?source=https://aka.ms/getwinget")
         End If
@@ -114,6 +130,8 @@ Public Class Container
 
     Private Sub Programs_Install_Steam_Click(sender As Object, e As EventArgs) Handles Programs_Install_Steam.Click
         If DependenciesChecker.IsWingetInstalled() = False Then
+            MessageBox.Show("Windows Package Manager (winget) was not found on this system. Please install it and try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
             Process.Start("powershell.exe", "winget install Valve.Steam")
         End If
     End Sub
@@ -311,6 +329,66 @@ Public Class Container
             MessageBox.Show("Windows Package Manager (winget) was not found on this system. Please install it and try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Else
             Process.Start("powershell.exe", "winget install Bitwarden.Bitwarden")
+        End If
+    End Sub
+
+    Private Sub Programs_Install_VisualStudio2019Community_Click(sender As Object, e As EventArgs) Handles Programs_Install_VisualStudio2019Community.Click
+        If DependenciesChecker.IsWingetInstalled() = False Then
+            MessageBox.Show("Windows Package Manager (winget) was not found on this system. Please install it and try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            Process.Start("powershell.exe", "winget install Microsoft.VisualStudio.2019.Community")
+        End If
+    End Sub
+
+    Private Sub Programs_Install_VisualStudio2019Enterprise_Click(sender As Object, e As EventArgs) Handles Programs_Install_VisualStudio2019Enterprise.Click
+        If DependenciesChecker.IsWingetInstalled() = False Then
+            MessageBox.Show("Windows Package Manager (winget) was not found on this system. Please install it and try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            Process.Start("powershell.exe", "winget install Microsoft.VisualStudio.2019.Enterprise")
+        End If
+    End Sub
+
+    Private Sub Programs_Install_GeForce_Now_Click(sender As Object, e As EventArgs) Handles Programs_Install_GeForce_Now.Click
+        If DependenciesChecker.IsWingetInstalled() = False Then
+            MessageBox.Show("Windows Package Manager (winget) was not found on this system. Please install it and try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            Process.Start("powershell.exe", "winget install Nvidia.GeForceNow")
+        End If
+    End Sub
+
+    Private Sub Programs_Install_GeForce_Experience_Click(sender As Object, e As EventArgs) Handles Programs_Install_GeForce_Experience.Click
+        If DependenciesChecker.IsWingetInstalled() = False Then
+            MessageBox.Show("Windows Package Manager (winget) was not found on this system. Please install it and try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            Process.Start("powershell.exe", "winget install Nvidia.GeForceExperience")
+        End If
+    End Sub
+
+    Private Sub Programs_Install_AMD_Ryzen_Master_Click(sender As Object, e As EventArgs) Handles Programs_Install_AMD_Ryzen_Master.Click
+        If DependenciesChecker.IsWingetInstalled() = False Then
+            MessageBox.Show("Windows Package Manager (winget) was not found on this system. Please install it and try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            Process.Start("powershell.exe", "winget install AMD.RyzenMaster")
+        End If
+    End Sub
+
+    Private Sub Programs_Install_mRemoteNG_Click(sender As Object, e As EventArgs) Handles Programs_Install_mRemoteNG.Click
+        If DependenciesChecker.IsWingetInstalled() = False Then
+            MessageBox.Show("Windows Package Manager (winget) was not found on this system. Please install it and try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            Process.Start("powershell.exe", "winget install mRemoteNG.mRemoteNG")
+        End If
+    End Sub
+
+    Private Sub Programs_Install_LightShot_Click(sender As Object, e As EventArgs) Handles Programs_Install_LightShot.Click
+        If GetCurrentRole.IsUserAdmin() = True Then
+            If ProgramsChecker.IsItInstalled("\Skillbrains\lightshot", "Lightshot.exe") = False Then
+                Process.Start("powershell.exe", "wget https://app.prntscr.com/build/setup-lightshot.exe && .\setup-lightshot.exe /SILENT /NORESTART")
+            Else
+                MessageBox.Show("This program is already installed. Do you want to reinstall it?", "Already installed", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation)
+            End If
+        Else
+            MessageBox.Show("You need Administrator privileges to do this.", "Access denied", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
     End Sub
 

@@ -1,9 +1,9 @@
 #define MyAppName "System Readiness for Workstations"
-#define MyAppVersion "0.0.6.0"
-#define MyAppVersionAlt "0_0_6_0"
+#define MyAppVersion "0.0.7.0"
 #define MyAppURL "https://github.com/mrkenhoo/sunvalley-srw"
 #define MyAppExeName "sunvalley-srw.exe"
 #define MyUsername "mrkenhoo"
+#define VersionInfoDescription "System Readiness for Workstations is an automated privacy-focused configuration tool which debloats and tweaks any compatible Windows version and edition to improve it's performance and reduce the user's footprint as much as possible."
 
 [Setup]
 SignTool=default $f
@@ -25,6 +25,16 @@ OutputBaseFilename=sunvalley-srw-setup
 Compression=lzma
 SolidCompression=yes
 WizardStyle=modern
+VersionInfoCompany=Ken Hoo
+VersionInfoCopyright=GPLv3
+VersionInfoDescription={#VersionInfoDescription}
+VersionInfoOriginalFileName=sunvalley-srw-setup.exe
+VersionInfoProductName=System Readiness for Workstations
+VersionInfoProductVersion={#MyAppVersion}
+VersionInfoProductTextVersion={#MyAppVersion}
+VersionInfoTextVersion={#MyAppVersion}
+WizardResizable=no
+WindowResizable=no
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
@@ -35,8 +45,8 @@ Name: "spanish"; MessagesFile: "compiler:Languages\Spanish.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "C:\Users\{#MyUsername}\Documents\GitHub\sunvalley-srw\workstations\bin\publish\Application Files\sunvalley-srw_{#MyAppVersionAlt}\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\{#MyUsername}\Documents\GitHub\sunvalley-srw\workstations\bin\publish\Application Files\sunvalley-srw_{#MyAppVersionAlt}\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Users\{#MyUsername}\Documents\GitHub\sunvalley-srw\workstations\bin\Release\netcoreapp3.1\publish\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\{#MyUsername}\Documents\GitHub\sunvalley-srw\workstations\bin\Release\netcoreapp3.1\publish\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 [Icons]
 Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
