@@ -383,7 +383,7 @@ Public Class Container
     Private Sub Programs_Install_LightShot_Click(sender As Object, e As EventArgs) Handles Programs_Install_LightShot.Click
         If GetCurrentRole.IsUserAdmin() = True Then
             If ProgramsChecker.IsItInstalled("\Skillbrains\lightshot", "Lightshot.exe") = False Then
-                Process.Start("powershell.exe", "wget https://app.prntscr.com/build/setup-lightshot.exe && .\setup-lightshot.exe /SILENT /NORESTART")
+                Process.Start("powershell.exe", "Write-Host Downloading LightShot...; Invoke-WebRequest -Uri https://app.prntscr.com/build/setup-lightshot.exe -OutFile $env:TEMP/setup-lightshot.exe -UseBasicParsing; cd $env:TEMP; .\setup-lightshot.exe /SILENT /NORESTART; cd $PSScriptRoot")
             Else
                 MessageBox.Show("This program is already installed. Do you want to reinstall it?", "Already installed", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation)
             End If

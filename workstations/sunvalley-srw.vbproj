@@ -6,7 +6,7 @@
     <RootNamespace>Container</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>0.0.7.0</Version>
+    <Version>0.0.7.1</Version>
     <Authors>Ken Hoo</Authors>
     <Company />
     <NeutralLanguage>en-US</NeutralLanguage>
@@ -20,21 +20,10 @@
     <AssemblyOriginatorKeyFile>mrkenhoo.pfx</AssemblyOriginatorKeyFile>
     <Description>System Readiness for Workstations is an automated privacy-focused configuration tool which debloats and tweaks any compatible Windows version and edition to improve it's performance and reduce the user's footprint as much as possible.</Description>
     <Copyright>GNU General Public License v3.0</Copyright>
-    <PackageReleaseNotes>* Added content:
-    - Visual Studio 2019 Community
-    - Visual Studio 2019 Enterprise
-    - NVIDIA GeForce Experience
-    - NVIDIA GeForce Now
-    - AMD Ryzen Master
-    - mRemoteNG
-    - PlayStation Now
-    - LightShot
-
-* Added a new module to check if a program is already installed on the system.
-* Fixed wrong popup message when clicking 'Install winget' button.</PackageReleaseNotes>
+    <PackageReleaseNotes>* Fixed 'Install LightShot' button not working</PackageReleaseNotes>
     <DelaySign>false</DelaySign>
-    <AssemblyVersion>0.0.7.0</AssemblyVersion>
-    <FileVersion>0.0.7.0</FileVersion>
+    <AssemblyVersion>0.0.7.1</AssemblyVersion>
+    <FileVersion>0.0.7.1</FileVersion>
     <OptionStrict>On</OptionStrict>
     <Product>System Readiness for Workstations</Product>
   </PropertyGroup>

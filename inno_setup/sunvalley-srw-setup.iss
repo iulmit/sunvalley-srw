@@ -1,5 +1,5 @@
 #define MyAppName "System Readiness for Workstations"
-#define MyAppVersion "0.0.7.0"
+#define MyAppVersion "0.0.7.1"
 #define MyAppURL "https://github.com/mrkenhoo/sunvalley-srw"
 #define MyAppExeName "sunvalley-srw.exe"
 #define MyUsername "mrkenhoo"
@@ -26,7 +26,7 @@ Compression=lzma
 SolidCompression=yes
 WizardStyle=modern
 VersionInfoCompany=Ken Hoo
-VersionInfoCopyright=GPLv3
+VersionInfoCopyright=GNU General Public License v3.0
 VersionInfoDescription={#VersionInfoDescription}
 VersionInfoOriginalFileName=sunvalley-srw-setup.exe
 VersionInfoProductName=System Readiness for Workstations
