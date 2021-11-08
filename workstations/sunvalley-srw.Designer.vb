@@ -24,6 +24,7 @@ Partial Class Container
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Container))
         Me.Programs = New System.Windows.Forms.GroupBox()
+        Me.Programs_Install_LightShot = New System.Windows.Forms.Button()
         Me.Programs_Install_PSNow = New System.Windows.Forms.Button()
         Me.Programs_Install_mRemoteNG = New System.Windows.Forms.Button()
         Me.Programs_Install_AMD_Ryzen_Master = New System.Windows.Forms.Button()
@@ -71,7 +72,6 @@ Partial Class Container
         Me.ThirdParty = New System.Windows.Forms.GroupBox()
         Me.ThirdParty_Simeononsecurity = New System.Windows.Forms.Button()
         Me.ThirdParty_Cttwin10script = New System.Windows.Forms.Button()
-        Me.Programs_Install_LightShot = New System.Windows.Forms.Button()
         Me.Programs.SuspendLayout()
         Me.SystemAdministration.SuspendLayout()
         Me.ThirdParty.SuspendLayout()
@@ -121,6 +121,12 @@ Partial Class Container
         Me.Programs.Name = "Programs"
         Me.Programs.TabStop = False
         Me.Programs.Tag = "Programs"
+        '
+        'Programs_Install_LightShot
+        '
+        resources.ApplyResources(Me.Programs_Install_LightShot, "Programs_Install_LightShot")
+        Me.Programs_Install_LightShot.Name = "Programs_Install_LightShot"
+        Me.Programs_Install_LightShot.UseVisualStyleBackColor = True
         '
         'Programs_Install_PSNow
         '
@@ -460,12 +466,6 @@ Partial Class Container
         Me.ThirdParty_Cttwin10script.ForeColor = System.Drawing.SystemColors.ControlText
         Me.ThirdParty_Cttwin10script.Name = "ThirdParty_Cttwin10script"
         Me.ThirdParty_Cttwin10script.UseVisualStyleBackColor = True
-        '
-        'Programs_Install_LightShot
-        '
-        resources.ApplyResources(Me.Programs_Install_LightShot, "Programs_Install_LightShot")
-        Me.Programs_Install_LightShot.Name = "Programs_Install_LightShot"
-        Me.Programs_Install_LightShot.UseVisualStyleBackColor = True
         '
         'Container
         '

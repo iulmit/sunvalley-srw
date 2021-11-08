@@ -380,10 +380,18 @@ Public Class Container
         End If
     End Sub
 
+    Private Sub Programs_Install_PSNow_Click(sender As Object, e As EventArgs) Handles Programs_Install_PSNow.Click
+        If DependenciesChecker.IsWingetInstalled() = False Then
+            MessageBox.Show("Windows Package Manager (winget) was not found on this system. Please install it and try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            Process.Start("powershell.exe", "winget install PlayStation.PSNow")
+        End If
+    End Sub
+
     Private Sub Programs_Install_LightShot_Click(sender As Object, e As EventArgs) Handles Programs_Install_LightShot.Click
         If GetCurrentRole.IsUserAdmin() = True Then
             If ProgramsChecker.IsItInstalled("\Skillbrains\lightshot", "Lightshot.exe") = False Then
-                Process.Start("powershell.exe", "Write-Host Downloading LightShot...; Invoke-WebRequest -Uri https://app.prntscr.com/build/setup-lightshot.exe -OutFile $env:TEMP/setup-lightshot.exe -UseBasicParsing; cd $env:TEMP; .\setup-lightshot.exe /SILENT /NORESTART; cd $PSScriptRoot")
+                Process.Start("powershell.exe", "Write-Host Downloading LightShot...; Invoke-WebRequest -Uri https://app.prntscr.com/build/setup-lightshot.exe -OutFile $env:TEMP/setup-lightshot.exe -UseBasicParsing; cd $env:TEMP; Write-Host Installing LightShot...; .\setup-lightshot.exe /SILENT /NORESTART; cd $PSScriptRoot")
             Else
                 MessageBox.Show("This program is already installed. Do you want to reinstall it?", "Already installed", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation)
             End If
