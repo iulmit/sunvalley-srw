@@ -1,0 +1,69 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Container</RootNamespace>
+    <UseWindowsForms>true</UseWindowsForms>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Version>0.0.7.3</Version>
+    <Authors>Ken Hoo</Authors>
+    <Company />
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <StartupObject>Container.Container</StartupObject>
+    <RepositoryType></RepositoryType>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/mrkenhoo/sunvalley-sr/tree/sunvalley-v2</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/mrkenhoo/sunvalley-sr/tree/sunvalley-v2</RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>../mrkenhoo.pfx</AssemblyOriginatorKeyFile>
+    <Description>System Readiness for Workstations is an automated privacy-focused configuration tool which debloats and tweaks any compatible Windows version and edition to improve it's performance and reduce the user's footprint as much as possible.</Description>
+    <Copyright>GNU General Public License v3.0</Copyright>
+    <PackageReleaseNotes>* Better application look and feel
+* Code improvements</PackageReleaseNotes>
+    <DelaySign>false</DelaySign>
+    <AssemblyVersion>0.0.7.3</AssemblyVersion>
+    <FileVersion>0.0.7.3</FileVersion>
+    <OptionStrict>On</OptionStrict>
+    <Product>System Readiness for Workstations</Product>
+    <AssemblyName>sunvalley-srw</AssemblyName>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <OptionCompare>Binary</OptionCompare>
+    <PackageId>sunvalley-srw</PackageId>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <Optimize>true</Optimize>
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>embedded</DebugType>
+    <NoWarn />
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+	<Optimize>true</Optimize>
+	<DebugSymbols>false</DebugSymbols>
+	<DebugType>none</DebugType>
+	<NoWarn />
+	<WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+	<PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
