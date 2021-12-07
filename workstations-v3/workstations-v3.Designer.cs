@@ -69,6 +69,7 @@ namespace workstations_v3
             this.ThirdParty = new System.Windows.Forms.TabPage();
             this.SimeononSecurityWoh = new System.Windows.Forms.Button();
             this.CttWin10script = new System.Windows.Forms.Button();
+            this.Install_Vim = new System.Windows.Forms.Button();
             this.TabManager.SuspendLayout();
             this.Programs.SuspendLayout();
             this.SystemAdministration.SuspendLayout();
@@ -88,8 +89,8 @@ namespace workstations_v3
             // Programs
             // 
             resources.ApplyResources(this.Programs, "Programs");
-            this.Programs.BackColor = System.Drawing.Color.Transparent;
-            this.Programs.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Programs.BackColor = System.Drawing.Color.DimGray;
+            this.Programs.Controls.Add(this.Install_Vim);
             this.Programs.Controls.Add(this.Install_Flameshot);
             this.Programs.Controls.Add(this.Install_LightShot);
             this.Programs.Controls.Add(this.Install_PlayStationNow);
@@ -124,8 +125,8 @@ namespace workstations_v3
             this.Programs.Controls.Add(this.Install_EpicGamesLauncher);
             this.Programs.Controls.Add(this.Install_Steam);
             this.Programs.Controls.Add(this.Install_7zip);
+            this.Programs.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Programs.Name = "Programs";
-            this.Programs.UseVisualStyleBackColor = true;
             // 
             // Install_Flameshot
             // 
@@ -365,10 +366,16 @@ namespace workstations_v3
             this.Install_7zip.UseVisualStyleBackColor = true;
             this.Install_7zip.Click += new System.EventHandler(this.Install_7zip_Click);
             // 
+            // Install_Vim
+            // 
+            resources.ApplyResources(this.Install_Vim, "Install_Vim");
+            this.Install_Vim.Name = "Install_Vim";
+            this.Install_Vim.UseVisualStyleBackColor = true;
+            this.Install_Vim.Click += new System.EventHandler(this.Install_Vim_Click);
+            // 
             // SystemAdministration
             // 
-            this.SystemAdministration.BackColor = System.Drawing.Color.Transparent;
-            this.SystemAdministration.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.SystemAdministration.BackColor = System.Drawing.Color.DimGray;
             this.SystemAdministration.Controls.Add(this.RemoveAllWindowsCapabilities);
             this.SystemAdministration.Controls.Add(this.DisableAllWindowsOptionalFeatures);
             this.SystemAdministration.Controls.Add(this.ReinstallAllUwpApps);
@@ -454,18 +461,18 @@ namespace workstations_v3
             // 
             // ThirdParty
             // 
+            this.ThirdParty.BackColor = System.Drawing.Color.DimGray;
             this.ThirdParty.Controls.Add(this.SimeononSecurityWoh);
             this.ThirdParty.Controls.Add(this.CttWin10script);
             resources.ApplyResources(this.ThirdParty, "ThirdParty");
             this.ThirdParty.Name = "ThirdParty";
-            this.ThirdParty.UseVisualStyleBackColor = true;
             // 
             // SimeononSecurityWoh
             // 
             resources.ApplyResources(this.SimeononSecurityWoh, "SimeononSecurityWoh");
             this.SimeononSecurityWoh.Name = "SimeononSecurityWoh";
             this.SimeononSecurityWoh.UseVisualStyleBackColor = true;
-            this.SimeononSecurityWoh.Click += new System.EventHandler(this.button1_Click);
+            this.SimeononSecurityWoh.Click += new System.EventHandler(this.SimeononSecurityWoh_Click);
             // 
             // CttWin10script
             // 
@@ -478,8 +485,9 @@ namespace workstations_v3
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.BackColor = System.Drawing.Color.DimGray;
             this.Controls.Add(this.TabManager);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.HelpButton = true;
             this.MaximizeBox = false;
             this.Name = "Container";
@@ -497,6 +505,7 @@ namespace workstations_v3
         private System.Windows.Forms.TabControl TabManager;
         private System.Windows.Forms.TabPage Programs;
         private System.Windows.Forms.TabPage SystemAdministration;
+        private System.Windows.Forms.TabPage ThirdParty;
         private System.Windows.Forms.Button Install_VisualStudioCodium;
         private System.Windows.Forms.Button Install_TelegramDesktop;
         private System.Windows.Forms.Button Install_MicrosoftTeams;
@@ -533,6 +542,8 @@ namespace workstations_v3
         private System.Windows.Forms.Button Install_Mremoteng;
         private System.Windows.Forms.Button Install_PlayStationNow;
         private System.Windows.Forms.Button Install_LightShot;
+        private System.Windows.Forms.Button Install_Flameshot;
+        private System.Windows.Forms.Button Install_Vim;
         private System.Windows.Forms.Button Apply_SystemReadiness;
         private System.Windows.Forms.Button Apply_SystemReadinessLite;
         private System.Windows.Forms.Button RemoveAllUwpApps;
@@ -540,8 +551,6 @@ namespace workstations_v3
         private System.Windows.Forms.Button ReinstallAllUwpApps;
         private System.Windows.Forms.Button DisableAllWindowsOptionalFeatures;
         private System.Windows.Forms.Button RemoveAllWindowsCapabilities;
-        private System.Windows.Forms.Button Install_Flameshot;
-        private System.Windows.Forms.TabPage ThirdParty;
         private System.Windows.Forms.Button CttWin10script;
         private System.Windows.Forms.Button SimeononSecurityWoh;
     }

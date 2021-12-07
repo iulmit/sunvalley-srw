@@ -138,6 +138,30 @@
   <data name="Programs.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="Install_Vim.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 330</value>
+  </data>
+  <data name="Install_Vim.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 23</value>
+  </data>
+  <data name="Install_Vim.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="Install_Vim.Text" xml:space="preserve">
+    <value>Install Vim</value>
+  </data>
+  <data name="&gt;&gt;Install_Vim.Name" xml:space="preserve">
+    <value>Install_Vim</value>
+  </data>
+  <data name="&gt;&gt;Install_Vim.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_Vim.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_Vim.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="Install_Flameshot.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
   </data>
@@ -166,7 +190,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_Flameshot.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="Install_LightShot.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -196,7 +220,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_LightShot.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="Install_PlayStationNow.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -226,7 +250,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_PlayStationNow.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="Install_Mremoteng.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -256,7 +280,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_Mremoteng.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="Install_AmdRyzenMaster.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -286,7 +310,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_AmdRyzenMaster.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="Install_GeForceExperience.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -316,7 +340,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_GeForceExperience.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="Install_GeForceNow.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -346,7 +370,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_GeForceNow.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="Install_VisualStudioEnterprise.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -376,7 +400,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_VisualStudioEnterprise.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="Install_VisualStudioCommunity.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -406,7 +430,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_VisualStudioCommunity.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="Install_Bitwarden.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -436,7 +460,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_Bitwarden.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="Install_InnoSetup.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -466,7 +490,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_InnoSetup.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="Install_CrystalDiskInfo.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -496,7 +520,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_CrystalDiskInfo.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="Install_OneDrive.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -526,7 +550,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_OneDrive.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="Install_GoogleDrive.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -556,7 +580,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_GoogleDrive.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="Install_Transmission.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -586,7 +610,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_Transmission.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="Install_Spotify.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -616,7 +640,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_Spotify.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="Install_Xampp.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -646,7 +670,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_Xampp.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="Install_BleachBit.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -676,7 +700,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_BleachBit.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="Install_WindowsTerminal.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -706,7 +730,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_WindowsTerminal.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>19</value>
   </data>
   <data name="Install_Skype.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -736,7 +760,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_Skype.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>20</value>
   </data>
   <data name="Install_GitHubDesktop.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -766,7 +790,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_GitHubDesktop.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>21</value>
   </data>
   <data name="Install_VisualStudioCode.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -796,7 +820,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_VisualStudioCode.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>22</value>
   </data>
   <data name="Install_VisualStudioCodium.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -826,7 +850,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_VisualStudioCodium.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>23</value>
   </data>
   <data name="Install_TelegramDesktop.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -859,7 +883,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_TelegramDesktop.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>24</value>
   </data>
   <data name="Install_MicrosoftTeams.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -889,7 +913,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_MicrosoftTeams.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>25</value>
   </data>
   <data name="Install_Brave.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -919,7 +943,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_Brave.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>26</value>
   </data>
   <data name="Install_AndroidStudio.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -949,7 +973,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_AndroidStudio.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>27</value>
   </data>
   <data name="Install_KdeConnect.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -979,7 +1003,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_KdeConnect.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>28</value>
   </data>
   <data name="Install_Gimp.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -1009,7 +1033,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_Gimp.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>29</value>
   </data>
   <data name="Install_Discord.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -1039,7 +1063,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_Discord.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>30</value>
   </data>
   <data name="Install_EADesktop.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -1069,7 +1093,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_EADesktop.ZOrder" xml:space="preserve">
-    <value>30</value>
+    <value>31</value>
   </data>
   <data name="Install_EpicGamesLauncher.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -1099,7 +1123,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_EpicGamesLauncher.ZOrder" xml:space="preserve">
-    <value>31</value>
+    <value>32</value>
   </data>
   <data name="Install_Steam.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -1129,7 +1153,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_Steam.ZOrder" xml:space="preserve">
-    <value>32</value>
+    <value>33</value>
   </data>
   <data name="Install_7zip.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -1159,7 +1183,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_7zip.ZOrder" xml:space="preserve">
-    <value>33</value>
+    <value>34</value>
   </data>
   <data name="Programs.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 24</value>

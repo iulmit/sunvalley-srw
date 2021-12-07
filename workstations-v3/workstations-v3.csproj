@@ -15,12 +15,12 @@
     <RepositoryUrl>https://github.com/mrkenhoo/sunvalley-sr</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <NeutralLanguage>en-US</NeutralLanguage>
-    <AssemblyVersion>0.0.8.0</AssemblyVersion>
-    <FileVersion>0.0.8.0</FileVersion>
+    <AssemblyVersion>0.0.8.1</AssemblyVersion>
+    <FileVersion>0.0.8.1</FileVersion>
     <PlatformTarget>x64</PlatformTarget>
     <Description>System Readiness for Workstations is an automated privacy-focused configuration tool which debloats and tweaks any compatible Windows version and edition to improve it's performance and reduce the user's footprint as much as possible.</Description>
     <AssemblyName>sunvalley-srw</AssemblyName>
-    <Version>0.0.8.0</Version>
+    <Version>0.0.8.1</Version>
     <Authors>Ken Hoo</Authors>
     <Company>Ken Hoo</Company>
     <Product>System Readiness for Workstations</Product>
@@ -31,6 +31,21 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>

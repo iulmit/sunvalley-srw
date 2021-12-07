@@ -692,6 +692,23 @@ namespace workstations_v3
             }
         }
 
+
+        private void Install_Vim_Click(object sender, EventArgs e)
+        {
+            if (GetCurrentRole.IsUserAdmin() == false)
+            {
+                var Message = "You need administrator privileges to install this program.";
+                var Caption = "Insufficient privileges";
+                var ButtonLayout = MessageBoxButtons.OK;
+                var Icon = MessageBoxIcon.Error;
+                MessageBox.Show(Message, Caption, ButtonLayout, Icon);
+            }
+            else
+            {
+                Worker.StartProcess("powershell.exe", "winget install -e vim.vim");
+            }
+        }
+
         private void Apply_SystemReadiness_Click(object sender, EventArgs e)
         {
             if (GetCurrentRole.IsUserAdmin() == false)
@@ -804,7 +821,7 @@ namespace workstations_v3
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void SimeononSecurityWoh_Click(object sender, EventArgs e)
         {
             if (GetCurrentRole.IsUserAdmin() == false)
             {
