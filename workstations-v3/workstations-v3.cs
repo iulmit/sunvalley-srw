@@ -118,7 +118,7 @@ namespace workstations_v3
             {
                 if (DependenciesChecker.IsWingetInstalled() == false)
                 {
-                    Worker.StartProcess("powershell.exe", "ms-appinstaller:?source=https://aka.ms/getwinget");
+                    Worker.StartProcess("powershell.exe", "Start-Process 'ms-appinstaller:?source=https://aka.ms/getwinget'");
                 }
                 else
                 {
