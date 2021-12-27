@@ -3,7 +3,9 @@
 #define MyAppURL "https://github.com/mrkenhoo/sunvalley-srw"
 #define MyAppExeName "sunvalley-srw.exe"
 #define MyUsername "mrkenhoo"
-#define VersionInfoDescription "System Readiness for Workstations is an automated privacy-focused configuration tool which debloats and tweaks any compatible Windows version and edition to improve it's performance and reduce the user's footprint as much as possible."
+#define VersionInfoDescription "System Readiness for Workstations is an automated \
+                                privacy-focused configuration tool which debloats and tweaks any compatible Windows \
+                                version and edition to improve it's performance and reduce the user's footprint as much as possible."
 
 [Setup]
 SignTool=default $f
@@ -40,12 +42,21 @@ WindowResizable=no
 Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "french"; MessagesFile: "compiler:Languages\French.isl"
 Name: "spanish"; MessagesFile: "compiler:Languages\Spanish.isl"
-   
+
+[Types]
+Name: "full"; Description: "Full installation"; Flags: iscustom
+
+[Components]
+Name: "corefiles"; Description: "Required program files"; Types: full; Flags: fixed
+
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "C:\Users\{#MyUsername}\Documents\GitHub\sunvalley-sr\workstations-v3\bin\Release\netcoreapp3.1\win-x64\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Users\{#MyUsername}\Documents\GitHub\sunvalley-sr\workstations-v3\bin\Release\net6.0-windows10.0.22000.0\*"; DestDir: "{app}"; \
+                                                                                                                         Flags: ignoreversion recursesubdirs createallsubdirs; \
+                                                                                                                         Components: corefiles; \
+                                                                                                                         MinVersion: 10.0.20348
 
 [Icons]
 Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
