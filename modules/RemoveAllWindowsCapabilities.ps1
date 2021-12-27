@@ -4,7 +4,7 @@
 #
 ### Check system version and edition ###
 if (!${validatedOsVersion}) {
-    New-Variable -Name validatedOsVersion -Value "10.0.19043" 2>&1
+    New-Variable -Name validatedOsVersion -Value "10.0.19044" 2>&1
 }
 
 if (!${OsVersion}) {
@@ -12,7 +12,7 @@ if (!${OsVersion}) {
 }
 
 if (${OsVersion} -ne ${validatedOsVersion}) {
-    Write-Error ('Please use Windows 10 (21H1) v' + ${validatedOsVersion} + ', instead. This script is known to the break the GUI of Windows Server and Windows 11.')
+    Write-Error ('Please use Windows 10 (21H2) v' + ${validatedOsVersion} + ', instead. This script is known to break the GUI of Windows Server and Windows 11.')
     Exit 1
 } else {
     $wc = (Get-WindowsCapability -Online).Name
