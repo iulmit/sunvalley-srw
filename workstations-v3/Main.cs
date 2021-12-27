@@ -1134,7 +1134,7 @@ namespace workstations_v3
             }
             else
             {
-                ProcessManager.NewProcess("powershell.exe", "iex ((New - Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/mrkenhoo/sunvalley-srw/sunvalley-v3/modules/DisableAllWindowsOptionalFeatures.ps1'))");
+                ProcessManager.NewProcess("powershell.exe", "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/mrkenhoo/sunvalley-srw/sunvalley-v3/modules/DisableAllWindowsOptionalFeatures.ps1'))");
             }
         }
 
@@ -1150,7 +1150,7 @@ namespace workstations_v3
             }
             else
             {
-                ProcessManager.NewProcess("powershell.exe", "iex ((New - Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/mrkenhoo/sunvalley-srw/sunvalley-v3/modules/RemoveAllWindowsCapabilities.ps1'))");
+                ProcessManager.NewProcess("powershell.exe", "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/mrkenhoo/sunvalley-srw/sunvalley-v3/modules/RemoveAllWindowsCapabilities.ps1'))");
             }
         }
 
