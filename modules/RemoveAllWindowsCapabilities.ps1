@@ -22,3 +22,5 @@ if (${OsVersion} -ne ${validatedOsVersion}) {
         Remove-WindowsCapability -Name $_ -Online -ErrorAction SilentlyContinue -WarningAction SilentlyContinue
     }
 }
+
+Write-Sleep 5
