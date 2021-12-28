@@ -15,3 +15,6 @@ Write-Host "    --> Applying policies from O&O ShutUp10 configuration file..."
 .\OOSU10.exe ooshutup10.cfg /quiet
 cd $PSScriptRoot
 Remove-Module BitsTransfer
+
+Write-Host -NoNewLine 'Press any key to continue...';
+$null = $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown');

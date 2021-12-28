@@ -13,7 +13,8 @@ if (!${OsVersion}) {
 
 if (${OsVersion} -ne ${validatedOsVersion}) {
     Write-Error ('Please use Windows 10 (21H2) v' + ${validatedOsVersion} + ', instead. This script is known to break the GUI of Windows Server and Windows 11.')
-    Exit 1
+    Write-Host -NoNewLine 'Press any key to continue...';
+    $null = $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown');
 } else {
     $wc = (Get-WindowsCapability -Online).Name
     Write-Host ('==> Found ' + $wc.Count + ' Windows capabilities...')
@@ -22,5 +23,3 @@ if (${OsVersion} -ne ${validatedOsVersion}) {
         Remove-WindowsCapability -Name $_ -Online -ErrorAction SilentlyContinue -WarningAction SilentlyContinue
     }
 }
-
-Write-Sleep 5

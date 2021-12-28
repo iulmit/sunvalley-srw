@@ -312,3 +312,6 @@ wmic recoveros set AutoReboot = False | Out-Null
 
 Write-Host "    --> Disabling system crash dumping..."
 wmic recoveros set DebugInfoType = 0 | Out-Null
+
+Write-Host -NoNewLine 'Press any key to continue...';
+$null = $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown');
