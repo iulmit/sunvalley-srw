@@ -6,7 +6,7 @@
     <RootNamespace>workstations_v3</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
     <StartupObject>workstations_v3.Program</StartupObject>
-    <SignAssembly>False</SignAssembly>
+    <SignAssembly>True</SignAssembly>
     <AssemblyOriginatorKeyFile>C:\Users\mrkenhoo\Documents\GitHub\sunvalley-sr\mrkenhoo.pfx</AssemblyOriginatorKeyFile>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Copyright>GNU General Public License v3.0</Copyright>
@@ -28,7 +28,6 @@
     <SupportedOSPlatformVersion>10.0.20348.0</SupportedOSPlatformVersion>
     <DebugType>portable</DebugType>
     <AnalysisLevel>6.0</AnalysisLevel>
-    <ErrorReport>none</ErrorReport>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
