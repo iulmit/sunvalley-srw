@@ -17,6 +17,7 @@ AppVerName={#MyAppName} {#MyAppVersion}
 AppPublisherURL={#MyAppURL}
 AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}/releases
+UsePreviousAppDir=no
 DefaultDirName={autopf}\{#MyUsername}\sunvalley-srw
 DefaultGroupName={#MyUsername}\sunvalley-srw
 AllowNoIcons=yes
