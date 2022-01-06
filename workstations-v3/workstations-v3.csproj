@@ -6,8 +6,7 @@
     <RootNamespace>workstations_v3</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
     <StartupObject>workstations_v3.Program</StartupObject>
-    <SignAssembly>True</SignAssembly>
-    <AssemblyOriginatorKeyFile>C:\Users\mrkenhoo\Documents\GitHub\sunvalley-sr\mrkenhoo.pfx</AssemblyOriginatorKeyFile>
+    <SignAssembly>False</SignAssembly>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Copyright>GNU General Public License v3.0</Copyright>
     <PackageProjectUrl>https://github.com/mrkenhoo/sunvalley-srw</PackageProjectUrl>
@@ -15,12 +14,12 @@
     <RepositoryUrl>https://github.com/mrkenhoo/sunvalley-srw</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <NeutralLanguage>en-US</NeutralLanguage>
-    <AssemblyVersion>0.0.9.0</AssemblyVersion>
-    <FileVersion>0.0.9.0</FileVersion>
+    <AssemblyVersion>0.0.9.1</AssemblyVersion>
+    <FileVersion>0.0.9.1</FileVersion>
     <PlatformTarget>x64</PlatformTarget>
     <Description>System Readiness for Workstations is an automated privacy-focused configuration tool which debloats and tweaks any compatible Windows version and edition to improve it's performance and reduce the user's footprint as much as possible.</Description>
     <AssemblyName>sunvalley-srw</AssemblyName>
-    <Version>0.0.9.0</Version>
+    <Version>0.0.9.1</Version>
     <Authors>Ken Hoo</Authors>
     <Company>Ken Hoo</Company>
     <Product>System Readiness for Workstations</Product>
@@ -28,6 +27,8 @@
     <SupportedOSPlatformVersion>10.0.20348.0</SupportedOSPlatformVersion>
     <DebugType>portable</DebugType>
     <AnalysisLevel>6.0</AnalysisLevel>
+    <ErrorReport>none</ErrorReport>
+    <DelaySign>False</DelaySign>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -37,6 +38,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+	<Optimize>True</Optimize>
     <WarningLevel>4</WarningLevel>
     <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
   </PropertyGroup>
@@ -53,8 +55,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Main.es.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Update="Main.resx">
-      <Generator></Generator>
     </EmbeddedResource>
   </ItemGroup>
 
