@@ -1308,6 +1308,14 @@ namespace workstations_v3
         {
             if (PrivilegesManager.IsUserAdmin() == false)
             {
+                var Message = "You need administrator privileges toexecute this script.";
+                var Caption = "Insufficient privileges";
+                var ButtonLayout = MessageBoxButtons.OK;
+                var Icon = MessageBoxIcon.Error;
+                MessageBox.Show(Message, Caption, ButtonLayout, Icon);
+            }
+            else
+            {
                 ProcessManager.NewProcess("powershell.exe", "iwr -useb 'https://simeononsecurity.ch/scripts/windowsoptimizeanddebloat.ps1'|iex");
             }
         }
