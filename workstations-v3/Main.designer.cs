@@ -20,6 +20,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Container));
             this.TabManager = new System.Windows.Forms.TabControl();
             this.Programs = new System.Windows.Forms.TabPage();
+            this.Install_Jami = new System.Windows.Forms.Button();
+            this.Install_Element = new System.Windows.Forms.Button();
+            this.Install_Libreoffice = new System.Windows.Forms.Button();
+            this.Install_Onlyoffice = new System.Windows.Forms.Button();
             this.Install_Git = new System.Windows.Forms.Button();
             this.Install_Vim = new System.Windows.Forms.Button();
             this.Install_Flameshot = new System.Windows.Forms.Button();
@@ -70,10 +74,16 @@
             this.ThirdParty = new System.Windows.Forms.TabPage();
             this.SimeononSecurityWoh = new System.Windows.Forms.Button();
             this.CttWin10script = new System.Windows.Forms.Button();
+            this.Panel = new System.Windows.Forms.Panel();
+            this.BottomBar = new System.Windows.Forms.StatusStrip();
+            this.CurrentVersionLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.VisitGitHubRepository = new System.Windows.Forms.ToolStripStatusLabel();
             this.TabManager.SuspendLayout();
             this.Programs.SuspendLayout();
             this.SystemAdministration.SuspendLayout();
             this.ThirdParty.SuspendLayout();
+            this.Panel.SuspendLayout();
+            this.BottomBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // TabManager
@@ -88,7 +98,12 @@
             // 
             // Programs
             // 
+            resources.ApplyResources(this.Programs, "Programs");
             this.Programs.BackColor = System.Drawing.Color.DimGray;
+            this.Programs.Controls.Add(this.Install_Jami);
+            this.Programs.Controls.Add(this.Install_Element);
+            this.Programs.Controls.Add(this.Install_Libreoffice);
+            this.Programs.Controls.Add(this.Install_Onlyoffice);
             this.Programs.Controls.Add(this.Install_Git);
             this.Programs.Controls.Add(this.Install_Vim);
             this.Programs.Controls.Add(this.Install_Flameshot);
@@ -126,8 +141,35 @@
             this.Programs.Controls.Add(this.Install_Steam);
             this.Programs.Controls.Add(this.Install_7zip);
             this.Programs.ForeColor = System.Drawing.SystemColors.ControlText;
-            resources.ApplyResources(this.Programs, "Programs");
             this.Programs.Name = "Programs";
+            // 
+            // Install_Jami
+            // 
+            resources.ApplyResources(this.Install_Jami, "Install_Jami");
+            this.Install_Jami.Name = "Install_Jami";
+            this.Install_Jami.UseVisualStyleBackColor = true;
+            this.Install_Jami.Click += new System.EventHandler(this.Install_Jami_Click);
+            // 
+            // Install_Element
+            // 
+            resources.ApplyResources(this.Install_Element, "Install_Element");
+            this.Install_Element.Name = "Install_Element";
+            this.Install_Element.UseVisualStyleBackColor = true;
+            this.Install_Element.Click += new System.EventHandler(this.Install_Element_Click);
+            // 
+            // Install_Libreoffice
+            // 
+            resources.ApplyResources(this.Install_Libreoffice, "Install_Libreoffice");
+            this.Install_Libreoffice.Name = "Install_Libreoffice";
+            this.Install_Libreoffice.UseVisualStyleBackColor = true;
+            this.Install_Libreoffice.Click += new System.EventHandler(this.Install_Libreoffice_Click);
+            // 
+            // Install_Onlyoffice
+            // 
+            resources.ApplyResources(this.Install_Onlyoffice, "Install_Onlyoffice");
+            this.Install_Onlyoffice.Name = "Install_Onlyoffice";
+            this.Install_Onlyoffice.UseVisualStyleBackColor = true;
+            this.Install_Onlyoffice.Click += new System.EventHandler(this.Install_Onlyoffice_Click);
             // 
             // Install_Git
             // 
@@ -490,22 +532,52 @@
             this.CttWin10script.UseVisualStyleBackColor = true;
             this.CttWin10script.Click += new System.EventHandler(this.CttWin10script_Click);
             // 
+            // Panel
+            // 
+            this.Panel.Controls.Add(this.TabManager);
+            resources.ApplyResources(this.Panel, "Panel");
+            this.Panel.Name = "Panel";
+            // 
+            // BottomBar
+            // 
+            resources.ApplyResources(this.BottomBar, "BottomBar");
+            this.BottomBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.CurrentVersionLabel,
+            this.VisitGitHubRepository});
+            this.BottomBar.Name = "BottomBar";
+            this.BottomBar.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
+            this.BottomBar.SizingGrip = false;
+            // 
+            // CurrentVersionLabel
+            // 
+            this.CurrentVersionLabel.Name = "CurrentVersionLabel";
+            resources.ApplyResources(this.CurrentVersionLabel, "CurrentVersionLabel");
+            // 
+            // VisitGitHubRepository
+            // 
+            this.VisitGitHubRepository.IsLink = true;
+            this.VisitGitHubRepository.Name = "VisitGitHubRepository";
+            resources.ApplyResources(this.VisitGitHubRepository, "VisitGitHubRepository");
+            // 
             // Container
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.Controls.Add(this.TabManager);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Controls.Add(this.BottomBar);
+            this.Controls.Add(this.Panel);
             this.HelpButton = true;
-            this.MaximizeBox = false;
             this.Name = "Container";
             this.Load += new System.EventHandler(this.Container_Load);
             this.TabManager.ResumeLayout(false);
             this.Programs.ResumeLayout(false);
             this.SystemAdministration.ResumeLayout(false);
             this.ThirdParty.ResumeLayout(false);
+            this.Panel.ResumeLayout(false);
+            this.BottomBar.ResumeLayout(false);
+            this.BottomBar.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -514,6 +586,9 @@
         private System.Windows.Forms.TabPage Programs;
         private System.Windows.Forms.TabPage SystemAdministration;
         private System.Windows.Forms.TabPage ThirdParty;
+        private System.Windows.Forms.Panel Panel;
+        private System.Windows.Forms.StatusStrip BottomBar;
+
         private System.Windows.Forms.Button Install_VisualStudioCodium;
         private System.Windows.Forms.Button Install_TelegramDesktop;
         private System.Windows.Forms.Button Install_MicrosoftTeams;
@@ -562,5 +637,12 @@
         private System.Windows.Forms.Button CttWin10script;
         private System.Windows.Forms.Button SimeononSecurityWoh;
         private System.Windows.Forms.Button Install_Git;
+        private System.Windows.Forms.Button Install_Onlyoffice;
+        private System.Windows.Forms.Button Install_Libreoffice;
+        private System.Windows.Forms.Button Install_Element;
+        private System.Windows.Forms.Button Install_Jami;
+
+        private System.Windows.Forms.ToolStripStatusLabel CurrentVersionLabel;
+        private System.Windows.Forms.ToolStripStatusLabel VisitGitHubRepository;
     }
 }

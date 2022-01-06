@@ -1,0 +1,242 @@
+﻿<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Programs.Text" xml:space="preserve">
+    <value>Programas</value>
+  </data>
+  <data name="SystemAdministration.Text" xml:space="preserve">
+    <value>Administración del sistema</value>
+  </data>
+  <data name="ThirdParty.Text" xml:space="preserve">
+    <value>De terceros</value>
+  </data>
+  <data name="Install_Libreoffice.Text" xml:space="preserve">
+    <value>Instalar LibreOffice</value>
+  </data>
+  <data name="Install_Onlyoffice.Text" xml:space="preserve">
+    <value>Instalar ONLYOFFICE</value>
+  </data>
+  <data name="Install_Git.Text" xml:space="preserve">
+    <value>Instalar Git</value>
+  </data>
+  <data name="Install_Vim.Text" xml:space="preserve">
+    <value>Instalar Vim</value>
+  </data>
+  <data name="Install_Flameshot.Text" xml:space="preserve">
+    <value>Instalar Flameshot</value>
+  </data>
+  <data name="Install_LightShot.Text" xml:space="preserve">
+    <value>Instalar LightShot</value>
+  </data>
+  <data name="Install_PlayStationNow.Text" xml:space="preserve">
+    <value>Instalar PlayStation Now</value>
+  </data>
+  <data name="Install_Mremoteng.Text" xml:space="preserve">
+    <value>Instalar mRemoteNG</value>
+  </data>
+  <data name="Install_AmdRyzenMaster.Text" xml:space="preserve">
+    <value>Instalar AMD Ryzen Master</value>
+  </data>
+  <data name="Install_GeForceExperience.Text" xml:space="preserve">
+    <value>Instalar GeForce Experience</value>
+  </data>
+  <data name="Install_GeForceNow.Text" xml:space="preserve">
+    <value>Instalar GeForce Now</value>
+  </data>
+  <data name="Install_VisualStudioCommunity.Text" xml:space="preserve">
+    <value>Instalar VS Community 2022</value>
+  </data>
+  <data name="Install_Bitwarden.Text" xml:space="preserve">
+    <value>Instalar Bitwarden</value>
+  </data>
+  <data name="Install_InnoSetup.Text" xml:space="preserve">
+    <value>Instalar Inno Setup</value>
+  </data>
+  <data name="Install_CrystalDiskInfo.Text" xml:space="preserve">
+    <value>Instalar CrystalDiskInfo</value>
+  </data>
+  <data name="Install_OneDrive.Text" xml:space="preserve">
+    <value>Instalar OneDrive</value>
+  </data>
+  <data name="Install_GoogleDrive.Text" xml:space="preserve">
+    <value>Instalar Google Drive</value>
+  </data>
+  <data name="Install_Transmission.Text" xml:space="preserve">
+    <value>Instalar Transmission</value>
+  </data>
+  <data name="Install_Spotify.Text" xml:space="preserve">
+    <value>Instalar Spotify</value>
+  </data>
+  <data name="Install_Xampp.Text" xml:space="preserve">
+    <value>Instalar XAMPP</value>
+  </data>
+  <data name="Install_BleachBit.Text" xml:space="preserve">
+    <value>Instalar BleachBit</value>
+  </data>
+  <data name="Install_WindowsTerminal.Text" xml:space="preserve">
+    <value>Instalar Windows Terminal</value>
+  </data>
+  <data name="Install_Skype.Text" xml:space="preserve">
+    <value>Instalar Skype</value>
+  </data>
+  <data name="Install_GitHubDesktop.Text" xml:space="preserve">
+    <value>Instalar GitHub Desktop</value>
+  </data>
+  <data name="Install_VisualStudioCode.Text" xml:space="preserve">
+    <value>Instalar Visual Studio Code</value>
+  </data>
+  <data name="Install_VisualStudioCodium.Text" xml:space="preserve">
+    <value>Instalar Visual Studio Codium</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Install_TelegramDesktop.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="Install_TelegramDesktop.Text" xml:space="preserve">
+    <value>Instalar Telegram Desktop</value>
+  </data>
+  <data name="Install_MicrosoftTeams.Text" xml:space="preserve">
+    <value>Instalar Microsoft Teams</value>
+  </data>
+  <data name="Install_Brave.Text" xml:space="preserve">
+    <value>Instalar Brave</value>
+  </data>
+  <data name="Install_AndroidStudio.Text" xml:space="preserve">
+    <value>Instalar Android Studio</value>
+  </data>
+  <data name="Install_KdeConnect.Text" xml:space="preserve">
+    <value>Instalar KDE Connect</value>
+  </data>
+  <data name="Install_Gimp.Text" xml:space="preserve">
+    <value>Instalar GIMP</value>
+  </data>
+  <data name="Install_Discord.Text" xml:space="preserve">
+    <value>Instalar Discord</value>
+  </data>
+  <data name="Install_EADesktop.Text" xml:space="preserve">
+    <value>Instalar EA Desktop</value>
+  </data>
+  <data name="Install_EpicGamesLauncher.Text" xml:space="preserve">
+    <value>Instalar Epic Games Launcher</value>
+  </data>
+  <data name="Install_Steam.Text" xml:space="preserve">
+    <value>Instalar Steam</value>
+  </data>
+  <data name="Install_7zip.Text" xml:space="preserve">
+    <value>Instalar 7-Zip</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="RemoveAllWindowsCapabilities.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 206</value>
+  </data>
+  <data name="RemoveAllWindowsCapabilities.Text" xml:space="preserve">
+    <value>Eliminar las características de Windows</value>
+  </data>
+  <data name="DisableAllWindowsOptionalFeatures.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 148</value>
+  </data>
+  <data name="DisableAllWindowsOptionalFeatures.Text" xml:space="preserve">
+    <value>Desactivar todas las características opcionales</value>
+  </data>
+  <data name="ReinstallAllUwpApps.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 119</value>
+  </data>
+  <data name="ReinstallAllUwpApps.Text" xml:space="preserve">
+    <value>Reinstalar apps UWP</value>
+  </data>
+  <data name="RemoveNonCriticalUwpApps.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 61</value>
+  </data>
+  <data name="RemoveNonCriticalUwpApps.Text" xml:space="preserve">
+    <value>Eliminar aplicaciones UWP no críticas</value>
+  </data>
+  <data name="RemoveAllUwpApps.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 52</value>
+  </data>
+  <data name="RemoveAllUwpApps.Text" xml:space="preserve">
+    <value>Eliminar todas las aplicaciones UWP</value>
+  </data>
+  <data name="Apply_SystemReadinessLite.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 52</value>
+  </data>
+  <data name="Apply_SystemReadinessLite.Text" xml:space="preserve">
+    <value>Preparación del sistema (ligero)</value>
+  </data>
+  <data name="Apply_SystemReadiness.Text" xml:space="preserve">
+    <value>Preparación del sistema</value>
+  </data>
+  <data name="Install_Winget.Text" xml:space="preserve">
+    <value>Instalar winget</value>
+  </data>
+  <data name="Upgrade_AllPackages.Text" xml:space="preserve">
+    <value>Actualizar todos los paquetes</value>
+  </data>
+  <data name="Update_WingetSources.Text" xml:space="preserve">
+    <value>Actualizar fuente de winget</value>
+  </data>
+  <data name="SimeononSecurityWoh.Text" xml:space="preserve">
+    <value>Ejecutar script Windows-Optimize-Harden-Debloat de Simeononsecurity</value>
+  </data>
+  <data name="CttWin10script.Text" xml:space="preserve">
+    <value>Ejecutar win10script de ChrisTitusTech</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Preparación del sistema para estaciones de trabajo</value>
+  </data>
+</root>

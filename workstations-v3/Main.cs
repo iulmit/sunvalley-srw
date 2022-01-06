@@ -1041,6 +1041,113 @@ namespace workstations_v3
                 }
             }
         }
+        private void Install_Onlyoffice_Click(object sender, EventArgs e)
+        {
+            if (PrivilegesManager.IsUserAdmin() == false)
+            {
+                var Message = "You need administrator privileges to install this program.";
+                var Caption = "Insufficient privileges";
+                var ButtonLayout = MessageBoxButtons.OK;
+                var Icon = MessageBoxIcon.Error;
+                MessageBox.Show(Message, Caption, ButtonLayout, Icon);
+            }
+            else
+            {
+                if (DependenciesManager.IsWingetInstalled() == true)
+                {
+                    ProcessManager.NewProcess("powershell.exe", "winget install -e ONLYOFFICE.DesktopEditors");
+                }
+                else
+                {
+                    var Message = "Cannot install this program because winget is not installed.";
+                    var Caption = "Cannot find winget";
+                    var ButtonLayout = MessageBoxButtons.OK;
+                    var Icon = MessageBoxIcon.Warning;
+                    MessageBox.Show(Message, Caption, ButtonLayout, Icon);
+                }
+            }
+        }
+
+        private void Install_Libreoffice_Click(object sender, EventArgs e)
+        {
+            if (PrivilegesManager.IsUserAdmin() == false)
+            {
+                var Message = "You need administrator privileges to install this program.";
+                var Caption = "Insufficient privileges";
+                var ButtonLayout = MessageBoxButtons.OK;
+                var Icon = MessageBoxIcon.Error;
+                MessageBox.Show(Message, Caption, ButtonLayout, Icon);
+            }
+            else
+            {
+                if (DependenciesManager.IsWingetInstalled() == true)
+                {
+                    ProcessManager.NewProcess("powershell.exe", "winget install -e TheDocumentFoundation.LibreOffice");
+                }
+                else
+                {
+                    var Message = "Cannot install this program because winget is not installed.";
+                    var Caption = "Cannot find winget";
+                    var ButtonLayout = MessageBoxButtons.OK;
+                    var Icon = MessageBoxIcon.Warning;
+                    MessageBox.Show(Message, Caption, ButtonLayout, Icon);
+                }
+            }
+        }
+
+        private void Install_Element_Click(object sender, EventArgs e)
+        {
+            if (PrivilegesManager.IsUserAdmin() == false)
+            {
+                var Message = "You need administrator privileges to install this program.";
+                var Caption = "Insufficient privileges";
+                var ButtonLayout = MessageBoxButtons.OK;
+                var Icon = MessageBoxIcon.Error;
+                MessageBox.Show(Message, Caption, ButtonLayout, Icon);
+            }
+            else
+            {
+                if (DependenciesManager.IsWingetInstalled() == true)
+                {
+                    ProcessManager.NewProcess("powershell.exe", "winget install -e Element.Element");
+                }
+                else
+                {
+                    var Message = "Cannot install this program because winget is not installed.";
+                    var Caption = "Cannot find winget";
+                    var ButtonLayout = MessageBoxButtons.OK;
+                    var Icon = MessageBoxIcon.Warning;
+                    MessageBox.Show(Message, Caption, ButtonLayout, Icon);
+                }
+            }
+        }
+
+        private void Install_Jami_Click(object sender, EventArgs e)
+        {
+            if (PrivilegesManager.IsUserAdmin() == false)
+            {
+                var Message = "You need administrator privileges to install this program.";
+                var Caption = "Insufficient privileges";
+                var ButtonLayout = MessageBoxButtons.OK;
+                var Icon = MessageBoxIcon.Error;
+                MessageBox.Show(Message, Caption, ButtonLayout, Icon);
+            }
+            else
+            {
+                if (DependenciesManager.IsWingetInstalled() == true)
+                {
+                    ProcessManager.NewProcess("powershell.exe", "winget install -e SFLinux.Jami");
+                }
+                else
+                {
+                    var Message = "Cannot install this program because winget is not installed.";
+                    var Caption = "Cannot find winget";
+                    var ButtonLayout = MessageBoxButtons.OK;
+                    var Icon = MessageBoxIcon.Warning;
+                    MessageBox.Show(Message, Caption, ButtonLayout, Icon);
+                }
+            }
+        }
 
         private void Apply_SystemReadiness_Click(object sender, EventArgs e)
         {
@@ -1201,8 +1308,13 @@ namespace workstations_v3
         {
             if (PrivilegesManager.IsUserAdmin() == false)
             {
-                ProcessManager.NewProcess("powershell.exe", "iwr -useb 'https://simeononsecurity.ch/scripts/windowsoptimizeandharden.ps1'|iex");
+                ProcessManager.NewProcess("powershell.exe", "iwr -useb 'https://simeononsecurity.ch/scripts/windowsoptimizeanddebloat.ps1'|iex");
             }
+        }
+
+        private void VisitGithubRepository_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/mrkenhoo/sunvalley-srw");
         }
     }
 }
