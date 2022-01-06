@@ -4,7 +4,7 @@
 #
 ### Check system version and edition ###
 if (!${validatedOsVersion}) {
-    New-Variable -Name validatedOsVersion -Value "10.0.19044" 2>&1
+    New-Variable -Name validatedOsVersion -Value "10.0.20348" 2>&1
 }
 
 if (!${OsVersion}) {
