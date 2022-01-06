@@ -1,5 +1,5 @@
 #define MyAppName "System Readiness for Workstations"
-#define MyAppVersion "0.0.9.0"
+#define MyAppVersion "0.0.9.1"
 #define MyAppURL "https://github.com/mrkenhoo/sunvalley-srw"
 #define MyAppExeName "sunvalley-srw.exe"
 #define MyUsername "mrkenhoo"
@@ -8,8 +8,6 @@
                                 version and edition to improve it's performance and reduce the user's footprint as much as possible."
 
 [Setup]
-SignTool=default $f
-SignedUninstaller=yes
 AppId={{28B11907-066D-4911-BA15-E70234360C28}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
