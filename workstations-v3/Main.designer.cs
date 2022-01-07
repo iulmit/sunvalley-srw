@@ -78,6 +78,7 @@
             this.BottomBar = new System.Windows.Forms.StatusStrip();
             this.CurrentVersionLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.VisitGitHubRepository = new System.Windows.Forms.ToolStripStatusLabel();
+            this.Install_MozillaThunderbird = new System.Windows.Forms.Button();
             this.TabManager.SuspendLayout();
             this.Programs.SuspendLayout();
             this.SystemAdministration.SuspendLayout();
@@ -100,6 +101,7 @@
             // 
             resources.ApplyResources(this.Programs, "Programs");
             this.Programs.BackColor = System.Drawing.Color.DimGray;
+            this.Programs.Controls.Add(this.Install_MozillaThunderbird);
             this.Programs.Controls.Add(this.Install_Jami);
             this.Programs.Controls.Add(this.Install_Element);
             this.Programs.Controls.Add(this.Install_Libreoffice);
@@ -552,12 +554,20 @@
             // 
             this.CurrentVersionLabel.Name = "CurrentVersionLabel";
             resources.ApplyResources(this.CurrentVersionLabel, "CurrentVersionLabel");
+            this.CurrentVersionLabel.Text = VersionManager.ShowCurrentVersion();
             // 
             // VisitGitHubRepository
             // 
             this.VisitGitHubRepository.IsLink = true;
             this.VisitGitHubRepository.Name = "VisitGitHubRepository";
             resources.ApplyResources(this.VisitGitHubRepository, "VisitGitHubRepository");
+            // 
+            // Install_MozillaThunderbird
+            // 
+            resources.ApplyResources(this.Install_MozillaThunderbird, "Install_MozillaThunderbird");
+            this.Install_MozillaThunderbird.Name = "Install_MozillaThunderbird";
+            this.Install_MozillaThunderbird.UseVisualStyleBackColor = true;
+            this.Install_MozillaThunderbird.Click += new System.EventHandler(this.Install_MozillaThunderbird_Click);
             // 
             // Container
             // 
@@ -644,5 +654,6 @@
 
         private System.Windows.Forms.ToolStripStatusLabel CurrentVersionLabel;
         private System.Windows.Forms.ToolStripStatusLabel VisitGitHubRepository;
+        private System.Windows.Forms.Button Install_MozillaThunderbird;
     }
 }
