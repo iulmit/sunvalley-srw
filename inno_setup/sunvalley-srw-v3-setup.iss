@@ -1,5 +1,5 @@
 #define MyAppName "System Readiness for Workstations"
-#define MyAppVersion "0.0.9.3"
+#define MyAppVersion "0.0.9.4"
 #define MyAppURL "https://github.com/mrkenhoo/sunvalley-srw"
 #define MyAppExeName "sunvalley-srw.exe"
 #define MyUsername "mrkenhoo"
@@ -35,7 +35,8 @@ VersionInfoProductVersion={#MyAppVersion}
 VersionInfoProductTextVersion={#MyAppVersion}
 VersionInfoTextVersion={#MyAppVersion}
 WizardResizable=no
-WindowResizable=no                           
+WindowResizable=no      
+MinVersion=10.0.20348                     
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
@@ -50,6 +51,9 @@ Name: "corefiles"; Description: "Required program files"; Types: full; Flags: fi
 
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
+
+[InstallDelete]
+Type: filesandordirs; Name: {app}\*;
 
 [Files]
 Source: "C:\Users\{#MyUsername}\Documents\GitHub\sunvalley-srw\workstations-v3\bin\Release\net6.0-windows10.0.22000.0\publish\win-x64\*"; DestDir: "{app}"; \
