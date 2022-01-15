@@ -57,6 +57,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Programs.Text" xml:space="preserve">
+    <value>Programas</value>
+  </data>
+  <data name="SystemAdministration.Text" xml:space="preserve">
+    <value>Administración del sistema</value>
+  </data>
+  <data name="ThirdParty.Text" xml:space="preserve">
+    <value>De terceros</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="CurrentVersionLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>119, 17</value>
@@ -197,9 +206,6 @@
   <data name="Install_7zip.Text" xml:space="preserve">
     <value>Instalar 7-Zip</value>
   </data>
-  <data name="Programs.Text" xml:space="preserve">
-    <value>Programas</value>
-  </data>
   <data name="CreateTask_WingetAutoUpgrades.Size" type="System.Drawing.Size, System.Drawing">
     <value>168, 78</value>
   </data>
@@ -254,17 +260,11 @@
   <data name="Update_WingetSources.Text" xml:space="preserve">
     <value>Actualizar fuente de winget</value>
   </data>
-  <data name="SystemAdministration.Text" xml:space="preserve">
-    <value>Administración del sistema</value>
-  </data>
   <data name="SimeononSecurityWoh.Text" xml:space="preserve">
     <value>Ejecutar script Windows-Optimize-Harden-Debloat de Simeononsecurity</value>
   </data>
   <data name="CttWin10script.Text" xml:space="preserve">
     <value>Ejecutar win10script de ChrisTitusTech</value>
-  </data>
-  <data name="ThirdParty.Text" xml:space="preserve">
-    <value>De terceros</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Preparación del sistema para estaciones de trabajo</value>
