@@ -255,7 +255,7 @@ namespace workstations_v3
             }
             else
             {
-                if (DependenciesManager.IsWingetInstalled()  == true)
+                if (DependenciesManager.IsWingetInstalled() == true)
                 {
                     ProcessManager.NewProcess("powershell.exe", "winget install -e KDE.KDEConnect");
                 }
@@ -1176,6 +1176,33 @@ namespace workstations_v3
             }
         }
 
+        private void Install_MicrosoftPowertoys_Click(object sender, EventArgs e)
+        {
+            if (PrivilegesManager.IsUserAdmin() == false)
+            {
+                var Message = "You need administrator privileges to install this program.";
+                var Caption = "Insufficient privileges";
+                var ButtonLayout = MessageBoxButtons.OK;
+                var Icon = MessageBoxIcon.Error;
+                MessageBox.Show(Message, Caption, ButtonLayout, Icon);
+            }
+            else
+            {
+                if (DependenciesManager.IsWingetInstalled() == true)
+                {
+                    ProcessManager.NewProcess("powershell.exe", "winget install -e Microsoft.PowerToys");
+                }
+                else
+                {
+                    var Message = "Cannot install this program because winget is not installed.";
+                    var Caption = "Cannot find winget";
+                    var ButtonLayout = MessageBoxButtons.OK;
+                    var Icon = MessageBoxIcon.Warning;
+                    MessageBox.Show(Message, Caption, ButtonLayout, Icon);
+                }
+            }
+        }
+
         private void Apply_SystemReadiness_Click(object sender, EventArgs e)
         {
             if (PrivilegesManager.IsUserAdmin() == false)
@@ -1319,7 +1346,7 @@ namespace workstations_v3
         {
             if (PrivilegesManager.IsUserAdmin() == false)
             {
-                var Message = "You need administrator privileges toexecute this script.";
+                var Message = "You need administrator privileges to execute this script.";
                 var Caption = "Insufficient privileges";
                 var ButtonLayout = MessageBoxButtons.OK;
                 var Icon = MessageBoxIcon.Error;
@@ -1335,7 +1362,7 @@ namespace workstations_v3
         {
             if (PrivilegesManager.IsUserAdmin() == false)
             {
-                var Message = "You need administrator privileges toexecute this script.";
+                var Message = "You need administrator privileges to execute this script.";
                 var Caption = "Insufficient privileges";
                 var ButtonLayout = MessageBoxButtons.OK;
                 var Icon = MessageBoxIcon.Error;
@@ -1350,6 +1377,22 @@ namespace workstations_v3
         private void VisitGithubRepository_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/mrkenhoo/sunvalley-srw");
+        }
+
+        private void CreateTask_WingetAutoUpgrades_Click(object sender, EventArgs e)
+        {
+            if (PrivilegesManager.IsUserAdmin() == false)
+            {
+                var Message = "You need administrator privileges toexecute this script.";
+                var Caption = "Insufficient privileges";
+                var ButtonLayout = MessageBoxButtons.OK;
+                var Icon = MessageBoxIcon.Error;
+                MessageBox.Show(Message, Caption, ButtonLayout, Icon);
+            }
+            else
+            {
+                TaskManager.CreateTask("WingetAutoUpgrades", "winget.exe", "upgrade --all", "", "Automatically upgrades winget packages on daily basis.", 1);
+            }
         }
     }
 }

@@ -20,6 +20,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Container));
             this.TabManager = new System.Windows.Forms.TabControl();
             this.Programs = new System.Windows.Forms.TabPage();
+            this.Install_MicrosoftPowertoys = new System.Windows.Forms.Button();
+            this.BottomBar = new System.Windows.Forms.StatusStrip();
+            this.CurrentVersionLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.VisitGitHubRepository = new System.Windows.Forms.ToolStripStatusLabel();
+            this.Install_MozillaThunderbird = new System.Windows.Forms.Button();
             this.Install_Jami = new System.Windows.Forms.Button();
             this.Install_Element = new System.Windows.Forms.Button();
             this.Install_Libreoffice = new System.Windows.Forms.Button();
@@ -61,6 +66,7 @@
             this.Install_Steam = new System.Windows.Forms.Button();
             this.Install_7zip = new System.Windows.Forms.Button();
             this.SystemAdministration = new System.Windows.Forms.TabPage();
+            this.CreateTask_WingetAutoUpgrades = new System.Windows.Forms.Button();
             this.RemoveAllWindowsCapabilities = new System.Windows.Forms.Button();
             this.DisableAllWindowsOptionalFeatures = new System.Windows.Forms.Button();
             this.ReinstallAllUwpApps = new System.Windows.Forms.Button();
@@ -75,16 +81,12 @@
             this.SimeononSecurityWoh = new System.Windows.Forms.Button();
             this.CttWin10script = new System.Windows.Forms.Button();
             this.Panel = new System.Windows.Forms.Panel();
-            this.BottomBar = new System.Windows.Forms.StatusStrip();
-            this.CurrentVersionLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.VisitGitHubRepository = new System.Windows.Forms.ToolStripStatusLabel();
-            this.Install_MozillaThunderbird = new System.Windows.Forms.Button();
             this.TabManager.SuspendLayout();
             this.Programs.SuspendLayout();
+            this.BottomBar.SuspendLayout();
             this.SystemAdministration.SuspendLayout();
             this.ThirdParty.SuspendLayout();
             this.Panel.SuspendLayout();
-            this.BottomBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // TabManager
@@ -101,6 +103,8 @@
             // 
             resources.ApplyResources(this.Programs, "Programs");
             this.Programs.BackColor = System.Drawing.Color.DimGray;
+            this.Programs.Controls.Add(this.Install_MicrosoftPowertoys);
+            this.Programs.Controls.Add(this.BottomBar);
             this.Programs.Controls.Add(this.Install_MozillaThunderbird);
             this.Programs.Controls.Add(this.Install_Jami);
             this.Programs.Controls.Add(this.Install_Element);
@@ -144,6 +148,41 @@
             this.Programs.Controls.Add(this.Install_7zip);
             this.Programs.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Programs.Name = "Programs";
+            // 
+            // Install_MicrosoftPowertoys
+            // 
+            resources.ApplyResources(this.Install_MicrosoftPowertoys, "Install_MicrosoftPowertoys");
+            this.Install_MicrosoftPowertoys.Name = "Install_MicrosoftPowertoys";
+            this.Install_MicrosoftPowertoys.UseVisualStyleBackColor = true;
+            this.Install_MicrosoftPowertoys.Click += new System.EventHandler(this.Install_MicrosoftPowertoys_Click);
+            // 
+            // BottomBar
+            // 
+            this.BottomBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.CurrentVersionLabel,
+            this.VisitGitHubRepository});
+            resources.ApplyResources(this.BottomBar, "BottomBar");
+            this.BottomBar.Name = "BottomBar";
+            this.BottomBar.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
+            this.BottomBar.SizingGrip = false;
+            // 
+            // CurrentVersionLabel
+            // 
+            this.CurrentVersionLabel.Name = "CurrentVersionLabel";
+            resources.ApplyResources(this.CurrentVersionLabel, "CurrentVersionLabel");
+            // 
+            // VisitGitHubRepository
+            // 
+            this.VisitGitHubRepository.IsLink = true;
+            this.VisitGitHubRepository.Name = "VisitGitHubRepository";
+            resources.ApplyResources(this.VisitGitHubRepository, "VisitGitHubRepository");
+            // 
+            // Install_MozillaThunderbird
+            // 
+            resources.ApplyResources(this.Install_MozillaThunderbird, "Install_MozillaThunderbird");
+            this.Install_MozillaThunderbird.Name = "Install_MozillaThunderbird";
+            this.Install_MozillaThunderbird.UseVisualStyleBackColor = true;
+            this.Install_MozillaThunderbird.Click += new System.EventHandler(this.Install_MozillaThunderbird_Click);
             // 
             // Install_Jami
             // 
@@ -428,6 +467,7 @@
             // SystemAdministration
             // 
             this.SystemAdministration.BackColor = System.Drawing.Color.DimGray;
+            this.SystemAdministration.Controls.Add(this.CreateTask_WingetAutoUpgrades);
             this.SystemAdministration.Controls.Add(this.RemoveAllWindowsCapabilities);
             this.SystemAdministration.Controls.Add(this.DisableAllWindowsOptionalFeatures);
             this.SystemAdministration.Controls.Add(this.ReinstallAllUwpApps);
@@ -441,6 +481,13 @@
             this.SystemAdministration.ForeColor = System.Drawing.SystemColors.ControlText;
             resources.ApplyResources(this.SystemAdministration, "SystemAdministration");
             this.SystemAdministration.Name = "SystemAdministration";
+            // 
+            // CreateTask_WingetAutoUpgrades
+            // 
+            resources.ApplyResources(this.CreateTask_WingetAutoUpgrades, "CreateTask_WingetAutoUpgrades");
+            this.CreateTask_WingetAutoUpgrades.Name = "CreateTask_WingetAutoUpgrades";
+            this.CreateTask_WingetAutoUpgrades.UseVisualStyleBackColor = true;
+            this.CreateTask_WingetAutoUpgrades.Click += new System.EventHandler(this.CreateTask_WingetAutoUpgrades_Click);
             // 
             // RemoveAllWindowsCapabilities
             // 
@@ -540,54 +587,24 @@
             resources.ApplyResources(this.Panel, "Panel");
             this.Panel.Name = "Panel";
             // 
-            // BottomBar
-            // 
-            resources.ApplyResources(this.BottomBar, "BottomBar");
-            this.BottomBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.CurrentVersionLabel,
-            this.VisitGitHubRepository});
-            this.BottomBar.Name = "BottomBar";
-            this.BottomBar.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
-            this.BottomBar.SizingGrip = false;
-            // 
-            // CurrentVersionLabel
-            // 
-            this.CurrentVersionLabel.Name = "CurrentVersionLabel";
-            resources.ApplyResources(this.CurrentVersionLabel, "CurrentVersionLabel");
-            this.CurrentVersionLabel.Text = VersionManager.ShowCurrentVersion();
-            // 
-            // VisitGitHubRepository
-            // 
-            this.VisitGitHubRepository.IsLink = true;
-            this.VisitGitHubRepository.Name = "VisitGitHubRepository";
-            resources.ApplyResources(this.VisitGitHubRepository, "VisitGitHubRepository");
-            // 
-            // Install_MozillaThunderbird
-            // 
-            resources.ApplyResources(this.Install_MozillaThunderbird, "Install_MozillaThunderbird");
-            this.Install_MozillaThunderbird.Name = "Install_MozillaThunderbird";
-            this.Install_MozillaThunderbird.UseVisualStyleBackColor = true;
-            this.Install_MozillaThunderbird.Click += new System.EventHandler(this.Install_MozillaThunderbird_Click);
-            // 
             // Container
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.Controls.Add(this.BottomBar);
             this.Controls.Add(this.Panel);
             this.HelpButton = true;
             this.Name = "Container";
             this.Load += new System.EventHandler(this.Container_Load);
             this.TabManager.ResumeLayout(false);
             this.Programs.ResumeLayout(false);
+            this.Programs.PerformLayout();
+            this.BottomBar.ResumeLayout(false);
+            this.BottomBar.PerformLayout();
             this.SystemAdministration.ResumeLayout(false);
             this.ThirdParty.ResumeLayout(false);
             this.Panel.ResumeLayout(false);
-            this.BottomBar.ResumeLayout(false);
-            this.BottomBar.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -651,9 +668,11 @@
         private System.Windows.Forms.Button Install_Libreoffice;
         private System.Windows.Forms.Button Install_Element;
         private System.Windows.Forms.Button Install_Jami;
+        private System.Windows.Forms.Button Install_MozillaThunderbird;
+        private System.Windows.Forms.Button Install_MicrosoftPowertoys;
+        private System.Windows.Forms.Button CreateTask_WingetAutoUpgrades;
 
         private System.Windows.Forms.ToolStripStatusLabel CurrentVersionLabel;
         private System.Windows.Forms.ToolStripStatusLabel VisitGitHubRepository;
-        private System.Windows.Forms.Button Install_MozillaThunderbird;
     }
 }

@@ -57,6 +57,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="TabManager.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="TabManager.Appearance" type="System.Windows.Forms.TabAppearance, System.Windows.Forms">
     <value>FlatButtons</value>
@@ -68,10 +71,76 @@
   <data name="Programs.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="Install_MozillaThunderbird.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="Install_MicrosoftPowertoys.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Install_MicrosoftPowertoys.Location" type="System.Drawing.Point, System.Drawing">
+    <value>177, 530</value>
+  </data>
+  <data name="Install_MicrosoftPowertoys.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 23</value>
+  </data>
+  <data name="Install_MicrosoftPowertoys.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="Install_MicrosoftPowertoys.Text" xml:space="preserve">
+    <value>Install Microsoft PowerToys</value>
+  </data>
+  <data name="&gt;&gt;Install_MicrosoftPowertoys.Name" xml:space="preserve">
+    <value>Install_MicrosoftPowertoys</value>
+  </data>
+  <data name="&gt;&gt;Install_MicrosoftPowertoys.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_MicrosoftPowertoys.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_MicrosoftPowertoys.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="BottomBar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="CurrentVersionLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 17</value>
+  </data>
+  <data name="CurrentVersionLabel.Text" xml:space="preserve">
+    <value>Current version: 0.0.9.4</value>
+  </data>
+  <data name="VisitGitHubRepository.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 17</value>
+  </data>
+  <data name="VisitGitHubRepository.Text" xml:space="preserve">
+    <value>Visit GitHub repository</value>
+  </data>
+  <data name="BottomBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 673</value>
+  </data>
+  <data name="BottomBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>994, 22</value>
+  </data>
+  <data name="BottomBar.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="BottomBar.Text" xml:space="preserve">
+    <value>BottomBar</value>
+  </data>
+  <data name="&gt;&gt;BottomBar.Name" xml:space="preserve">
+    <value>BottomBar</value>
+  </data>
+  <data name="&gt;&gt;BottomBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BottomBar.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;BottomBar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Install_MozillaThunderbird.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
   <data name="Install_MozillaThunderbird.Location" type="System.Drawing.Point, System.Drawing">
     <value>177, 501</value>
   </data>
@@ -94,7 +163,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_MozillaThunderbird.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="Install_Jami.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -121,7 +190,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_Jami.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="Install_Element.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -148,7 +217,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_Element.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="Install_Libreoffice.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -175,7 +244,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_Libreoffice.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="Install_Onlyoffice.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -202,7 +271,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_Onlyoffice.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="Install_Git.Location" type="System.Drawing.Point, System.Drawing">
     <value>177, 356</value>
@@ -226,7 +295,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_Git.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="Install_Vim.Location" type="System.Drawing.Point, System.Drawing">
     <value>177, 327</value>
@@ -250,7 +319,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_Vim.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="Install_Flameshot.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -280,7 +349,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_Flameshot.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="Install_LightShot.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -310,7 +379,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_LightShot.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="Install_PlayStationNow.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -340,7 +409,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_PlayStationNow.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="Install_Mremoteng.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -370,7 +439,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_Mremoteng.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
   <data name="Install_AmdRyzenMaster.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -400,7 +469,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_AmdRyzenMaster.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
   <data name="Install_GeForceExperience.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -430,7 +499,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_GeForceExperience.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <data name="Install_GeForceNow.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -460,7 +529,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_GeForceNow.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>15</value>
   </data>
   <data name="Install_VisualStudioEnterprise.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -490,7 +559,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_VisualStudioEnterprise.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>16</value>
   </data>
   <data name="Install_VisualStudioCommunity.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -520,7 +589,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_VisualStudioCommunity.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>17</value>
   </data>
   <data name="Install_Bitwarden.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -550,7 +619,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_Bitwarden.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>18</value>
   </data>
   <data name="Install_InnoSetup.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -580,7 +649,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_InnoSetup.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>19</value>
   </data>
   <data name="Install_CrystalDiskInfo.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -610,7 +679,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_CrystalDiskInfo.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>20</value>
   </data>
   <data name="Install_OneDrive.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -640,7 +709,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_OneDrive.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>21</value>
   </data>
   <data name="Install_GoogleDrive.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -670,7 +739,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_GoogleDrive.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>22</value>
   </data>
   <data name="Install_Transmission.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -700,7 +769,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_Transmission.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>23</value>
   </data>
   <data name="Install_Spotify.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -730,7 +799,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_Spotify.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>24</value>
   </data>
   <data name="Install_Xampp.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -760,7 +829,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_Xampp.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>25</value>
   </data>
   <data name="Install_BleachBit.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -790,7 +859,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_BleachBit.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>26</value>
   </data>
   <data name="Install_WindowsTerminal.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -820,7 +889,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_WindowsTerminal.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>27</value>
   </data>
   <data name="Install_Skype.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -850,7 +919,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_Skype.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>28</value>
   </data>
   <data name="Install_GitHubDesktop.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -880,7 +949,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_GitHubDesktop.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>29</value>
   </data>
   <data name="Install_VisualStudioCode.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -910,7 +979,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_VisualStudioCode.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>30</value>
   </data>
   <data name="Install_VisualStudioCodium.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -940,7 +1009,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_VisualStudioCodium.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>31</value>
   </data>
   <data name="Install_TelegramDesktop.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -973,7 +1042,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_TelegramDesktop.ZOrder" xml:space="preserve">
-    <value>30</value>
+    <value>32</value>
   </data>
   <data name="Install_MicrosoftTeams.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -1003,7 +1072,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_MicrosoftTeams.ZOrder" xml:space="preserve">
-    <value>31</value>
+    <value>33</value>
   </data>
   <data name="Install_Brave.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -1033,7 +1102,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_Brave.ZOrder" xml:space="preserve">
-    <value>32</value>
+    <value>34</value>
   </data>
   <data name="Install_AndroidStudio.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -1063,7 +1132,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_AndroidStudio.ZOrder" xml:space="preserve">
-    <value>33</value>
+    <value>35</value>
   </data>
   <data name="Install_KdeConnect.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -1093,7 +1162,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_KdeConnect.ZOrder" xml:space="preserve">
-    <value>34</value>
+    <value>36</value>
   </data>
   <data name="Install_Gimp.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -1123,7 +1192,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_Gimp.ZOrder" xml:space="preserve">
-    <value>35</value>
+    <value>37</value>
   </data>
   <data name="Install_Discord.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -1153,7 +1222,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_Discord.ZOrder" xml:space="preserve">
-    <value>36</value>
+    <value>38</value>
   </data>
   <data name="Install_EADesktop.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -1183,7 +1252,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_EADesktop.ZOrder" xml:space="preserve">
-    <value>37</value>
+    <value>39</value>
   </data>
   <data name="Install_EpicGamesLauncher.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -1213,7 +1282,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_EpicGamesLauncher.ZOrder" xml:space="preserve">
-    <value>38</value>
+    <value>40</value>
   </data>
   <data name="Install_Steam.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -1243,7 +1312,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_Steam.ZOrder" xml:space="preserve">
-    <value>39</value>
+    <value>41</value>
   </data>
   <data name="Install_7zip.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -1273,7 +1342,7 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_7zip.ZOrder" xml:space="preserve">
-    <value>40</value>
+    <value>42</value>
   </data>
   <data name="Programs.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 27</value>
@@ -1283,7 +1352,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="Programs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1000, 673</value>
+    <value>1000, 698</value>
   </data>
   <data name="Programs.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1309,6 +1378,33 @@
   <metadata name="SystemAdministration.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="CreateTask_WingetAutoUpgrades.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="CreateTask_WingetAutoUpgrades.Location" type="System.Drawing.Point, System.Drawing">
+    <value>525, 6</value>
+  </data>
+  <data name="CreateTask_WingetAutoUpgrades.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 52</value>
+  </data>
+  <data name="CreateTask_WingetAutoUpgrades.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="CreateTask_WingetAutoUpgrades.Text" xml:space="preserve">
+    <value>Create task to upgrade packages automatically</value>
+  </data>
+  <data name="&gt;&gt;CreateTask_WingetAutoUpgrades.Name" xml:space="preserve">
+    <value>CreateTask_WingetAutoUpgrades</value>
+  </data>
+  <data name="&gt;&gt;CreateTask_WingetAutoUpgrades.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CreateTask_WingetAutoUpgrades.Parent" xml:space="preserve">
+    <value>SystemAdministration</value>
+  </data>
+  <data name="&gt;&gt;CreateTask_WingetAutoUpgrades.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="RemoveAllWindowsCapabilities.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
   </data>
@@ -1337,7 +1433,7 @@
     <value>SystemAdministration</value>
   </data>
   <data name="&gt;&gt;RemoveAllWindowsCapabilities.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="DisableAllWindowsOptionalFeatures.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -1367,7 +1463,7 @@
     <value>SystemAdministration</value>
   </data>
   <data name="&gt;&gt;DisableAllWindowsOptionalFeatures.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="ReinstallAllUwpApps.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -1400,7 +1496,7 @@
     <value>SystemAdministration</value>
   </data>
   <data name="&gt;&gt;ReinstallAllUwpApps.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="RemoveNonCriticalUwpApps.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -1430,7 +1526,7 @@
     <value>SystemAdministration</value>
   </data>
   <data name="&gt;&gt;RemoveNonCriticalUwpApps.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="RemoveAllUwpApps.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -1460,7 +1556,7 @@
     <value>SystemAdministration</value>
   </data>
   <data name="&gt;&gt;RemoveAllUwpApps.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="Apply_SystemReadinessLite.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1487,7 +1583,7 @@
     <value>SystemAdministration</value>
   </data>
   <data name="&gt;&gt;Apply_SystemReadinessLite.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="Apply_SystemReadiness.Location" type="System.Drawing.Point, System.Drawing">
     <value>351, 3</value>
@@ -1511,7 +1607,7 @@
     <value>SystemAdministration</value>
   </data>
   <data name="&gt;&gt;Apply_SystemReadiness.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="Install_Winget.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -1541,7 +1637,7 @@
     <value>SystemAdministration</value>
   </data>
   <data name="&gt;&gt;Install_Winget.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="Upgrade_AllPackages.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -1571,7 +1667,7 @@
     <value>SystemAdministration</value>
   </data>
   <data name="&gt;&gt;Upgrade_AllPackages.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="Update_WingetSources.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
@@ -1601,7 +1697,7 @@
     <value>SystemAdministration</value>
   </data>
   <data name="&gt;&gt;Update_WingetSources.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="SystemAdministration.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 27</value>
@@ -1610,7 +1706,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="SystemAdministration.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1000, 673</value>
+    <value>1000, 698</value>
   </data>
   <data name="SystemAdministration.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1649,7 +1745,7 @@
     <value>1</value>
   </data>
   <data name="SimeononSecurityWoh.Text" xml:space="preserve">
-    <value>Run Simeononsecurity's  Windows-Optimize-Debloat script</value>
+    <value>Run Simeononsecurity's Windows-Optimize-Debloat script</value>
   </data>
   <data name="&gt;&gt;SimeononSecurityWoh.Name" xml:space="preserve">
     <value>SimeononSecurityWoh</value>
@@ -1697,7 +1793,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="ThirdParty.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1000, 673</value>
+    <value>1000, 698</value>
   </data>
   <data name="ThirdParty.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1727,7 +1823,7 @@
     <value>True</value>
   </data>
   <data name="TabManager.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1008, 704</value>
+    <value>1008, 729</value>
   </data>
   <data name="TabManager.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1745,13 +1841,13 @@
     <value>0</value>
   </data>
   <data name="Panel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
+    <value>Fill</value>
   </data>
   <data name="Panel.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
   <data name="Panel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1008, 704</value>
+    <value>1008, 729</value>
   </data>
   <data name="Panel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1766,48 +1862,6 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Panel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <metadata name="BottomBar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="BottomBar.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="CurrentVersionLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 20</value>
-  </data>
-  <data name="CurrentVersionLabel.Text" xml:space="preserve">
-    <value>Current version: 0.0.9.1</value>
-  </data>
-  <data name="VisitGitHubRepository.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 20</value>
-  </data>
-  <data name="VisitGitHubRepository.Text" xml:space="preserve">
-    <value>Visit GitHub repository</value>
-  </data>
-  <data name="BottomBar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 704</value>
-  </data>
-  <data name="BottomBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1008, 25</value>
-  </data>
-  <data name="BottomBar.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="BottomBar.Text" xml:space="preserve">
-    <value>BottomBar</value>
-  </data>
-  <data name="&gt;&gt;BottomBar.Name" xml:space="preserve">
-    <value>BottomBar</value>
-  </data>
-  <data name="&gt;&gt;BottomBar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BottomBar.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;BottomBar.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
