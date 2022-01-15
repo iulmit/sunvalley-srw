@@ -57,14 +57,27 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Programs.Text" xml:space="preserve">
-    <value>Programas</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="CurrentVersionLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 17</value>
   </data>
-  <data name="SystemAdministration.Text" xml:space="preserve">
-    <value>Administración del sistema</value>
+  <data name="CurrentVersionLabel.Text" xml:space="preserve">
+    <value>Versión actual: 0.0.9.4</value>
   </data>
-  <data name="ThirdParty.Text" xml:space="preserve">
-    <value>De terceros</value>
+  <data name="VisitGitHubRepository.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 17</value>
+  </data>
+  <data name="VisitGitHubRepository.Text" xml:space="preserve">
+    <value>Visitar repositorio en GitHub</value>
+  </data>
+  <data name="Install_MozillaThunderbird.Text" xml:space="preserve">
+    <value>Instalar Mozilla Thunderbird</value>
+  </data>
+  <data name="Install_Jami.Text" xml:space="preserve">
+    <value>Instalar Jami</value>
+  </data>
+  <data name="Install_Element.Text" xml:space="preserve">
+    <value>Instalar Element</value>
   </data>
   <data name="Install_Libreoffice.Text" xml:space="preserve">
     <value>Instalar LibreOffice</value>
@@ -98,6 +111,9 @@
   </data>
   <data name="Install_GeForceNow.Text" xml:space="preserve">
     <value>Instalar GeForce Now</value>
+  </data>
+  <data name="Install_VisualStudioEnterprise.Text" xml:space="preserve">
+    <value>Instalar VS Enterprise 2022</value>
   </data>
   <data name="Install_VisualStudioCommunity.Text" xml:space="preserve">
     <value>Instalar VS Community 2022</value>
@@ -181,7 +197,15 @@
   <data name="Install_7zip.Text" xml:space="preserve">
     <value>Instalar 7-Zip</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Programs.Text" xml:space="preserve">
+    <value>Programas</value>
+  </data>
+  <data name="CreateTask_WingetAutoUpgrades.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 78</value>
+  </data>
+  <data name="CreateTask_WingetAutoUpgrades.Text" xml:space="preserve">
+    <value>Crear tarea para actualizar paquetes automáticamente</value>
+  </data>
   <data name="RemoveAllWindowsCapabilities.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 206</value>
   </data>
@@ -230,11 +254,17 @@
   <data name="Update_WingetSources.Text" xml:space="preserve">
     <value>Actualizar fuente de winget</value>
   </data>
+  <data name="SystemAdministration.Text" xml:space="preserve">
+    <value>Administración del sistema</value>
+  </data>
   <data name="SimeononSecurityWoh.Text" xml:space="preserve">
     <value>Ejecutar script Windows-Optimize-Harden-Debloat de Simeononsecurity</value>
   </data>
   <data name="CttWin10script.Text" xml:space="preserve">
     <value>Ejecutar win10script de ChrisTitusTech</value>
+  </data>
+  <data name="ThirdParty.Text" xml:space="preserve">
+    <value>De terceros</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Preparación del sistema para estaciones de trabajo</value>
