@@ -21,9 +21,6 @@
             this.TabManager = new System.Windows.Forms.TabControl();
             this.Programs = new System.Windows.Forms.TabPage();
             this.Install_MicrosoftPowertoys = new System.Windows.Forms.Button();
-            this.BottomBar = new System.Windows.Forms.StatusStrip();
-            this.CurrentVersionLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.VisitGitHubRepository = new System.Windows.Forms.ToolStripStatusLabel();
             this.Install_MozillaThunderbird = new System.Windows.Forms.Button();
             this.Install_Jami = new System.Windows.Forms.Button();
             this.Install_Element = new System.Windows.Forms.Button();
@@ -80,13 +77,22 @@
             this.ThirdParty = new System.Windows.Forms.TabPage();
             this.SimeononSecurityWoh = new System.Windows.Forms.Button();
             this.CttWin10script = new System.Windows.Forms.Button();
+            this.BottomBar = new System.Windows.Forms.StatusStrip();
+            this.CurrentVersionLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.VisitGitHubRepository = new System.Windows.Forms.ToolStripStatusLabel();
             this.Panel = new System.Windows.Forms.Panel();
+            this.MenuBar = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Install_Teamviewer = new System.Windows.Forms.Button();
             this.TabManager.SuspendLayout();
             this.Programs.SuspendLayout();
-            this.BottomBar.SuspendLayout();
             this.SystemAdministration.SuspendLayout();
             this.ThirdParty.SuspendLayout();
+            this.BottomBar.SuspendLayout();
             this.Panel.SuspendLayout();
+            this.MenuBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // TabManager
@@ -103,8 +109,8 @@
             // 
             resources.ApplyResources(this.Programs, "Programs");
             this.Programs.BackColor = System.Drawing.Color.DimGray;
+            this.Programs.Controls.Add(this.Install_Teamviewer);
             this.Programs.Controls.Add(this.Install_MicrosoftPowertoys);
-            this.Programs.Controls.Add(this.BottomBar);
             this.Programs.Controls.Add(this.Install_MozillaThunderbird);
             this.Programs.Controls.Add(this.Install_Jami);
             this.Programs.Controls.Add(this.Install_Element);
@@ -155,27 +161,6 @@
             this.Install_MicrosoftPowertoys.Name = "Install_MicrosoftPowertoys";
             this.Install_MicrosoftPowertoys.UseVisualStyleBackColor = true;
             this.Install_MicrosoftPowertoys.Click += new System.EventHandler(this.Install_MicrosoftPowertoys_Click);
-            // 
-            // BottomBar
-            // 
-            this.BottomBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.CurrentVersionLabel,
-            this.VisitGitHubRepository});
-            resources.ApplyResources(this.BottomBar, "BottomBar");
-            this.BottomBar.Name = "BottomBar";
-            this.BottomBar.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
-            this.BottomBar.SizingGrip = false;
-            // 
-            // CurrentVersionLabel
-            // 
-            this.CurrentVersionLabel.Name = "CurrentVersionLabel";
-            resources.ApplyResources(this.CurrentVersionLabel, "CurrentVersionLabel");
-            // 
-            // VisitGitHubRepository
-            // 
-            this.VisitGitHubRepository.IsLink = true;
-            this.VisitGitHubRepository.Name = "VisitGitHubRepository";
-            resources.ApplyResources(this.VisitGitHubRepository, "VisitGitHubRepository");
             // 
             // Install_MozillaThunderbird
             // 
@@ -581,11 +566,70 @@
             this.CttWin10script.UseVisualStyleBackColor = true;
             this.CttWin10script.Click += new System.EventHandler(this.CttWin10script_Click);
             // 
+            // BottomBar
+            // 
+            this.BottomBar.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BottomBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.CurrentVersionLabel,
+            this.VisitGitHubRepository});
+            resources.ApplyResources(this.BottomBar, "BottomBar");
+            this.BottomBar.Name = "BottomBar";
+            this.BottomBar.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
+            this.BottomBar.SizingGrip = false;
+            // 
+            // CurrentVersionLabel
+            // 
+            this.CurrentVersionLabel.Name = "CurrentVersionLabel";
+            resources.ApplyResources(this.CurrentVersionLabel, "CurrentVersionLabel");
+            CurrentVersionLabel.Text = VersionManager.ShowCurrentVersion();
+            // 
+            // VisitGitHubRepository
+            // 
+            this.VisitGitHubRepository.IsLink = true;
+            this.VisitGitHubRepository.Name = "VisitGitHubRepository";
+            resources.ApplyResources(this.VisitGitHubRepository, "VisitGitHubRepository");
+            // 
             // Panel
             // 
-            this.Panel.Controls.Add(this.TabManager);
             resources.ApplyResources(this.Panel, "Panel");
+            this.Panel.Controls.Add(this.TabManager);
             this.Panel.Name = "Panel";
+            // 
+            // MenuBar
+            // 
+            this.MenuBar.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.MenuBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.aboutToolStripMenuItem});
+            resources.ApplyResources(this.MenuBar, "MenuBar");
+            this.MenuBar.Name = "MenuBar";
+            this.MenuBar.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exitToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            resources.ApplyResources(this.fileToolStripMenuItem, "fileToolStripMenuItem");
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            resources.ApplyResources(this.exitToolStripMenuItem, "exitToolStripMenuItem");
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
+            // Install_Teamviewer
+            // 
+            resources.ApplyResources(this.Install_Teamviewer, "Install_Teamviewer");
+            this.Install_Teamviewer.Name = "Install_Teamviewer";
+            this.Install_Teamviewer.UseVisualStyleBackColor = true;
+            this.Install_Teamviewer.Click += new System.EventHandler(this.Install_Teamviewer_Click);
             // 
             // Container
             // 
@@ -593,18 +637,23 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.DimGray;
             this.Controls.Add(this.Panel);
+            this.Controls.Add(this.BottomBar);
+            this.Controls.Add(this.MenuBar);
             this.HelpButton = true;
+            this.MainMenuStrip = this.MenuBar;
             this.Name = "Container";
             this.Load += new System.EventHandler(this.Container_Load);
             this.TabManager.ResumeLayout(false);
             this.Programs.ResumeLayout(false);
-            this.Programs.PerformLayout();
-            this.BottomBar.ResumeLayout(false);
-            this.BottomBar.PerformLayout();
             this.SystemAdministration.ResumeLayout(false);
             this.ThirdParty.ResumeLayout(false);
+            this.BottomBar.ResumeLayout(false);
+            this.BottomBar.PerformLayout();
             this.Panel.ResumeLayout(false);
+            this.MenuBar.ResumeLayout(false);
+            this.MenuBar.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -674,5 +723,10 @@
 
         private System.Windows.Forms.ToolStripStatusLabel CurrentVersionLabel;
         private System.Windows.Forms.ToolStripStatusLabel VisitGitHubRepository;
+        private System.Windows.Forms.MenuStrip MenuBar;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.Button Install_Teamviewer;
     }
 }

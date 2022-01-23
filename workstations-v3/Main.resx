@@ -57,9 +57,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="TabManager.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="TabManager.Appearance" type="System.Windows.Forms.TabAppearance, System.Windows.Forms">
     <value>FlatButtons</value>
@@ -71,10 +68,797 @@
   <data name="Programs.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="&gt;&gt;Install_Teamviewer.Name" xml:space="preserve">
+    <value>Install_Teamviewer</value>
+  </data>
+  <data name="&gt;&gt;Install_Teamviewer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_Teamviewer.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_Teamviewer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Install_MicrosoftPowertoys.Name" xml:space="preserve">
+    <value>Install_MicrosoftPowertoys</value>
+  </data>
+  <data name="&gt;&gt;Install_MicrosoftPowertoys.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_MicrosoftPowertoys.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_MicrosoftPowertoys.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Install_MozillaThunderbird.Name" xml:space="preserve">
+    <value>Install_MozillaThunderbird</value>
+  </data>
+  <data name="&gt;&gt;Install_MozillaThunderbird.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_MozillaThunderbird.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_MozillaThunderbird.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;Install_Jami.Name" xml:space="preserve">
+    <value>Install_Jami</value>
+  </data>
+  <data name="&gt;&gt;Install_Jami.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_Jami.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_Jami.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;Install_Element.Name" xml:space="preserve">
+    <value>Install_Element</value>
+  </data>
+  <data name="&gt;&gt;Install_Element.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_Element.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_Element.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;Install_Libreoffice.Name" xml:space="preserve">
+    <value>Install_Libreoffice</value>
+  </data>
+  <data name="&gt;&gt;Install_Libreoffice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_Libreoffice.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_Libreoffice.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;Install_Onlyoffice.Name" xml:space="preserve">
+    <value>Install_Onlyoffice</value>
+  </data>
+  <data name="&gt;&gt;Install_Onlyoffice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_Onlyoffice.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_Onlyoffice.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;Install_Git.Name" xml:space="preserve">
+    <value>Install_Git</value>
+  </data>
+  <data name="&gt;&gt;Install_Git.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_Git.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_Git.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;Install_Vim.Name" xml:space="preserve">
+    <value>Install_Vim</value>
+  </data>
+  <data name="&gt;&gt;Install_Vim.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_Vim.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_Vim.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;Install_Flameshot.Name" xml:space="preserve">
+    <value>Install_Flameshot</value>
+  </data>
+  <data name="&gt;&gt;Install_Flameshot.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_Flameshot.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_Flameshot.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;Install_LightShot.Name" xml:space="preserve">
+    <value>Install_LightShot</value>
+  </data>
+  <data name="&gt;&gt;Install_LightShot.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_LightShot.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_LightShot.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;Install_PlayStationNow.Name" xml:space="preserve">
+    <value>Install_PlayStationNow</value>
+  </data>
+  <data name="&gt;&gt;Install_PlayStationNow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_PlayStationNow.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_PlayStationNow.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;Install_Mremoteng.Name" xml:space="preserve">
+    <value>Install_Mremoteng</value>
+  </data>
+  <data name="&gt;&gt;Install_Mremoteng.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_Mremoteng.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_Mremoteng.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;Install_AmdRyzenMaster.Name" xml:space="preserve">
+    <value>Install_AmdRyzenMaster</value>
+  </data>
+  <data name="&gt;&gt;Install_AmdRyzenMaster.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_AmdRyzenMaster.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_AmdRyzenMaster.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;Install_GeForceExperience.Name" xml:space="preserve">
+    <value>Install_GeForceExperience</value>
+  </data>
+  <data name="&gt;&gt;Install_GeForceExperience.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_GeForceExperience.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_GeForceExperience.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;Install_GeForceNow.Name" xml:space="preserve">
+    <value>Install_GeForceNow</value>
+  </data>
+  <data name="&gt;&gt;Install_GeForceNow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_GeForceNow.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_GeForceNow.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;Install_VisualStudioEnterprise.Name" xml:space="preserve">
+    <value>Install_VisualStudioEnterprise</value>
+  </data>
+  <data name="&gt;&gt;Install_VisualStudioEnterprise.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_VisualStudioEnterprise.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_VisualStudioEnterprise.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;Install_VisualStudioCommunity.Name" xml:space="preserve">
+    <value>Install_VisualStudioCommunity</value>
+  </data>
+  <data name="&gt;&gt;Install_VisualStudioCommunity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_VisualStudioCommunity.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_VisualStudioCommunity.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;Install_Bitwarden.Name" xml:space="preserve">
+    <value>Install_Bitwarden</value>
+  </data>
+  <data name="&gt;&gt;Install_Bitwarden.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_Bitwarden.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_Bitwarden.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;Install_InnoSetup.Name" xml:space="preserve">
+    <value>Install_InnoSetup</value>
+  </data>
+  <data name="&gt;&gt;Install_InnoSetup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_InnoSetup.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_InnoSetup.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;Install_CrystalDiskInfo.Name" xml:space="preserve">
+    <value>Install_CrystalDiskInfo</value>
+  </data>
+  <data name="&gt;&gt;Install_CrystalDiskInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_CrystalDiskInfo.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_CrystalDiskInfo.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;Install_OneDrive.Name" xml:space="preserve">
+    <value>Install_OneDrive</value>
+  </data>
+  <data name="&gt;&gt;Install_OneDrive.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_OneDrive.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_OneDrive.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;Install_GoogleDrive.Name" xml:space="preserve">
+    <value>Install_GoogleDrive</value>
+  </data>
+  <data name="&gt;&gt;Install_GoogleDrive.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_GoogleDrive.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_GoogleDrive.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;Install_Transmission.Name" xml:space="preserve">
+    <value>Install_Transmission</value>
+  </data>
+  <data name="&gt;&gt;Install_Transmission.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_Transmission.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_Transmission.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;Install_Spotify.Name" xml:space="preserve">
+    <value>Install_Spotify</value>
+  </data>
+  <data name="&gt;&gt;Install_Spotify.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_Spotify.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_Spotify.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;Install_Xampp.Name" xml:space="preserve">
+    <value>Install_Xampp</value>
+  </data>
+  <data name="&gt;&gt;Install_Xampp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_Xampp.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_Xampp.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;Install_BleachBit.Name" xml:space="preserve">
+    <value>Install_BleachBit</value>
+  </data>
+  <data name="&gt;&gt;Install_BleachBit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_BleachBit.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_BleachBit.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;Install_WindowsTerminal.Name" xml:space="preserve">
+    <value>Install_WindowsTerminal</value>
+  </data>
+  <data name="&gt;&gt;Install_WindowsTerminal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_WindowsTerminal.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_WindowsTerminal.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;Install_Skype.Name" xml:space="preserve">
+    <value>Install_Skype</value>
+  </data>
+  <data name="&gt;&gt;Install_Skype.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_Skype.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_Skype.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;Install_GitHubDesktop.Name" xml:space="preserve">
+    <value>Install_GitHubDesktop</value>
+  </data>
+  <data name="&gt;&gt;Install_GitHubDesktop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_GitHubDesktop.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_GitHubDesktop.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;Install_VisualStudioCode.Name" xml:space="preserve">
+    <value>Install_VisualStudioCode</value>
+  </data>
+  <data name="&gt;&gt;Install_VisualStudioCode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_VisualStudioCode.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_VisualStudioCode.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;Install_VisualStudioCodium.Name" xml:space="preserve">
+    <value>Install_VisualStudioCodium</value>
+  </data>
+  <data name="&gt;&gt;Install_VisualStudioCodium.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_VisualStudioCodium.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_VisualStudioCodium.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;Install_TelegramDesktop.Name" xml:space="preserve">
+    <value>Install_TelegramDesktop</value>
+  </data>
+  <data name="&gt;&gt;Install_TelegramDesktop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_TelegramDesktop.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_TelegramDesktop.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;Install_MicrosoftTeams.Name" xml:space="preserve">
+    <value>Install_MicrosoftTeams</value>
+  </data>
+  <data name="&gt;&gt;Install_MicrosoftTeams.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_MicrosoftTeams.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_MicrosoftTeams.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;Install_Brave.Name" xml:space="preserve">
+    <value>Install_Brave</value>
+  </data>
+  <data name="&gt;&gt;Install_Brave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_Brave.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_Brave.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;Install_AndroidStudio.Name" xml:space="preserve">
+    <value>Install_AndroidStudio</value>
+  </data>
+  <data name="&gt;&gt;Install_AndroidStudio.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_AndroidStudio.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_AndroidStudio.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;Install_KdeConnect.Name" xml:space="preserve">
+    <value>Install_KdeConnect</value>
+  </data>
+  <data name="&gt;&gt;Install_KdeConnect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_KdeConnect.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_KdeConnect.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;Install_Gimp.Name" xml:space="preserve">
+    <value>Install_Gimp</value>
+  </data>
+  <data name="&gt;&gt;Install_Gimp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_Gimp.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_Gimp.ZOrder" xml:space="preserve">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;Install_Discord.Name" xml:space="preserve">
+    <value>Install_Discord</value>
+  </data>
+  <data name="&gt;&gt;Install_Discord.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_Discord.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_Discord.ZOrder" xml:space="preserve">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;Install_EADesktop.Name" xml:space="preserve">
+    <value>Install_EADesktop</value>
+  </data>
+  <data name="&gt;&gt;Install_EADesktop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_EADesktop.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_EADesktop.ZOrder" xml:space="preserve">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;Install_EpicGamesLauncher.Name" xml:space="preserve">
+    <value>Install_EpicGamesLauncher</value>
+  </data>
+  <data name="&gt;&gt;Install_EpicGamesLauncher.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_EpicGamesLauncher.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_EpicGamesLauncher.ZOrder" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;Install_Steam.Name" xml:space="preserve">
+    <value>Install_Steam</value>
+  </data>
+  <data name="&gt;&gt;Install_Steam.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_Steam.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_Steam.ZOrder" xml:space="preserve">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;Install_7zip.Name" xml:space="preserve">
+    <value>Install_7zip</value>
+  </data>
+  <data name="&gt;&gt;Install_7zip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_7zip.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_7zip.ZOrder" xml:space="preserve">
+    <value>42</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Programs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 27</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Programs.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="Programs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1128, 748</value>
+  </data>
+  <data name="Programs.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="Programs.Text" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="Programs.ToolTipText" xml:space="preserve">
+    <value>A list of available programs to be installed</value>
+  </data>
+  <data name="&gt;&gt;Programs.Name" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Programs.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Programs.Parent" xml:space="preserve">
+    <value>TabManager</value>
+  </data>
+  <data name="&gt;&gt;Programs.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;CreateTask_WingetAutoUpgrades.Name" xml:space="preserve">
+    <value>CreateTask_WingetAutoUpgrades</value>
+  </data>
+  <data name="&gt;&gt;CreateTask_WingetAutoUpgrades.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CreateTask_WingetAutoUpgrades.Parent" xml:space="preserve">
+    <value>SystemAdministration</value>
+  </data>
+  <data name="&gt;&gt;CreateTask_WingetAutoUpgrades.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;RemoveAllWindowsCapabilities.Name" xml:space="preserve">
+    <value>RemoveAllWindowsCapabilities</value>
+  </data>
+  <data name="&gt;&gt;RemoveAllWindowsCapabilities.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RemoveAllWindowsCapabilities.Parent" xml:space="preserve">
+    <value>SystemAdministration</value>
+  </data>
+  <data name="&gt;&gt;RemoveAllWindowsCapabilities.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;DisableAllWindowsOptionalFeatures.Name" xml:space="preserve">
+    <value>DisableAllWindowsOptionalFeatures</value>
+  </data>
+  <data name="&gt;&gt;DisableAllWindowsOptionalFeatures.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DisableAllWindowsOptionalFeatures.Parent" xml:space="preserve">
+    <value>SystemAdministration</value>
+  </data>
+  <data name="&gt;&gt;DisableAllWindowsOptionalFeatures.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ReinstallAllUwpApps.Name" xml:space="preserve">
+    <value>ReinstallAllUwpApps</value>
+  </data>
+  <data name="&gt;&gt;ReinstallAllUwpApps.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ReinstallAllUwpApps.Parent" xml:space="preserve">
+    <value>SystemAdministration</value>
+  </data>
+  <data name="&gt;&gt;ReinstallAllUwpApps.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;RemoveNonCriticalUwpApps.Name" xml:space="preserve">
+    <value>RemoveNonCriticalUwpApps</value>
+  </data>
+  <data name="&gt;&gt;RemoveNonCriticalUwpApps.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RemoveNonCriticalUwpApps.Parent" xml:space="preserve">
+    <value>SystemAdministration</value>
+  </data>
+  <data name="&gt;&gt;RemoveNonCriticalUwpApps.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;RemoveAllUwpApps.Name" xml:space="preserve">
+    <value>RemoveAllUwpApps</value>
+  </data>
+  <data name="&gt;&gt;RemoveAllUwpApps.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RemoveAllUwpApps.Parent" xml:space="preserve">
+    <value>SystemAdministration</value>
+  </data>
+  <data name="&gt;&gt;RemoveAllUwpApps.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;Apply_SystemReadinessLite.Name" xml:space="preserve">
+    <value>Apply_SystemReadinessLite</value>
+  </data>
+  <data name="&gt;&gt;Apply_SystemReadinessLite.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Apply_SystemReadinessLite.Parent" xml:space="preserve">
+    <value>SystemAdministration</value>
+  </data>
+  <data name="&gt;&gt;Apply_SystemReadinessLite.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;Apply_SystemReadiness.Name" xml:space="preserve">
+    <value>Apply_SystemReadiness</value>
+  </data>
+  <data name="&gt;&gt;Apply_SystemReadiness.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Apply_SystemReadiness.Parent" xml:space="preserve">
+    <value>SystemAdministration</value>
+  </data>
+  <data name="&gt;&gt;Apply_SystemReadiness.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;Install_Winget.Name" xml:space="preserve">
+    <value>Install_Winget</value>
+  </data>
+  <data name="&gt;&gt;Install_Winget.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_Winget.Parent" xml:space="preserve">
+    <value>SystemAdministration</value>
+  </data>
+  <data name="&gt;&gt;Install_Winget.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;Upgrade_AllPackages.Name" xml:space="preserve">
+    <value>Upgrade_AllPackages</value>
+  </data>
+  <data name="&gt;&gt;Upgrade_AllPackages.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Upgrade_AllPackages.Parent" xml:space="preserve">
+    <value>SystemAdministration</value>
+  </data>
+  <data name="&gt;&gt;Upgrade_AllPackages.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;Update_WingetSources.Name" xml:space="preserve">
+    <value>Update_WingetSources</value>
+  </data>
+  <data name="&gt;&gt;Update_WingetSources.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Update_WingetSources.Parent" xml:space="preserve">
+    <value>SystemAdministration</value>
+  </data>
+  <data name="&gt;&gt;Update_WingetSources.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="SystemAdministration.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 27</value>
+  </data>
+  <data name="SystemAdministration.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="SystemAdministration.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1128, 748</value>
+  </data>
+  <data name="SystemAdministration.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="SystemAdministration.Text" xml:space="preserve">
+    <value>System Administration</value>
+  </data>
+  <data name="SystemAdministration.ToolTipText" xml:space="preserve">
+    <value>PowerShell scripts to improve performance, security and privacy</value>
+  </data>
+  <data name="&gt;&gt;SystemAdministration.Name" xml:space="preserve">
+    <value>SystemAdministration</value>
+  </data>
+  <data name="&gt;&gt;SystemAdministration.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SystemAdministration.Parent" xml:space="preserve">
+    <value>TabManager</value>
+  </data>
+  <data name="&gt;&gt;SystemAdministration.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;SimeononSecurityWoh.Name" xml:space="preserve">
+    <value>SimeononSecurityWoh</value>
+  </data>
+  <data name="&gt;&gt;SimeononSecurityWoh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SimeononSecurityWoh.Parent" xml:space="preserve">
+    <value>ThirdParty</value>
+  </data>
+  <data name="&gt;&gt;SimeononSecurityWoh.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;CttWin10script.Name" xml:space="preserve">
+    <value>CttWin10script</value>
+  </data>
+  <data name="&gt;&gt;CttWin10script.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CttWin10script.Parent" xml:space="preserve">
+    <value>ThirdParty</value>
+  </data>
+  <data name="&gt;&gt;CttWin10script.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ThirdParty.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 27</value>
+  </data>
+  <data name="ThirdParty.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="ThirdParty.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1128, 748</value>
+  </data>
+  <data name="ThirdParty.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="ThirdParty.Text" xml:space="preserve">
+    <value>Third Party</value>
+  </data>
+  <data name="&gt;&gt;ThirdParty.Name" xml:space="preserve">
+    <value>ThirdParty</value>
+  </data>
+  <data name="&gt;&gt;ThirdParty.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ThirdParty.Parent" xml:space="preserve">
+    <value>TabManager</value>
+  </data>
+  <data name="&gt;&gt;ThirdParty.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="TabManager.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="TabManager.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="TabManager.ShowToolTips" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TabManager.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1136, 779</value>
+  </data>
+  <data name="TabManager.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TabManager.Name" xml:space="preserve">
+    <value>TabManager</value>
+  </data>
+  <data name="&gt;&gt;TabManager.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TabManager.Parent" xml:space="preserve">
+    <value>Panel</value>
+  </data>
+  <data name="&gt;&gt;TabManager.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="Install_MicrosoftPowertoys.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Install_MicrosoftPowertoys.Location" type="System.Drawing.Point, System.Drawing">
     <value>177, 530</value>
   </data>
@@ -97,45 +881,6 @@
     <value>Programs</value>
   </data>
   <data name="&gt;&gt;Install_MicrosoftPowertoys.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="BottomBar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="CurrentVersionLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 17</value>
-  </data>
-  <data name="CurrentVersionLabel.Text" xml:space="preserve">
-    <value>Current version: 0.0.9.4</value>
-  </data>
-  <data name="VisitGitHubRepository.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 17</value>
-  </data>
-  <data name="VisitGitHubRepository.Text" xml:space="preserve">
-    <value>Visit GitHub repository</value>
-  </data>
-  <data name="BottomBar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 673</value>
-  </data>
-  <data name="BottomBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>994, 22</value>
-  </data>
-  <data name="BottomBar.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="BottomBar.Text" xml:space="preserve">
-    <value>BottomBar</value>
-  </data>
-  <data name="&gt;&gt;BottomBar.Name" xml:space="preserve">
-    <value>BottomBar</value>
-  </data>
-  <data name="&gt;&gt;BottomBar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BottomBar.Parent" xml:space="preserve">
-    <value>Programs</value>
-  </data>
-  <data name="&gt;&gt;BottomBar.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="Install_MozillaThunderbird.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
@@ -1344,40 +2089,6 @@
   <data name="&gt;&gt;Install_7zip.ZOrder" xml:space="preserve">
     <value>42</value>
   </data>
-  <data name="Programs.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 27</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Programs.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="Programs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1000, 698</value>
-  </data>
-  <data name="Programs.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="Programs.Text" xml:space="preserve">
-    <value>Programs</value>
-  </data>
-  <data name="Programs.ToolTipText" xml:space="preserve">
-    <value>A list of available programs to be installed</value>
-  </data>
-  <data name="&gt;&gt;Programs.Name" xml:space="preserve">
-    <value>Programs</value>
-  </data>
-  <data name="&gt;&gt;Programs.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Programs.Parent" xml:space="preserve">
-    <value>TabManager</value>
-  </data>
-  <data name="&gt;&gt;Programs.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="SystemAdministration.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="CreateTask_WingetAutoUpgrades.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
   </data>
@@ -1699,36 +2410,6 @@
   <data name="&gt;&gt;Update_WingetSources.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
-  <data name="SystemAdministration.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 27</value>
-  </data>
-  <data name="SystemAdministration.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="SystemAdministration.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1000, 698</value>
-  </data>
-  <data name="SystemAdministration.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="SystemAdministration.Text" xml:space="preserve">
-    <value>System Administration</value>
-  </data>
-  <data name="SystemAdministration.ToolTipText" xml:space="preserve">
-    <value>PowerShell scripts to improve performance, security and privacy</value>
-  </data>
-  <data name="&gt;&gt;SystemAdministration.Name" xml:space="preserve">
-    <value>SystemAdministration</value>
-  </data>
-  <data name="&gt;&gt;SystemAdministration.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;SystemAdministration.Parent" xml:space="preserve">
-    <value>TabManager</value>
-  </data>
-  <data name="&gt;&gt;SystemAdministration.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="SimeononSecurityWoh.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
   </data>
@@ -1786,68 +2467,56 @@
   <data name="&gt;&gt;CttWin10script.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="ThirdParty.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 27</value>
+  <metadata name="BottomBar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="BottomBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 803</value>
   </data>
-  <data name="ThirdParty.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+  <data name="BottomBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1136, 22</value>
   </data>
-  <data name="ThirdParty.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1000, 698</value>
-  </data>
-  <data name="ThirdParty.TabIndex" type="System.Int32, mscorlib">
+  <data name="BottomBar.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="ThirdParty.Text" xml:space="preserve">
-    <value>Third Party</value>
+  <data name="BottomBar.Text" xml:space="preserve">
+    <value>BottomBar</value>
   </data>
-  <data name="&gt;&gt;ThirdParty.Name" xml:space="preserve">
-    <value>ThirdParty</value>
+  <data name="&gt;&gt;BottomBar.Name" xml:space="preserve">
+    <value>BottomBar</value>
   </data>
-  <data name="&gt;&gt;ThirdParty.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;BottomBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ThirdParty.Parent" xml:space="preserve">
-    <value>TabManager</value>
+  <data name="&gt;&gt;BottomBar.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;ThirdParty.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;BottomBar.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="TabManager.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="CurrentVersionLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 17</value>
   </data>
-  <data name="TabManager.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="CurrentVersionLabel.Text" xml:space="preserve">
+    <value>Current version: 0.0.10.0</value>
   </data>
-  <data name="TabManager.ShowToolTips" type="System.Boolean, mscorlib">
+  <data name="VisitGitHubRepository.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 17</value>
+  </data>
+  <data name="VisitGitHubRepository.Text" xml:space="preserve">
+    <value>Visit GitHub repository</value>
+  </data>
+  <data name="Panel.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="TabManager.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1008, 729</value>
-  </data>
-  <data name="TabManager.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;TabManager.Name" xml:space="preserve">
-    <value>TabManager</value>
-  </data>
-  <data name="&gt;&gt;TabManager.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TabManager.Parent" xml:space="preserve">
-    <value>Panel</value>
-  </data>
-  <data name="&gt;&gt;TabManager.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="Panel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <data name="Panel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>0, 24</value>
   </data>
   <data name="Panel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1008, 729</value>
+    <value>1136, 779</value>
   </data>
   <data name="Panel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1864,10 +2533,79 @@
   <data name="&gt;&gt;Panel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="MenuBar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>127, 17</value>
+  </metadata>
+  <metadata name="MenuBar.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="MenuBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="MenuBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1136, 24</value>
+  </data>
+  <data name="MenuBar.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="MenuBar.Text" xml:space="preserve">
+    <value>MenuBar</value>
+  </data>
+  <data name="&gt;&gt;MenuBar.Name" xml:space="preserve">
+    <value>MenuBar</value>
+  </data>
+  <data name="&gt;&gt;MenuBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MenuBar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MenuBar.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 20</value>
+  </data>
+  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 22</value>
+  </data>
+  <data name="exitToolStripMenuItem.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 20</value>
+  </data>
+  <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="Install_Teamviewer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>177, 559</value>
+  </data>
+  <data name="Install_Teamviewer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 23</value>
+  </data>
+  <data name="Install_Teamviewer.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="Install_Teamviewer.Text" xml:space="preserve">
+    <value>Install TeamViewer</value>
+  </data>
+  <data name="&gt;&gt;Install_Teamviewer.Name" xml:space="preserve">
+    <value>Install_Teamviewer</value>
+  </data>
+  <data name="&gt;&gt;Install_Teamviewer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Install_Teamviewer.Parent" xml:space="preserve">
+    <value>Programs</value>
+  </data>
+  <data name="&gt;&gt;Install_Teamviewer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
@@ -1880,10 +2618,10 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1008, 729</value>
+    <value>1136, 825</value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1024, 768</value>
+    <value>1152, 864</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
@@ -1902,6 +2640,24 @@
   </data>
   <data name="&gt;&gt;VisitGitHubRepository.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fileToolStripMenuItem.Name" xml:space="preserve">
+    <value>fileToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;fileToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;exitToolStripMenuItem.Name" xml:space="preserve">
+    <value>exitToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;exitToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;aboutToolStripMenuItem.Name" xml:space="preserve">
+    <value>aboutToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;aboutToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Container</value>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace workstations_v3
 {
@@ -1203,6 +1204,33 @@ namespace workstations_v3
             }
         }
 
+        private void Install_Teamviewer_Click(object sender, EventArgs e)
+        {
+            if (PrivilegesManager.IsUserAdmin() == false)
+            {
+                var Message = "You need administrator privileges to install this program.";
+                var Caption = "Insufficient privileges";
+                var ButtonLayout = MessageBoxButtons.OK;
+                var Icon = MessageBoxIcon.Error;
+                MessageBox.Show(Message, Caption, ButtonLayout, Icon);
+            }
+            else
+            {
+                if (DependenciesManager.IsWingetInstalled() == true)
+                {
+                    ProcessManager.NewProcess("powershell.exe", "winget install -e TeamViewer.TeamViewer");
+                }
+                else
+                {
+                    var Message = "Cannot install this program because winget is not installed.";
+                    var Caption = "Cannot find winget";
+                    var ButtonLayout = MessageBoxButtons.OK;
+                    var Icon = MessageBoxIcon.Warning;
+                    MessageBox.Show(Message, Caption, ButtonLayout, Icon);
+                }
+            }
+        }
+
         private void Apply_SystemReadiness_Click(object sender, EventArgs e)
         {
             if (PrivilegesManager.IsUserAdmin() == false)
@@ -1393,6 +1421,18 @@ namespace workstations_v3
             {
                 TaskManager.CreateTask("WingetAutoUpgrades", "winget.exe", "upgrade --all", "", "Automatically upgrades winget packages on daily basis.", 1);
             }
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            About aboutbox = new About();
+            aboutbox.ShowDialog();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Dispose();
+            Close();
         }
     }
 }
